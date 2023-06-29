@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Oswald:wght@600&family=Overpass&family=Roboto:wght@300&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  list-style-type: none !important;
+  text-decoration: none !important;
+}
+body {
+  background: url("/assets/images/png/bodyBgimg.png"),
+    linear-gradient(0deg, #1d1d27 0%, #1d1d27 100%),
+    linear-gradient(#f5f9ff, #f5f9ff), repeat;
+  background-blend-mode: soft-light, normal, normal;
+}
+body::before {
+  content: "";
+  position: fixed;
+  background-color: #1d1d28;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.95;
+}
+.custom-container {
+  max-width: 1178px !important;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+.ff-oswald {
+  font-family: "Oswald", sans-serif;
+}
+.ff-rubik {
+  font-family: "Rubik", sans-serif;
+}
+.ff-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.ff-overpass {
+  font-family: "Overpass", sans-serif;
+}
+.ff-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+.ff-inter {
+  font-family: "Inter", sans-serif;
+}
+.ff-dmsans {
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --fs-xxsm: 12px;
+  --fs-xsm: 14px;
+  --fs-sm: 15px;
+  --fs-md: 16px;
+  --fs-lg: 17px;
+  --fs-xl: 18px;
+  --fs-xxl: 20px;
+  --fs-2xl: 22px;
+  --fs-3xl: 24px;
+  --fs-4xl: 25px;
+  --fs-5xl: 32px;
+  --fs-6xl: 40px;
+  --fs-7xl: 60px;
+
+  --clr-blue: #0d6efd;
+  --clr-light-blue: #2f7fee;
+  --clr-dark-blue: #0f4bfd;
+  --clr-dark-blue-2: #0062ff;
+  --clr-off-white: #fbfbfb;
+  --clr-white-2: #f9f9f9;
+  --clr-white-3: #fefeff;
+  --clr-white-4: #eaeef1;
+  --clr-white-5: #fcfcff;
+  --clr-dark-grey: #808c95;
+  --clr-off-grey: #6e6e71;
+  --clr-light-grey: #8ba3b7;
+  --clr-grey: #9a9ea6;
+  --clr-green: #a4d6c5;
+  --bg-black-2: #111116;
+}
+
+/* FONT SIZE */
+
+.fs_xxsm {
+  font-size: var(--fs-xxsm);
+}
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+.fs_md {
+  font-size: var(--fs-md);
+}
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+.fs_xxl {
+  font-size: var(--fs-xxl);
+}
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+.fs_5xl {
+  font-size: var(--fs-5xl);
+}
+.fs_6xl {
+  font-size: var(--fs-6xl);
+}
+.fs_7xl {
+  font-size: var(--fs-7xl);
+}
+
+/* COLORS */
+
+.clr-blue {
+  color: var(--clr-blue);
+}
+.clr-light-blue {
+  color: var(--clr-light-blue);
+}
+.clr-dark-blue {
+  color: var(--clr-dark-blue);
+}
+.clr-dark-blue-2 {
+  color: var(--clr-dark-blue-2);
+}
+.clr-off-white {
+  color: var(--clr-off-white);
+}
+.clr-white-2 {
+  color: var(--clr-white-2);
+}
+.clr-white-3 {
+  color: var(--clr-white-3);
+}
+.clr-white-4 {
+  color: var(--clr-white-4);
+}
+.clr-white-5 {
+  color: var(--clr-white-5);
+}
+.clr-dark-grey {
+  color: var(--clr-dark-grey);
+}
+.clr-off-grey {
+  color: var(--clr-off-grey);
+}
+.clr-light-grey {
+  color: var(--clr-light-grey);
+}
+.clr-grey {
+  color: var(--clr-grey);
+}
+.clr-green {
+  color: var(--clr-green);
+}
+
+/* AWESOME PRICING PLAN SECTION START */
+.pricing-plan-cards {
+  background-color: var(--bg-black-2);
+  padding: 32px;
+  border-radius: 15px;
+  box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
+  transition: 0.4s ease-in-out;
+}
+.pricing-plan-cards:hover {
+  transform: translateY(-5%);
+}
+.text-popular-plan-bg {
+  border-radius: 45px;
+  background: rgba(132, 160, 232, 0.1);
+  padding: 10px 22px;
+}
+.btn-get-started {
+  border-radius: 10px;
+  border: 1px solid #0e4bfe;
+  padding: 16px 32px;
+  gap: 4px;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+  background: transparent;
+}
+.pricing-plan-cards:hover .btn-get-started {
+  background: linear-gradient(
+      27deg,
+      rgba(0, 63, 243, 0.8) 0%,
+      rgba(48, 156, 255, 0.8) 100%
+    ),
+    linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
+}
+/* AWESOME PRICING PLAN SECTION ENDS  */
+.why-choose-us-card-blue {
+  max-width: 347px;
+  height: 330px;
+  padding: 60px 24px;
+  background-size: 100% 100%;
+  background-image: url("/assets/images/png/whyChooseusblue.png");
+  background-repeat: no-repeat;
+}
+.why-choose-us-card-black {
+  max-width: 347px;
+  height: 330px;
+  padding: 48px 30px;
+  background-size: 100% 100%;
+  background-image: url("/assets/images/png/whyChooseusblack.png");
+  background-repeat: no-repeat;
+}
+/* WHY CHOOSE US ENDS */
+@media (min-width: 575.99px) {
+  .why-choose-us-card-blue {
+    padding: 48px 24px;
+  }
+  .why-choose-us-card-black {
+    padding: 48px 24px;
+  }
+}
+@media (min-width: 768.99px) {
+  .why-choose-us-card-blue {
+    width: unset;
+    height: unset;
+    padding: 73px 36px;
+  }
+  .why-choose-us-card-black {
+    width: unset;
+    height: unset;
+    padding: 73px 36px;
+  }
+}
+@media (min-width: 1199.99px) {
+  .why-choose-us-card-blue {
+    padding: 83px 40px;
+  }
+  .why-choose-us-card-black {
+    padding: 83px 40px;
+  }
+}
