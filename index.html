@@ -11,6 +11,26 @@
       crossorigin="anonymous"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <!-- slick min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- slick theam min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       rel="shortcut icon"
       href="/assets/images/png/logo.png"
       type="image/x-icon"
@@ -18,7 +38,12 @@
     <title>Gravel Host</title>
   </head>
   <body>
-    <section class="py-5">
+    <section class="py-5 position-relative">
+      <img
+        class="database position-absolute d-none d-xl-block"
+        src="/assets/images/png/dataBase.png"
+        alt="dataBase"
+      />
       <div class="custom-container">
         <h2
           style="line-height: 110%"
@@ -35,7 +60,7 @@
           egestas egestas pellentesque magna.
         </p>
         <div
-          class="row mt-md-5 pt-md-5 mt-5 justify-content-center justify-content-lg-start"
+          class="row pt-md-5 mt-2 justify-content-center justify-content-lg-start"
         >
           <div class="col-lg-4 col-md-6 text-center text-md-start">
             <div class="pricing-plan-cards">
@@ -616,8 +641,13 @@
         </div>
       </div>
     </section>
-    <section class="py-5">
-      <div class="custom-container">
+    <section class="py-5 position-relative">
+      <img
+        class="curvedlines position-absolute d-none d-xl-block"
+        src="/assets/images/png/curvedLines.png"
+        alt="curvedLines"
+      />
+      <div class="custom-container py-xl-5">
         <h2
           style="line-height: 110%"
           class="clr-white-5 fs_6xl ff-rubik fw-bold text-center mb-0"
@@ -639,15 +669,15 @@
         />
       </div>
     </section>
-    <section class="py-5">
-      <div class="custom-container">
+    <section class="py-5 mb-md-5">
+      <div class="custom-container py-xl-5">
         <h2
           style="line-height: 110%"
           class="clr-white-5 fs_6xl ff-rubik fw-bold text-center mb-0"
         >
           Why <span class="clr-blue"> Choose Us?</span>
         </h2>
-        <div class="row mt-5">
+        <div class="row mt-5 pb-mb-5">
           <div class="col-lg-4 col-sm-6">
             <div
               class="why-choose-us-card-blue mx-auto mx-lg-0 d-flex flex-column align-content-center justify-content-center"
@@ -748,7 +778,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mt-4">
+          <div class="col-lg-4 col-sm-6 mt-4 pb-xl-5">
             <div
               class="why-choose-us-card-black mx-auto mx-lg-0 d-flex flex-column align-content-center justify-content-center"
             >
@@ -771,11 +801,1154 @@
         </div>
       </div>
     </section>
-    <script src="/assets/js/index.js"></script>
+    <section class="sec-our-locations-bg pt-4 pt-md-5 position-relative">
+      <img
+        class="gravelhost position-absolute d-none d-sm-block"
+        src="/assets/images/png/gravelHost.png"
+        alt="gravelHost"
+      />
+      <div class="custom-container">
+        <div class="texts-black-bg py-5">
+          <h2
+            style="line-height: 110%"
+            class="clr-white-5 fs_6xl ff-rubik fw-bold text-center mb-0"
+          >
+            Our <span class="clr-blue"> Locations</span>
+          </h2>
+          <p
+            style="line-height: 135%"
+            class="mb-0 text-white fs_xl ff-inter text-center mt-4"
+          >
+            Sparked offers hosting all around the world
+          </p>
+          <div class="div-width mx-auto mt-5 pt-4">
+            <div class="row px-2">
+              <div class="col-md-4 col-sm-6">
+                <div
+                  class="d-flex align-items-lg-center flex-column gap-sm-5 gap-3"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-lg-center gap-lg-4 gap-3"
+                  >
+                    <div
+                      class="country-flags-bg d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        width="47px"
+                        src="/assets/images/png/usFlag.png"
+                        alt="usFlag"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        style="line-height: 24px"
+                        class="mb-1 text-white fs_xl ff-inter fw-bold"
+                      >
+                        Dallas Tx
+                      </p>
+                      <p
+                        class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                      >
+                        240ms
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ps-lg-2 ms-lg-1">
+                    <div
+                      class="d-flex align-items-center justify-content-lg-center gap-lg-4 gap-3"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/usFlag.png"
+                          alt="usFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold"
+                        >
+                          Chicago IL
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          240ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mt-3 mt-sm-0">
+                <div
+                  class="d-flex align-items-lg-center flex-column gap-sm-5 gap-3"
+                >
+                  <div>
+                    <div
+                      class="d-flex align-items-center justify-lg-content-center gap-lg-4 gap-3"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/usFlag.png"
+                          alt="usFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold"
+                        >
+                          Tampa FL
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          180ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="d-flex align-items-center justify-content-lg-center gap-lg-4 gap-3 ps-lg-4 ms-lg-1"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/usFlag.png"
+                          alt="usFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold"
+                        >
+                          New York NY
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          240ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 mt-3 mt-sm-5 mt-md-0">
+                <div class="row align-items-lg-center flex-md-column gap-md-5">
+                  <div class="col-sm-6 col-md-12">
+                    <div
+                      class="d-flex align-items-center justify-content-lg-center gap-lg-4 gap-3"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/usFlag.png"
+                          alt="usFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold"
+                        >
+                          Los Angeles CA
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          240ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps-lg-2 col-sm-6 col-md-12 mt-3 mt-sm-0">
+                    <div
+                      class="d-flex align-items-center justify-content-lg-center gap-lg-4 gap-3 ps-lg-1"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/australiaFlag.png"
+                          alt="australiaFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold text-nowrap"
+                        >
+                          Sydney Australia
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          240ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="row align-items-sm-center justify-content-md-center flex-column flex-sm-row mt-sm-5 mt-3"
+                >
+                  <div class="col-sm-6 col-lg-5 col-xl-4">
+                    <div
+                      class="d-flex align-items-center justify-content-md-center gap-3 gap-md-4"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/netherlandFlag.png"
+                          alt="netherlandFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold"
+                        >
+                          Amsterdam Netherlands
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          240ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-5 col-xl-4 mt-3 mt-sm-0">
+                    <div
+                      class="d-flex align-items-center justify-content-md-center gap-3 gap-md-3"
+                    >
+                      <div
+                        class="country-flags-bg d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          width="47px"
+                          src="/assets/images/png/singaporeFlag.png"
+                          alt="singaporeFlag"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="line-height: 24px"
+                          class="mb-1 text-white fs_xl ff-inter fw-bold"
+                        >
+                          Singapore, Asia
+                        </p>
+                        <p
+                          class="mb-0 text-white opacity-75 fs_md ff-inter fw-medium"
+                        >
+                          240ms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative mb-5 md-md-0">
+          <img
+            class="w-100 worldmap"
+            src="/assets/images/png/worldMap.png"
+            alt="worldMap"
+          />
+          <div
+            class="position-absolute cursor_pointer sydney bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Sydney, AUS
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer singapore bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Singapore, AS
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer amsterdam bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Amsterdam, EU
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer newyork bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Newyork, NY
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer los-angeles bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Los Angeles, CA
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer chichago bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Chicago, IL
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer tampa bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Tampa, FL
+              </p>
+            </div>
+          </div>
+          <div
+            class="position-absolute cursor_pointer dallas bg-white border-radius-100 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="blue-border-circle border-radius-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="border-radius-100 blue-circle"></div>
+            </div>
+            <div>
+              <p class="mb-0 ff-inter fw-semibold fs_md clr-blue country-name">
+                Dallas, Tx
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="testimonial-footer-bg">
+      <section class="py-5">
+        <div class="custom-container">
+          <p
+            style="letter-spacing: 3px; line-height: 32px"
+            class="mb-0 text-center ff-rubik fs_xl clr-dark-blue-2 mt-5"
+          >
+            TESTIMONIAL
+          </p>
+          <h2
+            style="line-height: 64px"
+            class="clr-white-5 fs_6xl ff-rubik fw-bold text-center mb-0 mt-3"
+          >
+            What Our Clients Say About Us
+          </h2>
+          <div class="testimonials mt-5">
+            <div class="px-2">
+              <div
+                class="our-clients-card d-flex flex-column justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-1">
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                </div>
+                <p
+                  style="line-height: 28.5px"
+                  class="mb-0 ff-opensans fs_md mt-4 pt-2 clr-dark-grey"
+                >
+                  I received great customer service from the specialists who
+                  helped me. I would recommend to anyone who wants quality.
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4 pt-2">
+                  <img
+                    width="40px"
+                    src="/assets/images/png/violaManisa.png"
+                    alt="violaManisa"
+                  />
+                  <div class="ps-1">
+                    <p class="mb-0 fs_md ff-opensans fw-semibold clr-green">
+                      Viola Manisa
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="tick-bg border-radius-100 d-flex align-items-center justify-content-center"
+                      >
+                        <svg
+                          width="8"
+                          height="6"
+                          viewBox="0 0 8 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.93212 4.97452L0.75765 2.81306C0.696886 2.7523 0.666504 2.67417 0.666504 2.57869C0.666504 2.4832 0.696886 2.40508 0.75765 2.34431L1.23942 1.87557C1.30018 1.80612 1.37614 1.7714 1.46728 1.7714C1.55843 1.7714 1.63872 1.80612 1.70817 1.87557L3.1665 3.3339L6.29149 0.208903C6.36093 0.139459 6.44123 0.104736 6.53238 0.104736C6.62352 0.104736 6.69948 0.139459 6.76024 0.208903L7.24201 0.677652C7.30277 0.738415 7.33315 0.81654 7.33315 0.912026C7.33315 1.00751 7.30277 1.08564 7.24201 1.1464L3.40087 4.97452C3.34011 5.04396 3.26198 5.07868 3.1665 5.07868C3.07101 5.07868 2.99289 5.04396 2.93212 4.97452Z"
+                            fill="#36B37E"
+                          />
+                        </svg>
+                      </div>
+                      <p class="mb-0 ff-opensans clr-light-grey">
+                        <i>Verified customer</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2">
+              <div
+                class="our-clients-card d-flex flex-column justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-1">
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                </div>
+                <p
+                  style="line-height: 28.5px"
+                  class="mb-0 ff-opensans fs_md mt-4 pt-2 clr-dark-grey"
+                >
+                  Very responsive and competent! I've never dealt with an
+                  insurance company this customer-friendly in my entire life.
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4 pt-2">
+                  <img
+                    width="40px"
+                    src="/assets/images/png/bryanArnoldy.png"
+                    alt="violaManisa"
+                  />
+                  <div class="ps-1">
+                    <p class="mb-0 fs_md ff-opensans fw-semibold clr-green">
+                      Bryan Arnoldy
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="tick-bg border-radius-100 d-flex align-items-center justify-content-center"
+                      >
+                        <svg
+                          width="8"
+                          height="6"
+                          viewBox="0 0 8 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.93212 4.97452L0.75765 2.81306C0.696886 2.7523 0.666504 2.67417 0.666504 2.57869C0.666504 2.4832 0.696886 2.40508 0.75765 2.34431L1.23942 1.87557C1.30018 1.80612 1.37614 1.7714 1.46728 1.7714C1.55843 1.7714 1.63872 1.80612 1.70817 1.87557L3.1665 3.3339L6.29149 0.208903C6.36093 0.139459 6.44123 0.104736 6.53238 0.104736C6.62352 0.104736 6.69948 0.139459 6.76024 0.208903L7.24201 0.677652C7.30277 0.738415 7.33315 0.81654 7.33315 0.912026C7.33315 1.00751 7.30277 1.08564 7.24201 1.1464L3.40087 4.97452C3.34011 5.04396 3.26198 5.07868 3.1665 5.07868C3.07101 5.07868 2.99289 5.04396 2.93212 4.97452Z"
+                            fill="#36B37E"
+                          />
+                        </svg>
+                      </div>
+                      <p class="mb-0 ff-opensans clr-light-grey">
+                        <i>Verified customer</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2">
+              <div
+                class="our-clients-card d-flex flex-column justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-1">
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                </div>
+                <p
+                  style="line-height: 28.5px"
+                  class="mb-0 ff-opensans fs_md mt-4 pt-2 clr-dark-grey"
+                >
+                  My experience with this platform so far has been great.
+                  Everything is easy, from signing the contract to making an
+                  appointment.
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4 pt-2">
+                  <img
+                    width="40px"
+                    src="/assets/images/png/joshuaWilliam.png"
+                    alt="violaManisa"
+                  />
+                  <div class="ps-1">
+                    <p class="mb-0 fs_md ff-opensans fw-semibold clr-green">
+                      Joshua William
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="tick-bg border-radius-100 d-flex align-items-center justify-content-center"
+                      >
+                        <svg
+                          width="8"
+                          height="6"
+                          viewBox="0 0 8 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.93212 4.97452L0.75765 2.81306C0.696886 2.7523 0.666504 2.67417 0.666504 2.57869C0.666504 2.4832 0.696886 2.40508 0.75765 2.34431L1.23942 1.87557C1.30018 1.80612 1.37614 1.7714 1.46728 1.7714C1.55843 1.7714 1.63872 1.80612 1.70817 1.87557L3.1665 3.3339L6.29149 0.208903C6.36093 0.139459 6.44123 0.104736 6.53238 0.104736C6.62352 0.104736 6.69948 0.139459 6.76024 0.208903L7.24201 0.677652C7.30277 0.738415 7.33315 0.81654 7.33315 0.912026C7.33315 1.00751 7.30277 1.08564 7.24201 1.1464L3.40087 4.97452C3.34011 5.04396 3.26198 5.07868 3.1665 5.07868C3.07101 5.07868 2.99289 5.04396 2.93212 4.97452Z"
+                            fill="#36B37E"
+                          />
+                        </svg>
+                      </div>
+                      <p class="mb-0 ff-opensans clr-light-grey">
+                        <i>Verified customer</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2">
+              <div
+                class="our-clients-card d-flex flex-column justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-1">
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                  <img
+                    width="19px"
+                    src="/assets/images/png/trustpilotstar.png"
+                    alt="trustpilotstar"
+                  />
+                </div>
+                <p
+                  style="line-height: 28.5px"
+                  class="mb-0 ff-opensans fs_md mt-4 pt-2 clr-dark-grey"
+                >
+                  It's the best online insurance you can find. Easy, without
+                  hidden costs and you can be very sure. your data is completely
+                  save.
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4 pt-2">
+                  <img
+                    width="40px"
+                    src="/assets/images/png/georgeScott.png"
+                    alt="violaManisa"
+                  />
+                  <div class="ps-1">
+                    <p class="mb-0 fs_md ff-opensans fw-semibold clr-green">
+                      George Scott
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="tick-bg border-radius-100 d-flex align-items-center justify-content-center"
+                      >
+                        <svg
+                          width="8"
+                          height="6"
+                          viewBox="0 0 8 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.93212 4.97452L0.75765 2.81306C0.696886 2.7523 0.666504 2.67417 0.666504 2.57869C0.666504 2.4832 0.696886 2.40508 0.75765 2.34431L1.23942 1.87557C1.30018 1.80612 1.37614 1.7714 1.46728 1.7714C1.55843 1.7714 1.63872 1.80612 1.70817 1.87557L3.1665 3.3339L6.29149 0.208903C6.36093 0.139459 6.44123 0.104736 6.53238 0.104736C6.62352 0.104736 6.69948 0.139459 6.76024 0.208903L7.24201 0.677652C7.30277 0.738415 7.33315 0.81654 7.33315 0.912026C7.33315 1.00751 7.30277 1.08564 7.24201 1.1464L3.40087 4.97452C3.34011 5.04396 3.26198 5.07868 3.1665 5.07868C3.07101 5.07868 2.99289 5.04396 2.93212 4.97452Z"
+                            fill="#36B37E"
+                          />
+                        </svg>
+                      </div>
+                      <p class="mb-0 ff-opensans clr-light-grey">
+                        <i>Verified customer</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center gap-3 mt-4"
+          >
+            <button class="slider-btns btn_previous">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.8403 10.925H5.15918"
+                  stroke="#A4A4A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.4998 17.2625L5.15918 10.9219L11.4998 4.5813"
+                  stroke="#A4A4A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="slider-btns btn_next">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.15918 10.925H17.8403"
+                  stroke="#A4A4A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.5 4.5813L17.8406 10.9219L11.5 17.2625"
+                  stroke="#A4A4A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="custom-container">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-md-5 gap-4 text-center"
+          >
+            <div
+              class="d-flex align-items-center justify-content-center gap-md-5 gap-sm-5 gap-4"
+            >
+              <div style="max-width: 230px">
+                <img
+                  style="max-width: 110px"
+                  src="/assets/images/png/customerSuppoerteam.png"
+                  alt="customerSuppoerteam"
+                />
+                <p class="mb-0 clr-white-4 fs_md ff-opensans mt-3 pt-1">
+                  <span class="fw-bold"> Friendly</span> customer support team
+                </p>
+              </div>
+              <div class="slash"></div>
+              <div style="max-width: 230px">
+                <img
+                  style="max-width: 128px"
+                  src="/assets/images/png/trustpilotLogo.png"
+                  alt="customerSuppoerteam"
+                />
+                <div class="py-3">
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="s "
+                      d="M12.0366 2.05701C12.2385 1.65857 12.5328 1.39294 12.9197 1.26013C13.3066 1.12732 13.6934 1.12732 14.0803 1.26013C14.4672 1.39294 14.7615 1.65857 14.9634 2.05701L18.2434 8.63123L25.6107 9.67712C26.0481 9.74353 26.3929 9.94275 26.6452 10.2748C26.8975 10.6068 27.0152 10.972 26.9984 11.3705C26.9816 11.7689 26.8218 12.1176 26.519 12.4164L21.1701 17.5463L22.4317 24.8177C22.4989 25.2162 22.4233 25.5897 22.2046 25.9384C21.9859 26.287 21.6747 26.5111 21.2711 26.6107C20.8674 26.7103 20.4805 26.6605 20.1104 26.4613L13.5 23.0746L6.88956 26.4613C6.51951 26.6605 6.13264 26.7103 5.72895 26.6107C5.32525 26.5111 5.01408 26.287 4.79541 25.9384C4.57674 25.5897 4.50105 25.2162 4.56833 24.8177L5.82987 17.5463L0.48096 12.4164C0.178192 12.1176 0.0183971 11.7689 0.00157688 11.3705C-0.0152433 10.972 0.1025 10.6068 0.354807 10.2748C0.607114 9.94275 0.951933 9.74353 1.38927 9.67712L8.75663 8.63123L12.0366 2.05701Z"
+                      fill="#FF8B00"
+                    />
+                  </svg>
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="s "
+                      d="M12.0366 2.05701C12.2385 1.65857 12.5328 1.39294 12.9197 1.26013C13.3066 1.12732 13.6934 1.12732 14.0803 1.26013C14.4672 1.39294 14.7615 1.65857 14.9634 2.05701L18.2434 8.63123L25.6107 9.67712C26.0481 9.74353 26.3929 9.94275 26.6452 10.2748C26.8975 10.6068 27.0152 10.972 26.9984 11.3705C26.9816 11.7689 26.8218 12.1176 26.519 12.4164L21.1701 17.5463L22.4317 24.8177C22.4989 25.2162 22.4233 25.5897 22.2046 25.9384C21.9859 26.287 21.6747 26.5111 21.2711 26.6107C20.8674 26.7103 20.4805 26.6605 20.1104 26.4613L13.5 23.0746L6.88956 26.4613C6.51951 26.6605 6.13264 26.7103 5.72895 26.6107C5.32525 26.5111 5.01408 26.287 4.79541 25.9384C4.57674 25.5897 4.50105 25.2162 4.56833 24.8177L5.82987 17.5463L0.48096 12.4164C0.178192 12.1176 0.0183971 11.7689 0.00157688 11.3705C-0.0152433 10.972 0.1025 10.6068 0.354807 10.2748C0.607114 9.94275 0.951933 9.74353 1.38927 9.67712L8.75663 8.63123L12.0366 2.05701Z"
+                      fill="#FF8B00"
+                    />
+                  </svg>
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="s "
+                      d="M12.0366 2.05701C12.2385 1.65857 12.5328 1.39294 12.9197 1.26013C13.3066 1.12732 13.6934 1.12732 14.0803 1.26013C14.4672 1.39294 14.7615 1.65857 14.9634 2.05701L18.2434 8.63123L25.6107 9.67712C26.0481 9.74353 26.3929 9.94275 26.6452 10.2748C26.8975 10.6068 27.0152 10.972 26.9984 11.3705C26.9816 11.7689 26.8218 12.1176 26.519 12.4164L21.1701 17.5463L22.4317 24.8177C22.4989 25.2162 22.4233 25.5897 22.2046 25.9384C21.9859 26.287 21.6747 26.5111 21.2711 26.6107C20.8674 26.7103 20.4805 26.6605 20.1104 26.4613L13.5 23.0746L6.88956 26.4613C6.51951 26.6605 6.13264 26.7103 5.72895 26.6107C5.32525 26.5111 5.01408 26.287 4.79541 25.9384C4.57674 25.5897 4.50105 25.2162 4.56833 24.8177L5.82987 17.5463L0.48096 12.4164C0.178192 12.1176 0.0183971 11.7689 0.00157688 11.3705C-0.0152433 10.972 0.1025 10.6068 0.354807 10.2748C0.607114 9.94275 0.951933 9.74353 1.38927 9.67712L8.75663 8.63123L12.0366 2.05701Z"
+                      fill="#FF8B00"
+                    />
+                  </svg>
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="s "
+                      d="M12.0366 2.05701C12.2385 1.65857 12.5328 1.39294 12.9197 1.26013C13.3066 1.12732 13.6934 1.12732 14.0803 1.26013C14.4672 1.39294 14.7615 1.65857 14.9634 2.05701L18.2434 8.63123L25.6107 9.67712C26.0481 9.74353 26.3929 9.94275 26.6452 10.2748C26.8975 10.6068 27.0152 10.972 26.9984 11.3705C26.9816 11.7689 26.8218 12.1176 26.519 12.4164L21.1701 17.5463L22.4317 24.8177C22.4989 25.2162 22.4233 25.5897 22.2046 25.9384C21.9859 26.287 21.6747 26.5111 21.2711 26.6107C20.8674 26.7103 20.4805 26.6605 20.1104 26.4613L13.5 23.0746L6.88956 26.4613C6.51951 26.6605 6.13264 26.7103 5.72895 26.6107C5.32525 26.5111 5.01408 26.287 4.79541 25.9384C4.57674 25.5897 4.50105 25.2162 4.56833 24.8177L5.82987 17.5463L0.48096 12.4164C0.178192 12.1176 0.0183971 11.7689 0.00157688 11.3705C-0.0152433 10.972 0.1025 10.6068 0.354807 10.2748C0.607114 9.94275 0.951933 9.74353 1.38927 9.67712L8.75663 8.63123L12.0366 2.05701Z"
+                      fill="#FF8B00"
+                    />
+                  </svg>
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="s "
+                      d="M12.0366 2.05701C12.2385 1.65857 12.5328 1.39294 12.9197 1.26013C13.3066 1.12732 13.6934 1.12732 14.0803 1.26013C14.4672 1.39294 14.7615 1.65857 14.9634 2.05701L18.2434 8.63123L25.6107 9.67712C26.0481 9.74353 26.3929 9.94275 26.6452 10.2748C26.8975 10.6068 27.0152 10.972 26.9984 11.3705C26.9816 11.7689 26.8218 12.1176 26.519 12.4164L21.1701 17.5463L22.4317 24.8177C22.4989 25.2162 22.4233 25.5897 22.2046 25.9384C21.9859 26.287 21.6747 26.5111 21.2711 26.6107C20.8674 26.7103 20.4805 26.6605 20.1104 26.4613L13.5 23.0746L6.88956 26.4613C6.51951 26.6605 6.13264 26.7103 5.72895 26.6107C5.32525 26.5111 5.01408 26.287 4.79541 25.9384C4.57674 25.5897 4.50105 25.2162 4.56833 24.8177L5.82987 17.5463L0.48096 12.4164C0.178192 12.1176 0.0183971 11.7689 0.00157688 11.3705C-0.0152433 10.972 0.1025 10.6068 0.354807 10.2748C0.607114 9.94275 0.951933 9.74353 1.38927 9.67712L8.75663 8.63123L12.0366 2.05701Z"
+                      fill="#FF8B00"
+                    />
+                  </svg>
+                </div>
+                <p class="mb-0 clr-white-4 fs_md ff-opensans">
+                  <span class="fw-bold"> 4.6 out of 5 stars</span> from 8.6k
+                  reviews
+                </p>
+              </div>
+            </div>
+            <div class="slash d-none d-md-block"></div>
+            <div style="max-width: 230px">
+              <img
+                style="max-width: 48px"
+                src="/assets/images/png/like.png"
+                alt="customerSuppoerteam"
+              />
+              <p class="mb-0 clr-white-4 fs_md ff-opensans mt-3 pt-1">
+                We’re making
+                <span class="fw-bold"> insurance as simple as</span> can be
+                support team
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer_sec pt-5 pb-4">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-xl-5">
+              <a class="text-white fs_3xl ff-overpass fw-medium" href="#"
+                >Logo</a
+              >
+              <p
+                style="line-height: 22px"
+                class="mb-0 ff-overpass clr-grey mt-3"
+              >
+                We ara a lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                <a class="clr-dark-blue-2" href="#"> Read More</a>
+              </p>
+              <div class="pb-5 pt-4 mt-2 d-flex gap-2 align-items-center">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="social-site-logo-bg border-radius-100 d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    width="10"
+                    height="17"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 6.06527H0V8.73193H2.66667V16.7319H6.66667V8.73193H9.09333L9.33333 6.06527H6.66667V4.9546C6.66667 4.31727 6.79467 4.06527 7.41067 4.06527H9.33333V0.731934H6.128C3.73067 0.731934 2.66667 1.78793 2.66667 3.80927V6.06527Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="social-site-logo-bg border-radius-100 d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8 0.731934C5.82667 0.731934 5.556 0.741267 4.70133 0.781267C1.79467 0.9146 0.181333 2.5266 0.048 5.43327C0.00933333 6.28793 0 6.55993 0 8.73193C0 10.9053 0.00933333 11.1773 0.048 12.0306C0.181333 14.9359 1.79467 16.5506 4.70133 16.6839C5.556 16.7226 5.82667 16.7319 8 16.7319C10.1733 16.7319 10.4453 16.7226 11.3 16.6839C14.2013 16.5506 15.8213 14.9386 15.952 12.0306C15.9907 11.1773 16 10.9053 16 8.73193C16 6.55993 15.9907 6.28793 15.952 5.43327C15.8213 2.5306 14.2067 0.913267 11.3 0.781267C10.4453 0.741267 10.1733 0.731934 8 0.731934ZM8 2.1746C10.136 2.1746 10.3893 2.1826 11.2333 2.22127C13.4027 2.31993 14.4133 3.34793 14.5133 5.49993C14.5507 6.34393 14.5587 6.59593 14.5587 8.73193C14.5587 10.8679 14.5507 11.1213 14.5133 11.9639C14.4133 14.1146 13.404 15.1453 11.2333 15.2439C10.3893 15.2813 10.1373 15.2906 8 15.2906C5.864 15.2906 5.61067 15.2826 4.768 15.2439C2.59467 15.1439 1.588 14.1119 1.488 11.9639C1.45067 11.1213 1.44133 10.8679 1.44133 8.73193C1.44133 6.59593 1.45067 6.3426 1.488 5.49993C1.58667 3.3466 2.59733 2.3186 4.768 2.21993C5.61067 2.18127 5.864 2.1746 8 2.1746ZM3.892 8.73193C3.892 6.4626 5.732 4.62393 8 4.62393C10.268 4.62393 12.108 6.46393 12.108 8.73193C12.108 11.0013 10.268 12.8399 8 12.8399C5.732 12.8399 3.892 11.0013 3.892 8.73193ZM8 11.3986C6.52667 11.3986 5.33333 10.2053 5.33333 8.73193C5.33333 7.25993 6.52667 6.06527 8 6.06527C9.472 6.06527 10.668 7.2586 10.668 8.73193C10.668 10.2053 9.472 11.3986 8 11.3986ZM11.3093 4.4626C11.3093 3.93193 11.74 3.5026 12.2693 3.5026C12.8013 3.5026 13.2307 3.93193 13.2307 4.4626C13.2307 4.99327 12.8 5.4226 12.2693 5.4226C11.7387 5.4226 11.3093 4.99193 11.3093 4.4626Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  class="social-site-logo-bg border-radius-100 d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 1.77093C15.405 2.03193 14.771 2.20493 14.11 2.28893C14.79 1.88293 15.309 1.24493 15.553 0.475934C14.919 0.853934 14.219 1.12093 13.473 1.26993C12.871 0.628934 12.013 0.231934 11.077 0.231934C9.261 0.231934 7.799 1.70593 7.799 3.51293C7.799 3.77293 7.821 4.02293 7.875 4.26093C5.148 4.12793 2.735 2.82093 1.114 0.829934C0.831 1.32093 0.665 1.88293 0.665 2.48793C0.665 3.62393 1.25 4.63093 2.122 5.21393C1.595 5.20393 1.078 5.05093 0.64 4.80993C0.64 4.81993 0.64 4.83293 0.64 4.84593C0.64 6.43993 1.777 7.76393 3.268 8.06893C3.001 8.14193 2.71 8.17693 2.408 8.17693C2.198 8.17693 1.986 8.16493 1.787 8.12093C2.212 9.41993 3.418 10.3749 4.852 10.4059C3.736 11.2789 2.319 11.8049 0.785 11.8049C0.516 11.8049 0.258 11.7929 0 11.7599C1.453 12.6969 3.175 13.2319 5.032 13.2319C11.068 13.2319 14.368 8.23193 14.368 3.89793C14.368 3.75293 14.363 3.61293 14.356 3.47393C15.007 3.01193 15.554 2.43493 16 1.77093Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="social-site-logo-bg border-radius-100 d-flex align-items-center justify-content-center"
+                >
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.59375 7.60693C8.59375 7.8109 8.53327 8.01028 8.41995 8.17986C8.30664 8.34945 8.14558 8.48163 7.95714 8.55968C7.76871 8.63774 7.56136 8.65816 7.36131 8.61837C7.16127 8.57858 6.97752 8.48036 6.8333 8.33614C6.68907 8.19191 6.59086 8.00816 6.55106 7.80812C6.51127 7.60808 6.5317 7.40073 6.60975 7.21229C6.6878 7.02385 6.81998 6.8628 6.98957 6.74948C7.15916 6.63617 7.35854 6.57568 7.5625 6.57568C7.836 6.57568 8.09831 6.68433 8.2917 6.87773C8.4851 7.07113 8.59375 7.33343 8.59375 7.60693ZM19.5938 4.51318V18.9507C19.5938 19.3154 19.4489 19.6651 19.191 19.923C18.9332 20.1808 18.5834 20.3257 18.2188 20.3257H3.78125C3.41658 20.3257 3.06684 20.1808 2.80898 19.923C2.55112 19.6651 2.40625 19.3154 2.40625 18.9507V4.51318C2.40625 4.14851 2.55112 3.79877 2.80898 3.54091C3.06684 3.28305 3.41658 3.13818 3.78125 3.13818H18.2188C18.5834 3.13818 18.9332 3.28305 19.191 3.54091C19.4489 3.79877 19.5938 4.14851 19.5938 4.51318ZM18.2188 18.9507V4.51318H3.78125V18.9507H18.2188ZM7.5625 9.66943C7.38016 9.66943 7.2053 9.74187 7.07636 9.8708C6.94743 9.99973 6.875 10.1746 6.875 10.3569V15.8569C6.875 16.0393 6.94743 16.2141 7.07636 16.3431C7.2053 16.472 7.38016 16.5444 7.5625 16.5444C7.74484 16.5444 7.9197 16.472 8.04864 16.3431C8.17757 16.2141 8.25 16.0393 8.25 15.8569V10.3569C8.25 10.1746 8.17757 9.99973 8.04864 9.8708C7.9197 9.74187 7.74484 9.66943 7.5625 9.66943ZM12.7188 9.66943C12.0998 9.6694 11.4951 9.855 10.9828 10.2022C10.9452 10.0373 10.8481 9.89197 10.7101 9.79412C10.5721 9.69628 10.4028 9.65277 10.2347 9.67192C10.0666 9.69107 9.91143 9.77154 9.79894 9.89793C9.68646 10.0243 9.62452 10.1877 9.625 10.3569V15.8569C9.625 16.0393 9.69743 16.2141 9.82636 16.3431C9.9553 16.472 10.1302 16.5444 10.3125 16.5444C10.4948 16.5444 10.6697 16.472 10.7986 16.3431C10.9276 16.2141 11 16.0393 11 15.8569V12.7632C11 12.3073 11.1811 11.8702 11.5034 11.5478C11.8257 11.2255 12.2629 11.0444 12.7188 11.0444C13.1746 11.0444 13.6118 11.2255 13.9341 11.5478C14.2564 11.8702 14.4375 12.3073 14.4375 12.7632V15.8569C14.4375 16.0393 14.5099 16.2141 14.6389 16.3431C14.7678 16.472 14.9427 16.5444 15.125 16.5444C15.3073 16.5444 15.4822 16.472 15.6111 16.3431C15.7401 16.2141 15.8125 16.0393 15.8125 15.8569V12.7632C15.8125 11.9427 15.4866 11.1558 14.9064 10.5756C14.3262 9.99538 13.5393 9.66943 12.7188 9.66943Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-7">
+              <div class="row">
+                <div class="col-sm-3 col-6">
+                  <ul class="ps-0 ps-sm-3">
+                    <li class="clr-white-3 ff-rubik fs_xl fw-medium">
+                      Company
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >About</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Career</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <ul class="ps-0 ps-sm-3">
+                    <li class="clr-white-3 ff-rubik fs_xl fw-medium">
+                      Services
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Email Marketing</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Campaigns</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Branding</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Offline</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-6 mt-4 mt-xl-0">
+                  <ul class="ps-0 ps-sm-3">
+                    <li class="clr-white-3 ff-rubik fs_xl fw-medium">
+                      Company
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >About</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Career</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-6 mt-4 mt-xl-0">
+                  <ul class="ps-0 ps-sm-3">
+                    <li class="clr-white-3 ff-rubik fs_xl fw-medium">
+                      Company
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >About</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="mt-3 pt-1">
+                      <a
+                        style="letter-spacing: -0.205px"
+                        class="fs_sm ff-dmsans"
+                        href="#"
+                        >Career</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mb-0 text-center text-white">
+            © Copyright
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </section>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <!-- j quairy min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>

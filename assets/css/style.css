@@ -5,7 +5,7 @@
   text-decoration: none !important;
 }
 body {
-  background: url("/assets/images/png/bodyBgimg.png"),
+  background: url("/assets/images/webp/bodyBgimg.webp"),
     linear-gradient(0deg, #1d1d27 0%, #1d1d27 100%),
     linear-gradient(#f5f9ff, #f5f9ff), repeat;
   background-blend-mode: soft-light, normal, normal;
@@ -49,25 +49,29 @@ body::before {
 .ff-dmsans {
   font-family: "DM Sans", sans-serif;
 }
+.cursor_pointer {
+  cursor: pointer;
+}
 :root {
   --fs-xxsm: 12px;
-  --fs-xsm: 14px;
-  --fs-sm: 15px;
-  --fs-md: 16px;
-  --fs-lg: 17px;
-  --fs-xl: 18px;
-  --fs-xxl: 20px;
-  --fs-2xl: 22px;
-  --fs-3xl: 24px;
-  --fs-4xl: 25px;
-  --fs-5xl: 32px;
-  --fs-6xl: 40px;
-  --fs-7xl: 60px;
+  --fs-xsm: 13px;
+  --fs-sm: 14px;
+  --fs-md: 14px;
+  --fs-lg: 15px;
+  --fs-xl: 16px;
+  --fs-xxl: 17px;
+  --fs-2xl: 20px;
+  --fs-3xl: 22px;
+  --fs-4xl: 24px;
+  --fs-5xl: 28px;
+  --fs-6xl: 36px;
+  --fs-7xl: 42px;
 
   --clr-blue: #0d6efd;
   --clr-light-blue: #2f7fee;
   --clr-dark-blue: #0f4bfd;
   --clr-dark-blue-2: #0062ff;
+  --clr-blue-2: #1062f9;
   --clr-off-white: #fbfbfb;
   --clr-white-2: #f9f9f9;
   --clr-white-3: #fefeff;
@@ -78,7 +82,13 @@ body::before {
   --clr-light-grey: #8ba3b7;
   --clr-grey: #9a9ea6;
   --clr-green: #a4d6c5;
+  --clr-light-green: #36b37e;
+  --bg-dark-green: #162926;
   --bg-black-2: #111116;
+  --bg-blue: #034ef7;
+  --bg-white: #fff;
+  --bg-grey: #e5eaf4;
+  --bg-blue-2: #0268ff;
 }
 
 /* FONT SIZE */
@@ -167,8 +177,16 @@ body::before {
 .clr-green {
   color: var(--clr-green);
 }
-
+.clr-light-green {
+  color: var(--clr-light-green);
+}
 /* AWESOME PRICING PLAN SECTION START */
+.database {
+  right: 0;
+  bottom: -34%;
+  z-index: -1;
+  max-width: 770px;
+}
 .pricing-plan-cards {
   background-color: var(--bg-black-2);
   padding: 32px;
@@ -202,12 +220,23 @@ body::before {
     linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
 }
 /* AWESOME PRICING PLAN SECTION ENDS  */
+/* GAME HOSTING */
+.curvedlines {
+  width: 100%;
+  transform: translateY(-15%);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+/* ---- */
+
+/*  */
 .why-choose-us-card-blue {
   max-width: 347px;
   height: 330px;
   padding: 60px 24px;
   background-size: 100% 100%;
-  background-image: url("/assets/images/png/whyChooseusblue.png");
+  background-image: url("/assets/images/webp/whyChooseusblue.webp");
   background-repeat: no-repeat;
 }
 .why-choose-us-card-black {
@@ -215,16 +244,341 @@ body::before {
   height: 330px;
   padding: 48px 30px;
   background-size: 100% 100%;
-  background-image: url("/assets/images/png/whyChooseusblack.png");
+  background-image: url("/assets/images/webp/whyChooseusblack.webp");
   background-repeat: no-repeat;
 }
 /* WHY CHOOSE US ENDS */
+
+/* OUR LOCATIONS STARTS */
+.sec-our-locations-bg {
+  background-image: url("/assets/images/webp/ourLocationsecbgsmscreen.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.texts-black-bg {
+  background-image: url("/assets/images/png/ourLocationblackbg.png");
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
+}
+.div-width {
+  max-width: 1088px;
+}
+.country-flags-bg {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background: #d1ddfe;
+}
+.sydney {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  right: 15%;
+  bottom: 17%;
+}
+.blue-border-circle {
+  width: 12px;
+  height: 12px;
+  border: 3px solid var(--clr-blue-2);
+}
+.border-radius-100 {
+  border-radius: 100%;
+}
+.blue-circle {
+  width: 4px;
+  height: 4px;
+  background-color: var(--clr-dark-blue-2);
+}
+.sydney:hover .blue-border-circle {
+  display: none !important;
+}
+.sydney:hover {
+  width: 110px;
+  height: 40px;
+  border-radius: 12px;
+}
+.sydney:hover .country-name {
+  display: block;
+}
+.country-name {
+  display: none;
+}
+.singapore,
+.chichago,
+.tampa {
+  width: 16px;
+  height: 16px;
+  right: 23%;
+  bottom: 34%;
+}
+.singapore .blue-border-circle,
+.chichago .blue-border-circle,
+.tampa .blue-border-circle {
+  width: 12px;
+  height: 12px;
+}
+.singapore .blue-circle,
+.chichago .blue-circle,
+.tampa .blue-circle {
+  width: 4px;
+  height: 4px;
+}
+.singapore:hover .blue-border-circle,
+.chichago:hover .blue-border-circle,
+.tampa:hover .blue-border-circle {
+  display: none !important;
+}
+.singapore:hover,
+.chichago:hover,
+.tampa:hover {
+  width: 115px;
+  border-radius: 12px;
+  height: 40px;
+}
+.singapore:hover .country-name,
+.chichago:hover .country-name,
+.tampa:hover .country-name {
+  display: block;
+}
+.amsterdam,
+.newyork,
+.los-angeles {
+  width: 16px;
+  height: 16px;
+  top: 25%;
+  left: 46%;
+}
+.amsterdam .blue-border-circle,
+.newyork .blue-border-circle,
+.los-angeles .blue-border-circle {
+  width: 12px;
+  height: 12px;
+}
+.amsterdam .blue-circle,
+.newyork .blue-circle,
+.los-angeles .blue-circle {
+  width: 4px;
+  height: 4px;
+}
+.amsterdam:hover,
+.newyork:hover,
+.los-angeles:hover,
+.dallas:hover {
+  width: 130px;
+  height: 40px;
+  border-radius: 12px;
+  z-index: 1;
+}
+.amsterdam:hover .country-name,
+.newyork:hover .country-name,
+.los-angeles:hover .country-name,
+.dallas:hover .country-name {
+  display: block;
+}
+.amsterdam:hover .blue-border-circle,
+.newyork:hover .blue-border-circle,
+.los-angeles:hover .blue-border-circle,
+.dallas:hover .blue-border-circle {
+  display: none !important;
+}
+.newyork {
+  top: 30%;
+  left: 27%;
+}
+.los-angeles {
+  top: 40%;
+  left: 14%;
+}
+.chichago {
+  top: 27%;
+  left: 21%;
+}
+.tampa {
+  top: 44%;
+  left: 23%;
+}
+.dallas {
+  width: 14px;
+  height: 14px;
+  top: 43%;
+  left: 20%;
+}
+.dallas .blue-border-circle {
+  width: 11px;
+  height: 11px;
+}
+.dallas .blue-circle {
+  width: 4px;
+  height: 4px;
+}
+.gravelhost {
+  bottom: -15%;
+  left: 0;
+  z-index: 1;
+  width: 533px;
+}
+/* OUR LOCATIONS ENDS */
+
+/* TESTIMONIAL AND FOOTER BG */
+.testimonial-footer-bg {
+  background-image: url("/assets/images/webp/footerBgimg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.testimonial-footer-bg::before {
+  content: "";
+  background-color: var(--bg-blue-2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  opacity: 0.09;
+}
+/* ---- */
+
+/* TESTIMONIALS STARTS */
+.our-clients-card {
+  height: 310px;
+  border-radius: 15px;
+  background: #111116;
+  box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
+  padding: 20px 12px;
+}
+.tick-bg {
+  width: 16px;
+  height: 16px;
+  background-color: var(--bg-dark-green);
+}
+.slider-btns {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background: var(--bg-white);
+  box-shadow: 0px 24px 48px 0px rgba(43, 70, 168, 0.08);
+  transition: 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+.slider-btns:hover {
+  background-color: var(--bg-blue);
+}
+.slider-btns:hover svg path {
+  stroke: white;
+}
+.slash {
+  height: 40px;
+  width: 2px;
+  rotate: -10%;
+  background: var(--bg-grey);
+  rotate: 15deg;
+}
+/* TESTIMONIALS END */
+
+/* FOOTER STARTS */
+.social-site-logo-bg {
+  width: 48px;
+  height: 48px;
+  background: var(--bg-blue-2);
+}
+.social-site-logo-bg svg {
+  transition: 0.3s ease-in-out;
+}
+.social-site-logo-bg:hover svg {
+  transform: scale(1.3);
+}
+.footer_sec ul li a {
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.footer_sec ul li a:hover {
+  color: var(--clr-dark-blue-2);
+}
+/* FOOTER ENDS */
+
 @media (min-width: 575.99px) {
   .why-choose-us-card-blue {
     padding: 48px 24px;
   }
   .why-choose-us-card-black {
     padding: 48px 24px;
+  }
+  .amsterdam,
+  .newyork,
+  .los-angeles {
+    width: 28px;
+    height: 28px;
+    top: 25%;
+    left: 46%;
+  }
+  .amsterdam .blue-border-circle,
+  .newyork .blue-border-circle,
+  .los-angeles .blue-border-circle {
+    width: 23px;
+    height: 23px;
+  }
+  .amsterdam .blue-circle,
+  .newyork .blue-circle,
+  .los-angeles .blue-circle {
+    width: 10px;
+    height: 10px;
+  }
+  .singapore,
+  .chichago,
+  .tampa {
+    width: 20px;
+    height: 20px;
+    right: 23%;
+    bottom: 34%;
+  }
+  .singapore .blue-border-circle,
+  .chichago .blue-border-circle,
+  .tampa .blue-border-circle {
+    width: 16px;
+    height: 16px;
+  }
+  .singapore .blue-circle,
+  .chichago .blue-circle,
+  .tampa .blue-circle {
+    width: 5px;
+    height: 5px;
+  }
+  .sydney {
+    width: 45px;
+    height: 45px;
+    right: 15%;
+    bottom: 17%;
+  }
+  .blue-border-circle {
+    width: 37px;
+    height: 37px;
+  }
+  .blue-circle {
+    width: 16px;
+    height: 16px;
+  }
+  .los-angeles {
+    top: 40%;
+    left: 14%;
+  }
+  .tampa {
+    top: 44%;
+    left: 23%;
+  }
+  .newyork {
+    top: 30%;
+    left: 27%;
+  }
+  .gravelhost {
+    width: 253px;
+    bottom: -10%;
   }
 }
 @media (min-width: 768.99px) {
@@ -238,6 +592,44 @@ body::before {
     height: unset;
     padding: 73px 36px;
   }
+  .sec-our-locations-bg {
+    background-image: url("/assets/images/webp/ourLocationsecbg.webp");
+    background-size: cover;
+    margin-top: 150px;
+  }
+  .texts-black-bg {
+    transform: translateY(-30%);
+    margin-bottom: -120px !important;
+  }
+}
+@media (min-width: 991.99px) {
+  :root {
+    --fs-xxsm: 12px;
+    --fs-xsm: 14px;
+    --fs-sm: 15px;
+    --fs-md: 16px;
+    --fs-lg: 17px;
+    --fs-xl: 18px;
+    --fs-xxl: 20px;
+    --fs-2xl: 22px;
+    --fs-3xl: 24px;
+    --fs-4xl: 25px;
+    --fs-5xl: 32px;
+    --fs-6xl: 40px;
+    --fs-7xl: 60px;
+  }
+  .div-width {
+    padding: 0 46px;
+  }
+  .texts-black-bg {
+    transform: translateY(-40%);
+  }
+  .sec-our-locations-bg {
+    margin-top: 150px;
+  }
+  .gravelhost {
+    width: 353px;
+  }
 }
 @media (min-width: 1199.99px) {
   .why-choose-us-card-blue {
@@ -245,5 +637,24 @@ body::before {
   }
   .why-choose-us-card-black {
     padding: 83px 40px;
+  }
+  .gravelhost {
+    width: 433px;
+    bottom: -15%;
+  }
+}
+@media (min-width: 1399.99px) {
+  .sec-our-locations-bg {
+    background-size: 100% 100%;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+  }
+  .texts-black-bg {
+    transform: translateY(-30%);
+    margin-bottom: -90px !important;
+  }
+  .gravelhost {
+    width: 533px;
   }
 }
