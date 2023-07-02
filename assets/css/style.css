@@ -930,7 +930,7 @@ button:focus::after {
   .header-para-max-width {
     max-width: 586px;
   }
-  .btn-login {
+  .btn-login-common {
     padding: 18px 40px;
   }
   .scroll-down-btn {
