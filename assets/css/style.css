@@ -440,7 +440,8 @@ button:focus::after {
   z-index: -1;
 }
 .dashboard {
-  max-width: 1148px !important;
+  max-width: 100%;
+  width: 1140px;
 }
 /* ---- */
 
