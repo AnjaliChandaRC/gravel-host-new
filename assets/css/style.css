@@ -65,7 +65,7 @@ body::before {
   --fs-4xl: 24px;
   --fs-5xl: 28px;
   --fs-6xl: 30px;
-  --fs-7xl: 38px;
+  --fs-7xl: 36px;
 
   --clr-blue: #0d6efd;
   --clr-light-blue: #2f7fee;
@@ -201,16 +201,19 @@ body::before {
   background-image: url("/assets/images/webp/headerBg.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 730px;
 }
 .header_bg_2 {
   background-image: url("/assets/images/webp/headerBg2.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 730px;
 }
 .header_bg_3 {
   background-image: url("/assets/images/webp/headerBg3.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 730px;
 }
 .logo {
   max-width: 179px;
@@ -224,24 +227,25 @@ body::before {
   background-color: #000;
 }
 .header-social-logo-bg-3 {
-  width: 48px;
-  height: 48px;
-  background-color: var(--clr-off-grey-2);
+  background-color: var(--clr-off-grey-2) !important;
+  border: none !important;
 }
 .btn-login {
-  padding: 18px 40px;
-  border-radius: 45px;
   background: linear-gradient(
     27deg,
     rgba(0, 63, 243, 0.8) 0%,
     rgba(48, 156, 255, 0.8) 100%
   );
-  box-shadow: 0px 4px 10px 0px rgba(10, 131, 247, 0.25);
-  border: none;
 }
 .btn-login-common {
+  padding: 12px 18px;
   position: relative;
   overflow: hidden;
+  max-width: 169px;
+  border-radius: 45px;
+  border-radius: 45px;
+  box-shadow: 0px 4px 10px 0px rgba(10, 131, 247, 0.25);
+  border: none;
 }
 .btn-login-common:after {
   content: "";
@@ -268,12 +272,7 @@ button:focus::after {
   }
 }
 .btn-login-black {
-  padding: 18px 40px;
-  border-radius: 45px;
-  border-radius: 45px;
   background: var(---bg-black-3);
-  box-shadow: 0px 4px 10px 0px rgba(10, 131, 247, 0.25);
-  border: none;
 }
 .header-social-logo-bg svg {
   transition: 0.3s ease-in-out;
@@ -306,12 +305,15 @@ button:focus::after {
 .hamburger {
   padding: 8px;
   display: block;
-  z-index: 2;
+  z-index: 5;
   background-color: var(---bg-black-3);
   border-radius: 5px;
   border: none;
   cursor: pointer;
   position: relative;
+}
+.main_parent #overlay {
+  z-index: 5;
 }
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
@@ -321,6 +323,29 @@ button:focus::after {
 }
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu li a {
+  position: relative;
+}
+.links-hover {
+  position: relative;
+}
+.links-hover::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #fff;
+}
+.links-hover-2::before {
+  background-color: #000 !important;
+}
+.links-hover::before {
+  width: 0%;
+  bottom: -2px;
+}
+.links-hover:hover::before {
+  width: 100%;
 }
 .nav-menu {
   color: var(--bg-white) !important;
@@ -346,21 +371,17 @@ button:focus::after {
   height: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-.scroll-cricle {
-  width: 80px;
-  height: 80px;
-  border: 1px solid var(--clr-light-grey-2);
-  rotate: 270deg;
+.scroll-down-btn p {
+  transition: 0.2s ease-in-out;
+}
+.scroll-down-btn:hover p {
+  letter-spacing: 5px !important;
 }
 .scroll-cricle-carausal-3 {
   border: 1px solid var(--clr-dark-cyan) !important;
-}
-.scroll-down-btn {
-  transform: rotate(90deg) translateX(20%) translateY(-40%);
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -378,14 +399,16 @@ button:focus::after {
   max-width: 770px;
 }
 .pricing-plan-cards {
+  max-width: 350px;
   background-color: var(--bg-black-2);
   padding: 32px;
   border-radius: 15px;
   box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
   transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 .pricing-plan-cards:hover {
-  transform: translateY(-5%);
+  transform: translateY(-3%);
 }
 .text-popular-plan-bg {
   border-radius: 45px;
@@ -453,6 +476,14 @@ button:focus::after {
   background-size: 100% 100%;
   background-image: url("/assets/images/webp/whyChooseusblue.webp");
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card-hover-up:hover {
+  transform: translateY(-5%);
+}
+.card-hover-down:hover {
+  transform: translateY(5%);
 }
 .why-choose-us-card-black {
   max-width: 347px;
@@ -461,6 +492,8 @@ button:focus::after {
   background-size: 100% 100%;
   background-image: url("/assets/images/webp/whyChooseusblack.webp");
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .px_6-5 {
   padding: 0 6.5px !important;
@@ -482,7 +515,7 @@ button:focus::after {
   border-radius: 20px;
   box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
 }
-.div-width {
+.our-location-content-width {
   max-width: 1088px;
 }
 .country-flags-bg {
@@ -665,11 +698,15 @@ button:focus::after {
 
 /* TESTIMONIALS STARTS */
 .our-clients-card {
-  height: 310px;
+  min-height: 100px;
   border-radius: 15px;
   background: #111116;
   box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
   padding: 20px 12px;
+  transition: 0.3s ease-in-out;
+}
+.our-clients-card:hover {
+  transform: scale(0.9);
 }
 .tick-bg {
   width: 16px;
@@ -717,7 +754,7 @@ button:focus::after {
   transition: 0.2s ease-in-out;
 }
 .footer_sec ul li a:hover {
-  color: var(--clr-dark-blue-2);
+  color: var(---bg-cyan);
 }
 .footer-text {
   max-width: 420px;
@@ -802,10 +839,22 @@ button:focus::after {
     bottom: -10%;
   }
   .btn-login-common {
-    padding: 14px 28px;
+    padding: 12px 22px;
+  }
+  .header_bg {
+    max-height: unset;
+    min-height: 800px;
+  }
+  .header_bg_2 {
+    max-height: unset;
+    min-height: 800px;
+  }
+  .header_bg_3 {
+    max-height: unset;
+    min-height: 800px;
   }
 }
-@media (min-width: 768.99px) {
+@media (min-width: 767.99px) {
   .why-choose-us-card-blue {
     width: unset;
     height: unset;
@@ -835,26 +884,33 @@ button:focus::after {
     background: transparent;
   }
   .btn-login-common {
-    padding: 14px 28px;
+    padding: 12px 22px;
+  }
+  .discord-database {
+    width: 600px;
+    height: 409px;
+  }
+  .minecraft-gamingconsole {
+    width: 500px;
   }
 }
 @media (min-width: 991.99px) {
   :root {
     --fs-xxsm: 12px;
-    --fs-xsm: 14px;
-    --fs-sm: 15px;
-    --fs-md: 16px;
-    --fs-lg: 17px;
-    --fs-xl: 18px;
-    --fs-xxl: 20px;
-    --fs-2xl: 22px;
-    --fs-3xl: 24px;
-    --fs-4xl: 25px;
-    --fs-5xl: 32px;
-    --fs-6xl: 40px;
-    --fs-7xl: 60px;
+    --fs-xsm: 13px;
+    --fs-sm: 14px;
+    --fs-md: 15px;
+    --fs-lg: 16px;
+    --fs-xl: 17px;
+    --fs-xxl: 18px;
+    --fs-2xl: 20px;
+    --fs-3xl: 21px;
+    --fs-4xl: 23px;
+    --fs-5xl: 26px;
+    --fs-6xl: 32px;
+    --fs-7xl: 42px;
   }
-  .div-width {
+  .our-location-content-width {
     padding: 0 46px;
   }
   .texts-black-bg {
@@ -875,10 +931,25 @@ button:focus::after {
     height: 100%;
   }
   .btn-login-common {
-    padding: 16px 30px;
+    padding: 12px 24px;
+  }
+  .discord-database {
+    width: 550px;
+    height: 409px;
+  }
+  .minecraft-gamingconsole {
+    width: 550px;
+    height: 409px;
   }
 }
 @media (min-width: 1199.99px) {
+  :root {
+    --fs-3xl: 21px;
+    --fs-4xl: 23px;
+    --fs-5xl: 29px;
+    --fs-6xl: 36px;
+    --fs-7xl: 48px;
+  }
   .why-choose-us-card-blue {
     padding: 83px 40px;
   }
@@ -900,21 +971,59 @@ button:focus::after {
   }
   .nav-menu {
     position: static;
-    right: 0;
-    top: 0;
     background-color: transparent;
     flex-direction: row;
     align-items: center;
     background-color: none;
     width: unset;
     max-height: unset;
-    transition: 0.6s ease-in-out;
   }
   .clr-black-xl-2 {
     color: var(--clr-black-2);
   }
+  .scroll-cricle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--clr-light-grey-2);
+    rotate: 270deg;
+  }
+  .scroll-down-btn {
+    transform: rotate(90deg) translateX(5%) translateY(-250%);
+  }
+  .header_bg {
+    min-height: 750px;
+  }
+  .header_bg_2 {
+    min-height: 750px;
+  }
+  .header_bg_3 {
+    min-height: 750px;
+  }
+  .discord-database {
+    width: 720px;
+    height: 489px;
+  }
+  .minecraft-gamingconsole {
+    width: 720px;
+    height: 489px;
+  }
 }
 @media (min-width: 1399.99px) {
+  :root {
+    --fs-xxsm: 12px;
+    --fs-xsm: 14px;
+    --fs-sm: 15px;
+    --fs-md: 16px;
+    --fs-lg: 17px;
+    --fs-xl: 18px;
+    --fs-xxl: 20px;
+    --fs-2xl: 22px;
+    --fs-3xl: 24px;
+    --fs-4xl: 25px;
+    --fs-5xl: 32px;
+    --fs-6xl: 40px;
+    --fs-7xl: 60px;
+  }
   .sec-our-locations-bg {
     background-size: 100% 100%;
     background-position: left;
@@ -936,5 +1045,25 @@ button:focus::after {
   }
   .scroll-down-btn {
     transform: rotate(90deg) translateX(30%) translateY(-40%);
+  }
+  .scroll-cricle {
+    width: 80px;
+    height: 80px;
+  }
+  .scroll-down-btn {
+    transform: rotate(90deg) translateX(30%) translateY(-40%);
+  }
+  .header_bg {
+    height: 100%;
+  }
+  .header_bg_2 {
+    height: 100%;
+  }
+  .header_bg_3 {
+    height: 100%;
+  }
+  .discord-database {
+    width: 750px;
+    height: 100%;
   }
 }
