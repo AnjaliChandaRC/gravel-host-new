@@ -348,7 +348,7 @@ button:focus::after {
   width: 100%;
 }
 .nav-menu {
-  color: var(--bg-white) !important;
+  color: var(--bg-white);
   position: absolute;
   border-radius: 10px;
   right: 3%;
@@ -404,11 +404,11 @@ button:focus::after {
   padding: 32px;
   border-radius: 15px;
   box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out !important;
   cursor: pointer;
 }
 .pricing-plan-cards:hover {
-  transform: translateY(-3%);
+  transform: translateY(-3%) !important;
 }
 .text-popular-plan-bg {
   border-radius: 45px;
@@ -940,6 +940,9 @@ button:focus::after {
   .minecraft-gamingconsole {
     width: 550px;
     height: 409px;
+  }
+  .pricing-plan-cards {
+    max-width: 450px;
   }
 }
 @media (min-width: 1199.99px) {
