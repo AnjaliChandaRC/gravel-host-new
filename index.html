@@ -3199,34 +3199,46 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      const hamburger1 = document.getElementById("hamburger-1");
-      const navMenu1 = document.getElementById("nav-menu-1");
-      // const overlay = document.getElementById("overlay");
-      hamburger1.addEventListener("click", function () {
-        hamburger1.classList.toggle("active");
-        navMenu1.classList.toggle("active");
-        // overlay.classList.add("z-3");
-      });
-      const hamburger2 = document.getElementById("hamburger-2");
-      const navMenu2 = document.getElementById("nav-menu-2");
+      const buttons = document.getElementsByClassName("hamburger");
+      const navMenus = document.getElementsByClassName("nav-menu");
 
-      hamburger2.addEventListener("click", function () {
-        hamburger2.classList.toggle("active");
-        navMenu2.classList.toggle("active");
-        // overlay.classList.add("z-3");
-      });
-      const hamburger3 = document.getElementById("hamburger-3");
-      const navMenu3 = document.getElementById("nav-menu-3");
+      function handleClick() {
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].classList.toggle("active");
+        }
 
-      hamburger3.addEventListener("click", function () {
-        hamburger3.classList.toggle("active");
-        navMenu3.classList.toggle("active");
-        // overlay.classList.add("z-3");
-      });
-      // function removeOverlay() {
-      //   document.getElementById("body").classList.add("main_parent");
-      // }
+        for (let i = 0; i < navMenus.length; i++) {
+          navMenus[i].classList.toggle("active");
+        }
 
+        console.log("Button clicked!");
+      }
+
+      // Add onclick event to buttons
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = handleClick;
+      }
+
+      // Add event listener to body
+      document.body.addEventListener("click", function (event) {
+        const isButton = Array.from(buttons).some(function (button) {
+          return button.contains(event.target);
+        });
+
+        const isNavMenu = Array.from(navMenus).some(function (navMenu) {
+          return navMenu.contains(event.target);
+        });
+
+        if (!isButton && !isNavMenu) {
+          for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active");
+          }
+
+          for (let i = 0; i < navMenus.length; i++) {
+            navMenus[i].classList.remove("active");
+          }
+        }
+      });
       $(".testimonials").slick({
         dots: false,
         infinite: true,
