@@ -217,15 +217,15 @@ body::before {
   background-image: url("/assets/images/webp/header_bg_1.webp");
 }
 .header_bg_2 {
-  background-image: url("/assets/images/png/header_bg_2.png");
+  background-image: url("/assets/images/webp/header_bg_2.webp");
 }
 .header_bg_3 {
-  background-image: url("/assets/images/png/header_bg_3.png");
+  background-image: url("/assets/images/webp/header_bg_3.webp");
 }
 .header_bg_common {
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 730px;
+  max-height: 700px;
 }
 .logo {
   width: 220px;
@@ -302,7 +302,10 @@ button:focus::after {
   background-color: var(---bg-cyan);
 }
 .discord-database {
-  width: 100%;
+  width: 90%;
+}
+.minecraft {
+  min-height: 250px;
 }
 .header-para-max-width {
   max-width: 586px;
@@ -739,6 +742,16 @@ button:focus::after {
   background: var(--bg-grey);
   rotate: 15deg;
 }
+.slick-track {
+  display: flex !important;
+}
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+.slick-slide > div {
+  display: flex;
+}
 /* TESTIMONIALS END */
 
 /* FOOTER STARTS */
@@ -831,6 +844,9 @@ button:focus::after {
   .discord-database {
     width: 490px;
   }
+  .minecraft {
+    min-height: unset;
+  }
 }
 @media (min-width: 767.99px) {
   .why-choose-us-card-black-blue-common {
@@ -893,7 +909,7 @@ button:focus::after {
     padding: 8px 20px;
   }
   .discord-database {
-    width: 500px;
+    width: 600px;
     height: 409px;
   }
   .pricing-plan-cards {
