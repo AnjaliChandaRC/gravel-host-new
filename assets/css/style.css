@@ -719,9 +719,11 @@ button:focus::after {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
+  max-width: 380px;
+  margin: 0 auto;
 }
 .basic-feature-cards:hover {
-  padding: 20px 16px 20px 20px;
+  scale: 0.9;
 }
 .basic-feature-cards p {
   transition: 0.3s ease-in-out;
@@ -1032,6 +1034,10 @@ button:focus::after {
   .btn-popular {
     max-width: unset;
     width: 100%;
+  }
+  .basic-feature-cards {
+    padding: 20px 40px 20px 40px;
+    max-width: 400px;
   }
 }
 @media (min-width: 991.99px) {
