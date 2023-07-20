@@ -286,7 +286,7 @@ button:focus::after {
   }
 }
 .btn-login-black {
-  background: var(---bg-black-3);
+  background: var(---bg-black-3) !important;
 }
 .header-social-logo-bg:hover svg {
   transform: scale(1.2);
@@ -360,7 +360,7 @@ button:focus::after {
   position: absolute;
   border-radius: 10px;
   right: 3%;
-  top: -100%;
+  top: -200%;
   flex-direction: column;
   background-color: var(--bg-black-2);
   padding: 30px 45px;
@@ -403,6 +403,19 @@ button:focus::after {
   border-radius: 100%;
   padding: 14px;
   opacity: 1 !important;
+}
+.header-bg {
+  background-image: url("/assets/images/png/headerBgsm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+}
+.gravel-host {
+  top: 30%;
+  width: 300px;
+  max-width: unset;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* HEADER ENDS */
 
@@ -467,14 +480,27 @@ button:focus::after {
 .sec-pricing-plan {
   overflow-x: clip;
 }
-/* AWESOME PRICING PLAN SECTION ENDS  */
+.btn-get-a-quote {
+  border-radius: 90px;
+  background: linear-gradient(
+      27deg,
+      rgba(0, 63, 243, 0.8) 0%,
+      rgba(48, 156, 255, 0.8) 100%
+    ),
+    #2898ff;
+  padding: 14px 28px !important;
+  max-width: unset;
+  overflow: hidden !important;
+  width: 177px;
+}
+/* AWESOME PRICING PLAN SECTION ENDS 
 /* GAME HOSTING */
 .curvedlines {
   width: 100%;
   transform: translateY(-15%);
   top: 50%;
   left: 0;
-  z-index: -1;
+  z-index: -3;
 }
 .dashboard {
   max-width: 100%;
@@ -680,6 +706,102 @@ button:focus::after {
   width: 533px;
 }
 /* OUR LOCATIONS ENDS */
+.header-social-logo-bg:hover svg .social-logo {
+  transform: scale(1.1) translateX(-4%) translateY(-4%);
+}
+.product-btn-login {
+  box-shadow: none !important;
+}
+/* ---- */
+/* ================ BASIC FEATURE ============ */
+.basic-feature-cards {
+  background-color: var(--bg-black-2);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.basic-feature-cards:hover {
+  padding: 20px 16px 20px 20px;
+}
+.basic-feature-cards p {
+  transition: 0.3s ease-in-out;
+}
+.basic-feature-cards:hover p {
+  opacity: 0.7;
+}
+/* ------- */
+
+/* ===== PRE-INSTALLED MODPACK ====== */
+.installed-modpack-cards {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #111116;
+  box-shadow: 8px 24px 96px 0px rgba(68, 77, 163, 0.08);
+  transition: 0.3s ease-in-out;
+  max-width: 383px;
+}
+.cardsbgabsoluteimg3 {
+  right: -15% !important;
+  top: 6%;
+  z-index: -1;
+}
+.installed-modpack-cards img {
+  border-radius: 10px;
+}
+.installed-modpack-cards:hover {
+  transform: translateY(-2%);
+}
+.btn-popular {
+  border-radius: 10px;
+  background: linear-gradient(
+      27deg,
+      rgba(0, 63, 243, 0.8) 0%,
+      rgba(48, 156, 255, 0.8) 100%
+    ),
+    #2898ff;
+  max-width: 161px;
+  width: 100%;
+  padding: 16px 32px !important;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+.btn-official {
+  background: transparent;
+  border: 1px solid rgba(14, 75, 254, 0.55);
+}
+.btn-official:hover {
+  animation: btn-pulse 1s;
+  box-shadow: 0 0 0 0.7em transparent;
+}
+.btn-get-started {
+  border-radius: 10px;
+  border: 1px solid #0e4bfe;
+  padding: 16px 32px;
+  gap: 4px;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+  background: transparent;
+}
+.btn-get-started:hover {
+  background: linear-gradient(
+      27deg,
+      rgba(0, 63, 243, 0.8) 0%,
+      rgba(48, 156, 255, 0.8) 100%
+    ),
+    linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
+}
+.installed-modpack-cards .btn-get-started svg {
+  transition: 0.3s ease-in-out;
+}
+.btn-get-started:hover svg {
+  margin-left: 8px;
+}
+@keyframes btn-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #3cb4e5;
+  }
+}
+/* ------ */
 
 /* TESTIMONIAL AND FOOTER BG */
 .testimonial-footer-bg {
@@ -847,6 +969,27 @@ button:focus::after {
   .minecraft {
     min-height: unset;
   }
+  .gravel-host {
+    top: 20%;
+    width: 480px;
+    max-width: unset;
+  }
+  .header-bg {
+    background-image: url("/assets/images/png/headerBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+  }
+  .btn-popular {
+    max-width: 161px;
+    width: 100%;
+  }
+  .installed-modpack-cards {
+    max-width: unset;
+  }
+  .header-social-logo-product:hover svg .social-logo {
+    transform: scale(1.1) translateX(-4%) translateY(-4%);
+  }
 }
 @media (min-width: 767.99px) {
   .why-choose-us-card-black-blue-common {
@@ -876,6 +1019,19 @@ button:focus::after {
   }
   .header_bg_common {
     max-height: 750px;
+  }
+  .btn-get-a-quote {
+    padding: 14px 28px !important;
+    width: unset;
+  }
+  .gravel-host {
+    left: 50%;
+    max-width: unset;
+    transform: translateX(-50%);
+  }
+  .btn-popular {
+    max-width: unset;
+    width: 100%;
   }
 }
 @media (min-width: 991.99px) {
@@ -917,6 +1073,14 @@ button:focus::after {
   }
   .header_bg_common {
     max-height: 855px;
+  }
+  .btn-get-a-quote {
+    padding: 12px 24px !important;
+  }
+  .gravel-host {
+    left: 0;
+    max-width: unset;
+    transform: unset;
   }
 }
 @media (min-width: 1199.99px) {
@@ -975,6 +1139,13 @@ button:focus::after {
     width: 720px;
     height: 489px;
   }
+  .btn-get-a-quote {
+    padding: 14px 28px !important;
+  }
+  .texts-black-bg-2 {
+    transform: translateY(-30%);
+    margin-bottom: -90px !important;
+  }
 }
 @media (min-width: 1399.99px) {
   :root {
@@ -1024,5 +1195,24 @@ button:focus::after {
   .discord-database {
     width: 700px;
     height: 100%;
+  }
+  .btn-get-a-quote {
+    padding: 18px 32px !important;
+  }
+}
+@media (min-width: 1600px) {
+  .header-bg {
+    min-height: 320px;
+    background-size: 100% 380px;
+  }
+  .gravel-host {
+    left: -1%;
+    top: 20%;
+    width: 580px;
+  }
+}
+@media (min-width: 1920px) {
+  .gravel-host {
+    left: 0%;
   }
 }
