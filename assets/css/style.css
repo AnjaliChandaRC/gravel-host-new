@@ -465,6 +465,23 @@ button:focus::after {
 .pricing-plan-cards:hover .btn-get-started svg {
   margin-left: 8px;
 }
+.btn-get-started-product {
+  padding: 13px 32px;
+}
+.btn-get-started:hover {
+  background: linear-gradient(
+      27deg,
+      rgba(0, 63, 243, 0.8) 0%,
+      rgba(48, 156, 255, 0.8) 100%
+    ),
+    linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
+}
+.installed-modpack-cards .btn-get-started svg {
+  transition: 0.3s ease-in-out;
+}
+.btn-get-started:hover svg {
+  margin-left: 8px;
+}
 .cardsbgabsoluteimg {
   bottom: -4%;
   left: -9%;
@@ -731,6 +748,9 @@ button:focus::after {
 .basic-feature-cards:hover p {
   opacity: 0.7;
 }
+.basic-cards-row-custom-width {
+  max-width: 930px;
+}
 /* ------- */
 
 /* ===== PRE-INSTALLED MODPACK ====== */
@@ -763,7 +783,7 @@ button:focus::after {
     #2898ff;
   max-width: 161px;
   width: 100%;
-  padding: 16px 32px !important;
+  padding: 12px 32px !important;
   border: 1px solid transparent;
   box-shadow: none;
 }
@@ -775,29 +795,7 @@ button:focus::after {
   animation: btn-pulse 1s;
   box-shadow: 0 0 0 0.7em transparent;
 }
-.btn-get-started {
-  border-radius: 10px;
-  border: 1px solid #0e4bfe;
-  padding: 16px 32px;
-  gap: 4px;
-  width: 100%;
-  transition: 0.4s ease-in-out;
-  background: transparent;
-}
-.btn-get-started:hover {
-  background: linear-gradient(
-      27deg,
-      rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%
-    ),
-    linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
-}
-.installed-modpack-cards .btn-get-started svg {
-  transition: 0.3s ease-in-out;
-}
-.btn-get-started:hover svg {
-  margin-left: 8px;
-}
+
 @keyframes btn-pulse {
   0% {
     box-shadow: 0 0 0 0 #3cb4e5;
@@ -1041,7 +1039,7 @@ button:focus::after {
     width: 100%;
   }
   .basic-feature-cards {
-    padding: 16px 8px 16px 14px;
+    padding: 13px 8px 13px 14px;
     max-width: 300px;
     margin: unset;
   }
@@ -1099,9 +1097,6 @@ button:focus::after {
   }
   .basic-feature-cards {
     margin: 0 auto;
-  }
-  .basic-feature-cards:hover {
-    transform: translateX(5%);
   }
 }
 @media (min-width: 1199.99px) {
