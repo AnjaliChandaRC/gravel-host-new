@@ -1,4 +1,4 @@
-// ============= SECTION PRE-INSTALLED MOD PACK ================ //
+  // ============= SECTION PRE-INSTALLED MOD PACK ================ //
 
 const tab1 = document.getElementById("btn1");
 const tab2 = document.getElementById("btn2");
@@ -54,12 +54,10 @@ function switchTab(tabs) {
     document.getElementById("content-1").innerHTML = "$49.99";
     tab2.classList.add("btn-official");
     tab1.classList.remove("btn-official");
-    tab2.classList.remove("btn-login-common");
-  }
+  } 
   if (tabs === tab2) {
     document.getElementById("content-1").innerHTML = "$69.99";
     tab1.classList.add("btn-official");
-    tab2.classList.add("btn-login-common");
     tab1.classList.remove("btn-login-common");
     tab2.classList.remove("btn-official");
   }
@@ -67,13 +65,11 @@ function switchTab(tabs) {
     document.getElementById("content-2").innerHTML = "$49.99";
     tab4.classList.add("btn-official");
     tab3.classList.remove("btn-official");
-    tab4.classList.remove("btn-login-common");
-  }
-
+  } 
+  
   if (tabs === tab4) {
     document.getElementById("content-2").innerHTML = "$69.99";
     tab3.classList.add("btn-official");
-    tab4.classList.add("btn-login-common");
     tab3.classList.remove("btn-login-common");
     tab4.classList.remove("btn-official");
   }
@@ -81,12 +77,10 @@ function switchTab(tabs) {
     document.getElementById("content-3").innerHTML = "$49.99";
     tab6.classList.add("btn-official");
     tab5.classList.remove("btn-official");
-    tab6.classList.remove("btn-login-common");
-  }
+  } 
   if (tabs === tab6) {
     document.getElementById("content-3").innerHTML = "$69.99";
     tab5.classList.add("btn-official");
-    tab6.classList.add("btn-login-common");
     tab5.classList.remove("btn-login-common");
     tab6.classList.remove("btn-official");
   }
@@ -94,12 +88,10 @@ function switchTab(tabs) {
     document.getElementById("content-4").innerHTML = "$49.99";
     tab8.classList.add("btn-official");
     tab7.classList.remove("btn-official");
-    tab8.classList.remove("btn-login-common");
-  }
+  } 
   if (tabs === tab8) {
     document.getElementById("content-4").innerHTML = "$69.99";
     tab7.classList.add("btn-official");
-    tab8.classList.add("btn-login-common");
     tab7.classList.remove("btn-login-common");
     tab8.classList.remove("btn-official");
   }
@@ -107,12 +99,10 @@ function switchTab(tabs) {
     document.getElementById("content-5").innerHTML = "$49.99";
     tab10.classList.add("btn-official");
     tab9.classList.remove("btn-official");
-    tab10.classList.remove("btn-login-common");
   }
   if (tabs === tab10) {
     document.getElementById("content-5").innerHTML = "$69.99";
     tab9.classList.add("btn-official");
-    tab10.classList.add("btn-login-common");
     tab9.classList.remove("btn-login-common");
     tab10.classList.remove("btn-official");
   }
@@ -120,13 +110,11 @@ function switchTab(tabs) {
     document.getElementById("content-6").innerHTML = "$49.99";
     tab12.classList.add("btn-official");
     tab11.classList.remove("btn-official");
-    tab12.classList.remove("btn-login-common");
-  }
+  } 
   if (tabs === tab12) {
     document.getElementById("content-6").innerHTML = "$69.99";
     tab11.classList.add("btn-official");
     tab11.classList.remove("btn-login-common");
-    tab12.classList.add("btn-login-common");
     tab12.classList.remove("btn-official");
   }
 }

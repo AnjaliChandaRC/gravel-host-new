@@ -784,21 +784,16 @@ button:focus::after {
   padding: 12px 32px !important;
   border: 1px solid transparent;
   box-shadow: none;
+  transition: 0.3s ease-in-out;
 }
 .btn-official {
   background: transparent;
   border: 1px solid rgba(14, 75, 254, 0.55);
 }
-.btn-official:hover {
-  animation: btn-pulse 1s;
-  box-shadow: 0 0 0 0.7em transparent;
+.btn-popular:hover {
+  transform: translateY(-5%);
 }
 
-@keyframes btn-pulse {
-  0% {
-    box-shadow: 0 0 0 0 #3cb4e5;
-  }
-}
 /* ------ */
 
 /* TESTIMONIAL AND FOOTER BG */
