@@ -719,11 +719,11 @@ button:focus::after {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  max-width: 380px;
+  max-width: 340px;
   margin: 0 auto;
 }
 .basic-feature-cards:hover {
-  scale: 0.9;
+  transform: scale(0.9);
 }
 .basic-feature-cards p {
   transition: 0.3s ease-in-out;
@@ -992,6 +992,11 @@ button:focus::after {
   .header-social-logo-product:hover svg .social-logo {
     transform: scale(1.1) translateX(-4%) translateY(-4%);
   }
+  .basic-feature-cards {
+    padding: 16px 8px 16px 14px;
+    max-width: 280px;
+    margin: unset;
+  }
 }
 @media (min-width: 767.99px) {
   .why-choose-us-card-black-blue-common {
@@ -1036,9 +1041,12 @@ button:focus::after {
     width: 100%;
   }
   .basic-feature-cards {
-    padding: 20px 26px;
-    max-width: 338px;
+    padding: 16px 8px 16px 14px;
+    max-width: 300px;
     margin: unset;
+  }
+  .basic-feature-cards:hover {
+    transform: translateX(5%);
   }
 }
 @media (min-width: 991.99px) {
