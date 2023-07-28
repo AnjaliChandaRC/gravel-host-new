@@ -436,171 +436,905 @@
         Choose between budget, and extreme.
       </p>
       <div class="d-flex gap-3 mt-3">
-        <button id="btn1" style="line-height: 140%" class="btn-popular text-white fs_md fw-bold ff-inter">
-          Popular
+        <button id="tab1_button" onclick="openTab(event,'tab1')" style="line-height: 140%"
+          class="tab-button active btn-popular btn-official text-white fs_md fw-bold ff-inter">
+          BUDGET
         </button>
-        <button id="btn2" style="line-height: 140%" class="btn-popular btn-official text-white fs_md fw-bold ff-inter">
-          Official
+        <button id="tab2_button" onclick="openTab(event,'tab2')" style="line-height: 140%"
+          class="tab-button btn-popular btn-official text-white fs_md fw-bold ff-inter">
+          ENTERPRISE
         </button>
       </div>
       <div>
-        <button class="btn-popular text-white fs_md fw-bold ff-inter">
-          Popular
-        </button>
+        <!-- <button class="btn-popular text-white fs_md fw-bold ff-inter">
+          ENTERPRISE
+        </button> -->
       </div>
-      <div class="standard_slider position-relative">
-        <img class="text-white prev bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
-          alt="prevArrow">
-        <img class="text-white next bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
-          alt="nextArrow">
-        <div class="position-relative z-1 slickCenter">
-          <div class="px-2 px-md-4">
-            <div
-              class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
-              <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
-                src="/assets/images/png/mvp_slider.png" alt="airship" />
-              <p style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
-                5 GB
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                oF RAM
-              </p>
-              <p style="line-height: 143%"
-                class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
-                STANDARD
-              </p>
-              <p id="content-4" style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
-                $4.50
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                /PER MONTH
-              </p>
-              <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
-                class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+      <div id="tab1" class="tab-contents ">
+        <div class=" standard_slider position-relative">
+          <img class="text-white prev bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+            alt="prevArrow">
+          <img class="text-white next bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+            alt="nextArrow">
+          <div class="position-relative z-1 slickCenter">
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  2 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $1.80
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
               ff-inter position-relative">
-                ORDER
-                <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
-                  viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
-                    fill="white" />
-                </svg>
-              </button>
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="px-2 px-md-4">
-            <div
-              class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
-              <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
-                src="/assets/images/png/mvp_slider.png" alt="airship" />
-              <p style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
-                5 GB
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                oF RAM
-              </p>
-              <p style="line-height: 143%"
-                class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
-                STANDARD
-              </p>
-              <p id="content-1" style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
-                $4.50
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                /PER MONTH
-              </p>
-              <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
-                class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  3 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $2.70
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
               ff-inter position-relative">
-                ORDER
-                <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
-                  viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
-                    fill="white" />
-                </svg>
-              </button>
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="px-2 px-md-4">
-            <div
-              class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
-              <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
-                src="/assets/images/png/mvp_slider.png" alt="airship" />
-              <p style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
-                5 GB
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                oF RAM
-              </p>
-              <p style="line-height: 143%"
-                class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
-                STANDARD
-              </p>
-              <p id="content-2" style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
-                $4.50
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                /PER MONTH
-              </p>
-              <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
-                class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  4 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $3.60
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
               ff-inter position-relative">
-                ORDER
-                <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
-                  viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
-                    fill="white" />
-                </svg>
-              </button>
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="px-2 px-md-4">
-            <div
-              class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
-              <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
-                src="/assets/images/png/mvp_slider.png" alt="airship" />
-              <p style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
-                5 GB
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                oF RAM
-              </p>
-              <p style="line-height: 143%"
-                class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
-                STANDARD
-              </p>
-              <p id="content-3" style="line-height: 110%; letter-spacing: -0.96px"
-                class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
-                $4.50
-              </p>
-              <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
-                /PER MONTH
-              </p>
-              <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
-                class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  5 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $4.50
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
               ff-inter position-relative">
-                ORDER
-                <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
-                  viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
-                    fill="white" />
-                </svg>
-              </button>
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvpOrange.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  6 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $5.40
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  7 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $6.30
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/vipGreen.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  8 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $7.20
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  9 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $8.10
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  10 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $9.00
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvpOrange.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  12 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $10.80
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  16 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $14.40
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/vipGreen.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  32 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $28.80
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
+      <div id="tab2" class="tab-contents">
+        <div class="standard_slider position-relative">
+          <img class="text-white prev bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+            alt="prevArrow">
+          <img class="text-white next bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+            alt="nextArrow">
+          <div class="position-relative z-1 slickCenter">
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  2 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $2.80
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  3 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $3.70
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  4 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $4.60
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  5 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $5.50
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvpOrange.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  6 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $6.40
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  7 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $8.30
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/vipGreen.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  8 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $9.20
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  9 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $10.10
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  10 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $13.00
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvpOrange.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  12 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $15.80
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/mvp_slider.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  16 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%"
+                  class="bg_blue_grediant mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5 standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $18.40
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 px-md-4">
+              <div
+                class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
+                <img class="position-absolute start-50 translate-middle-x sldier_top_img" width="60"
+                  src="/assets/images/png/vipGreen.png" alt="airship" />
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-lg-4 pt-lg-2 mt-3 pt-1 text-center">
+                  32 GB
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  oF RAM
+                </p>
+                <p style="line-height: 143%" class="bg_light_green mb-0 mt-3 ff-inter fs_xxsm clr-off-white py-1 text-center rounded-5
+                standard_para">
+                  STANDARD
+                </p>
+                <p style="line-height: 110%; letter-spacing: -0.96px"
+                  class="mb-0 text-white fs_6xl ff-inter fw-bold mt-3 text-center">
+                  $34.80
+                </p>
+                <p style="line-height: 143%" class="mb-0 mt-2 ff-inter fs_xxsm clr-off-white pe-2 text-center">
+                  /PER MONTH
+                </p>
+                <button onclick="window.location.href='https://gravelhost.com/voice-servers';" style="line-height: 140%"
+                  class="btn-get-started btn-get-started-product bg_blue_grediant text-white mt-lg-4 mt-3 fs_md fw-bold
+              ff-inter position-relative">
+                  ORDER
+                  <svg class="position-absolute end-0 top-50 translate-middle-y me-4" width="15" height="13"
+                    viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.66683 7.43473H11.5543L8.52683 11.0681C8.23183 11.4214 8.28016 11.9472 8.6335 12.2414C8.98766 12.5364 9.51266 12.4881 9.80766 12.1347L13.9743 7.13473C14.0068 7.09557 14.0227 7.04973 14.0468 7.0064C14.0668 6.9714 14.091 6.9414 14.106 6.90307C14.1435 6.80723 14.166 6.7064 14.166 6.60473C14.166 6.6039 14.1668 6.60223 14.1668 6.6014C14.1668 6.60057 14.166 6.5989 14.166 6.59807C14.166 6.4964 14.1435 6.39557 14.106 6.29973C14.091 6.2614 14.0668 6.2314 14.0468 6.1964C14.0227 6.15307 14.0068 6.10723 13.9743 6.06807L9.80766 1.06807C9.64183 0.870566 9.40516 0.768066 9.16683 0.768066C8.9785 0.768066 8.78933 0.8314 8.6335 0.9614C8.28016 1.25557 8.23183 1.7814 8.52683 2.13473L11.5543 5.76807H1.66683C1.20683 5.76807 0.833496 6.1414 0.833496 6.6014C0.833496 7.0614 1.20683 7.43473 1.66683 7.43473Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </section>
   <section class="py-sm-5 pt-4 position-relative">
     <img class="curvedlines position-absolute d-none d-xl-block" src="/assets/images/webp/curvedLines.webp"

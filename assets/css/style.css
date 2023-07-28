@@ -926,6 +926,7 @@ button:focus::after {
   transform: translateY(-2%);
 }
 
+
 .standard_slider .prev {
   border-radius: 50%;
   position: absolute;
@@ -974,6 +975,10 @@ button:focus::after {
       rgba(0, 63, 243, 0.8) 0%,
       rgba(48, 156, 255, 0.8) 100%),
     #2898ff;
+}
+
+.bg_light_green {
+  background-color: #37d79d !important;
 }
 
 /* ------ */
@@ -1215,6 +1220,18 @@ button:focus::after {
   .standard_para {
     max-width: 200px !important;
     margin: 0 auto;
+  }
+
+  /* tab button */
+  .tab-button.active {
+    border-radius: 10px;
+    background: linear-gradient(27deg, rgba(0, 63, 243, 0.8) 0%, rgba(48, 156, 255, 0.8) 100%),
+      #2898ff;
+    max-width: 161px !important;
+    padding: 12px 32px !important;
+    border: 1px solid transparent;
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
   }
 
 

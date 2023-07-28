@@ -50,50 +50,37 @@
     switchTab(tab12);
   });
 
-  function switchTab(tabs) {
-    if (tabs === tab1) {
-      document.getElementById("content-1").innerHTML = "$4.50";
-      tab2.classList.add("btn-official");
-      tab1.classList.remove("btn-official");
-    }
-    if (tabs === tab2) {
-      document.getElementById("content-1").innerHTML = "$5.91";
-      tab1.classList.add("btn-official");
-      tab1.classList.remove("btn-login-common");
-      tab2.classList.remove("btn-official");
-    }
-    if (tabs === tab3) {
-      document.getElementById("content-2").innerHTML = "$49.99";
-      tab4.classList.add("btn-official");
-      tab3.classList.remove("btn-official");
-    }
+  // function switchTab(tabs) {
+  //   if (tabs === tab1) {
+  //     document.getElementById("content-1").innerHTML = "$4.50";
+  //     tab2.classList.add("btn-official");
+  //     tab1.classList.remove("btn-official");
+  //   }
+  //   if (tabs === tab2) {
+  //     document.getElementById("content-1").innerHTML = "$5.91";
+  //     tab1.classList.add("btn-official");
+  //     tab1.classList.remove("btn-login-common");
+  //     tab2.classList.remove("btn-official");
+  //   }
+  // }
 
-    if (tabs === tab4) {
-      document.getElementById("content-2").innerHTML = "$69.99";
-      tab3.classList.add("btn-official");
-      tab3.classList.remove("btn-login-common");
-      tab4.classList.remove("btn-official");
+  function openTab(evt, tabName) {
+    var i, tabContent, tabButtons;
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-contents");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
     }
-    if (tabs === tab5) {
-      document.getElementById("content-3").innerHTML = "$49.99";
-      tab6.classList.add("btn-official");
-      tab5.classList.remove("btn-official");
+    // Remove the 'active' class from all tab buttons
+    tabButtons = document.getElementsByClassName("tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+      tabButtons[i].classList.remove("active");
     }
-    if (tabs === tab6) {
-      document.getElementById("content-3").innerHTML = "$69.99";
-      tab5.classList.add("btn-official");
-      tab5.classList.remove("btn-login-common");
-      tab6.classList.remove("btn-official");
-    }
-    if (tabs === tab7) {
-      document.getElementById("content-4").innerHTML = "$49.99";
-      tab8.classList.add("btn-official");
-      tab7.classList.remove("btn-official");
-    }
-    if (tabs === tab8) {
-      document.getElementById("content-4").innerHTML = "$69.99";
-      tab7.classList.add("btn-official");
-      tab7.classList.remove("btn-login-common");
-      tab8.classList.remove("btn-official");
-    }
+    // Show the selected tab content and set the corresponding tab button as 'active'
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
   }
+  // By default, display the first tab content and set the first tab button as 'active'
+  var defaultTab = document.getElementsByClassName("tab-button")[0];
+  defaultTab.classList.add("active");
+  document.getElementById("tab1").style.display = "block";
