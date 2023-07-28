@@ -305,9 +305,11 @@ body::before {
 }
 
 .btn-login {
-  background: linear-gradient(27deg,
-      rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%);
+  background: linear-gradient(
+    27deg,
+    rgba(0, 63, 243, 0.8) 0%,
+    rgba(48, 156, 255, 0.8) 100%
+  );
 }
 
 .btn-login-common {
@@ -329,10 +331,12 @@ body::before {
   right: -50%;
   bottom: -50%;
   left: -50%;
-  background: linear-gradient(to bottom,
-      rgba(229, 172, 142, 0),
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(229, 172, 142, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
@@ -548,9 +552,11 @@ button:focus::after {
 }
 
 .pricing-plan-cards:hover .btn-get-started {
-  background: linear-gradient(27deg,
+  background: linear-gradient(
+      27deg,
       rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%),
+      rgba(48, 156, 255, 0.8) 100%
+    ),
     linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
 }
 
@@ -567,9 +573,11 @@ button:focus::after {
 }
 
 .btn-get-started:hover {
-  background: linear-gradient(27deg,
+  background: linear-gradient(
+      27deg,
       rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%),
+      rgba(48, 156, 255, 0.8) 100%
+    ),
     linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
 }
 
@@ -609,9 +617,11 @@ button:focus::after {
 
 .btn-get-a-quote {
   border-radius: 90px;
-  background: linear-gradient(27deg,
+  background: linear-gradient(
+      27deg,
       rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%),
+      rgba(48, 156, 255, 0.8) 100%
+    ),
     #2898ff;
   padding: 14px 28px !important;
   max-width: unset;
@@ -931,7 +941,6 @@ button:focus::after {
   transform: translateY(-2%);
 }
 
-
 .standard_slider .prev {
   border-radius: 50%;
   position: absolute;
@@ -971,9 +980,11 @@ button:focus::after {
 
 .btn-popular {
   border-radius: 10px;
-  background: linear-gradient(27deg,
+  background: linear-gradient(
+      27deg,
       rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%),
+      rgba(48, 156, 255, 0.8) 100%
+    ),
     #2898ff;
   max-width: 161px !important;
   padding: 12px 32px !important;
@@ -992,9 +1003,11 @@ button:focus::after {
 }
 
 .bg_blue_grediant {
-  background: linear-gradient(27deg,
+  background: linear-gradient(
+      27deg,
       rgba(0, 63, 243, 0.8) 0%,
-      rgba(48, 156, 255, 0.8) 100%),
+      rgba(48, 156, 255, 0.8) 100%
+    ),
     #2898ff;
 }
 
@@ -1083,7 +1096,7 @@ button:focus::after {
   display: flex !important;
 }
 
-.slick-slide>div {
+.slick-slide > div {
   display: flex;
 }
 
@@ -1118,8 +1131,7 @@ button:focus::after {
 }
 
 /* FOOTER ENDS */
-@media (max-width:575.98px) {
-
+@media (max-width: 575.98px) {
   .standard_slider .prev,
   .standard_slider .next {
     display: none !important;
@@ -1246,7 +1258,11 @@ button:focus::after {
   /* tab button */
   .tab-button.active {
     border-radius: 10px;
-    background: linear-gradient(27deg, rgba(0, 63, 243, 0.8) 0%, rgba(48, 156, 255, 0.8) 100%),
+    background: linear-gradient(
+        27deg,
+        rgba(0, 63, 243, 0.8) 0%,
+        rgba(48, 156, 255, 0.8) 100%
+      ),
       #2898ff;
     max-width: 161px !important;
     padding: 12px 32px !important;
@@ -1254,7 +1270,6 @@ button:focus::after {
     box-shadow: none;
     transition: 0.3s ease-in-out;
   }
-
 
   .installed-modpack-cards {
     max-width: unset;
