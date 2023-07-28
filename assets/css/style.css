@@ -573,6 +573,10 @@ button:focus::after {
     linear-gradient(0deg, #2898ff 0%, #2898ff 100%), #1d1d27;
 }
 
+.hardware_box {
+  background-color: #232330;
+}
+
 .installed-modpack-cards .btn-get-started svg {
   transition: 0.3s ease-in-out;
 }
@@ -905,6 +909,7 @@ button:focus::after {
 /* ===== PRE-INSTALLED MODPACK ====== */
 .installed-modpack-cards {
   margin-top: 36px;
+  background-color: #171b33;
   padding: 25px;
   border: 2px solid #9293b5;
   border-radius: 10px;
@@ -946,6 +951,22 @@ button:focus::after {
   right: 0;
   top: 50%;
   z-index: 2;
+}
+
+.bg_yellow {
+  background-color: yellow !important;
+}
+
+.text_yellow {
+  color: yellow !important;
+}
+
+.hadware_btn {
+  padding: 12px 32px !important;
+}
+
+.letter_spacing_2px {
+  letter-spacing: 2px;
 }
 
 .btn-popular {
