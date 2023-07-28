@@ -590,6 +590,20 @@ button:focus::after {
   transition: 0.3s ease-in-out;
 }
 
+/* tab button */
+.tab-button.active {
+  border-radius: 10px;
+  background: linear-gradient(27deg,
+      rgba(0, 63, 243, 0.8) 0%,
+      rgba(48, 156, 255, 0.8) 100%),
+    #2898ff;
+  max-width: 161px !important;
+  padding: 12px 32px !important;
+  border: 1px solid transparent;
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+}
+
 .sldier_top_img {
   top: -30px;
 }
@@ -1252,19 +1266,6 @@ button:focus::after {
     margin: 0 auto;
   }
 
-  /* tab button */
-  .tab-button.active {
-    border-radius: 10px;
-    background: linear-gradient(27deg,
-        rgba(0, 63, 243, 0.8) 0%,
-        rgba(48, 156, 255, 0.8) 100%),
-      #2898ff;
-    max-width: 161px !important;
-    padding: 12px 32px !important;
-    border: 1px solid transparent;
-    box-shadow: none;
-    transition: 0.3s ease-in-out;
-  }
 
   .installed-modpack-cards {
     max-width: unset;
