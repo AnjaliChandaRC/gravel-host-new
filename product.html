@@ -495,11 +495,11 @@
           </div>
         </div>
         <div class=" standard_slider py-4 position-relative">
-          <img class="text-white prev bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+          <img class="text-white prev prev-tab1 bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
             alt="prevArrow">
-          <img class="text-white next bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+          <img class="text-white next next-tab1 bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
             alt="nextArrow">
-          <div class="position-relative z-1 slider_classs">
+          <div class="position-relative z-1 slider_classs-tab1">
             <div class="px-2 px-md-4">
               <div
                 class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
@@ -982,11 +982,11 @@
           </div>
         </div>
         <div class="standard_slider py-4 position-relative">
-          <img class="text-white prev bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+          <img class="text-white prev prev-tab2 bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
             alt="prevArrow">
-          <img class="text-white next bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
+          <img class="text-white next next-tab2 bg-white cursor_pointer" src="./assets/images/png/standardNextArrow.png"
             alt="nextArrow">
-          <div class="position-relative z-1 slider_classs">
+          <div class="position-relative z-1 slider_classs-tab2">
             <div class="px-2 px-md-4">
               <div
                 class="installed-modpack-cards d-block w-100 bg_extra_light_blue mx-auto cursor_pointer position-relative">
@@ -1891,44 +1891,59 @@
     }
 
     // Function to destroy Slick Slider instance
-    function destroySlider(sliderId) {
-      $(sliderId).slick('unslick');
+    function initializeSlider(sliderContainer, prevArrow, nextArrow) {
+      const sliderOptions = {
+        centerMode: true,
+        prevArrow: prevArrow,
+        nextArrow: nextArrow,
+        slidesToShow: 3,
+        responsive: [{
+            breakpoint: 991.98,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 575.98,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      };
+
+      $(sliderContainer).slick(sliderOptions);
     }
 
-    // Function to show the selected tab
+    initializeSlider(".slider_classs-tab1", ".prev-tab1", ".next-tab1");
+    initializeSlider(".slider_classs-tab2", ".prev-tab2", ".next-tab2");
+
     function openTab(event, tabId) {
       const tabContents = document.getElementsByClassName("tab-contents");
       for (let i = 0; i < tabContents.length; i++) {
         if (tabContents[i].id === tabId) {
           tabContents[i].classList.add("d-block");
           tabContents[i].classList.remove("d-none");
-          initializeSlider(`#${tabId} .slider_classs`); // Initialize Slick Slider for the selected tab
         } else {
           tabContents[i].classList.add("d-none");
           tabContents[i].classList.remove("d-block");
-          destroySlider(`#${tabContents[i].id} .slider_classs`); // Destroy Slick Slider for the hidden tab
         }
       }
-
-      // Remove the "active" class from all buttons
-      const tabButtons = document.getElementsByClassName("tab-button");
+      const
+        tabButtons = document.getElementsByClassName("tab-button");
       for (let i = 0; i < tabButtons.length; i++) {
         tabButtons[i].classList.remove("active");
       }
-      // Add the "active" class to the clicked button
       event.currentTarget.classList.add("active");
+      $(".slider_classs-tab1").slick("refresh");
+      $(".slider_classs-tab2").slick("refresh");
     }
-
-    // Add click event listeners to tab buttons
     document.getElementById("tab1_button").addEventListener("click", function (event) {
       openTab(event, "tab1");
     });
-
     document.getElementById("tab2_button").addEventListener("click", function (event) {
       openTab(event, "tab2");
     });
-
-    // Show the first tab by default
     document.getElementById("tab1_button").click();
 
     // ======= SLIDER ====== //
