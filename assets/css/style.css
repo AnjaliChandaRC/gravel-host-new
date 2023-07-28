@@ -1250,7 +1250,7 @@ button:focus::after {
   }
 
   .header-bg {
-    background-image: url("/assets/images/png/headerBg.png");
+    background-image: url("/assets/images/webp/headerBg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
