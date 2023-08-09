@@ -1577,3 +1577,7 @@ button:focus::after {
     left: 0%;
   }
 }
+/* DEFINE CAROUSEL CODE CSS*/
+.carousel-control-next, .carousel-control-prev{
+  top:400px  !important;
+}
