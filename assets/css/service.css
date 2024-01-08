@@ -73,6 +73,23 @@
     padding: 30px !important;
 }
 
+
+.show_more_btn {
+    background: linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%),
+        linear-gradient(0deg, #2898FF, #2898FF);
+    border: none;
+    border-radius: 10px;
+    padding: 14px 32px;
+}
+
+.show_more_btn:hover {
+    background: linear-gradient(80.44deg, rgba(48, 156, 255, 0.8) 16.92%, rgba(0, 63, 243, 0.8) 97.49%),
+        linear-gradient(0deg, #2898FF, #2898FF);
+}
+
+
+
+
 /* MEDIA QUERY */
 
 @media (max-width: 991.98px) {
