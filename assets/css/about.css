@@ -30,7 +30,7 @@
 .search_input_box{
     color: #959EAD !important;
     line-height: 133.333%;
-    width: 364px;
+    /* width: 364px; */
 }
 .search_input:focus-visible {
     outline: unset !important;
