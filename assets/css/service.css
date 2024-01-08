@@ -73,7 +73,6 @@
     padding: 30px !important;
 }
 
-
 /* MEDIA QUERY */
 
 @media (max-width: 991.98px) {
@@ -182,6 +181,14 @@
     .game_card_parent .cardsbgabsoluteimg3 {
         top: -10% !important;
     }
+
+    .custom_select_box {
+        width: 266px !important;
+    }
+
+    .search_input_box {
+        width: 364px !important;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -192,6 +199,7 @@
     .min_xxl_fs_20 {
         font-size: 20px !important;
     }
+
 }
 
 @media (min-width: 1700px) {
