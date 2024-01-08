@@ -62,7 +62,20 @@
     transform: translateX(5px) scale(1.1);
 }
 
+
+/* CHOOSE CSS */
+.leading_20 {
+    line-height: 20px;
+}
+
+.why-choose-us-card-black-blue-common {
+    height: 100% !important;
+    padding: 30px !important;
+}
+
+
 /* MEDIA QUERY */
+
 @media (max-width: 991.98px) {
     .w_grees_star {
         width: 40px !important;
@@ -81,6 +94,15 @@
     .w_green_clr_star {
         width: 170px !important;
     }
+
+    .why-choose-us-card-black-blue-common {
+        height: 100% !important;
+        padding: 30px !important;
+    }
+
+    .massage_icon {
+        width: 43px !important;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -91,6 +113,24 @@
     .w_green_clr_star {
         width: 140px !important;
     }
+
+    .why-choose-us-card-black-blue-common {
+        max-width: 350px !important;
+        height: 100% !important;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .why-choose-us-card-black-blue-common {
+        height: 100% !important;
+    }
+
+    .why-choose-us-card-black-blue-common {
+        height: 100% !important;
+        padding: 30px !important;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -100,6 +140,10 @@
 
     .game_overlay_parent:hover .game_overlay {
         height: 140px;
+    }
+
+    .why-choose-us-card-black-blue-common {
+        padding: 30px !important;
     }
 }
 
@@ -115,6 +159,15 @@
     .game_overlay_parent:hover .game_overlay {
         height: 150px;
     }
+
+    .why-choose-us-card-black,
+    .why-choose-us-card-blue {
+        height: 366px !important;
+    }
+
+    .why-choose-us-card-black-blue-common {
+        padding: 40px !important;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -124,6 +177,10 @@
 
     .game_overlay_parent:hover .game_overlay {
         height: 157px;
+    }
+
+    .game_card_parent .cardsbgabsoluteimg3 {
+        top: -10% !important;
     }
 }
 
