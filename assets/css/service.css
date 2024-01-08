@@ -87,7 +87,12 @@
         linear-gradient(0deg, #2898FF, #2898FF);
 }
 
-
+.layers_img {
+    opacity: 0.3;
+    max-height: 1050px;
+    z-index: -1;
+    top: -35%;
+}
 
 
 /* MEDIA QUERY */
