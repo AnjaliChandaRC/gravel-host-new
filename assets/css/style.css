@@ -672,6 +672,16 @@ button:focus::after {
 .card-hover-down:hover {
   transform: translateY(5%);
 }
+.explore_text{
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.why-choose-us-card-black-blue-common:hover .text-capitalize {
+  color: #0D6EFD; /* Change text color to blue */
+}
+.why-choose-us-card-black-blue-common:hover .arrow path  {
+  fill:#0D6EFD  !important;
+}
 
 .why-choose-us-card-black-blue-common {
   max-width: 347px;

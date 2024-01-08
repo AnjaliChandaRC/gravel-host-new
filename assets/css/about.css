@@ -84,6 +84,9 @@
 .faq_parent .accordion-item.active h2.accordion-header button {
     color: #0D6EFD !important;
 }
+.faq_parent .accordion-button:not(.collapsed){
+    color: #0D6EFD !important;
+}
 
 .faq_parent .accordion-item:first-of-type {
     border: 1px solid unset !important;
