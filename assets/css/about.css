@@ -1,60 +1,65 @@
-.game_hosting_bg{
+.game_hosting_bg {
     background-image: url("../images/png/game_hosting_bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
 }
-.game_server_bg{
+
+.game_server_bg {
     background-image: url("../images/png/game-server-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
 }
-.rounded_left_5{
+
+.rounded_left_5 {
     border-radius: 5px 0px 0px 5px !important;
 }
-.btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn{
+
+.btn-group>.btn-group:not(:first-child),
+.btn-group>:not(.btn-check:first-child)+.btn {
     margin-left: calc(var(--bs-border-width) * 0) !important;
 }
-.custom_select_box{
-    width: 266px !important;
-}
-.custom_select{
+
+.custom_select {
     background: rgba(18, 18, 26, 0.60) !important;
     color: #959EAD !important;
     height: 44px;
 }
-.search_input_box{
+
+.search_input_box {
     border-radius: 5px !important;
 }
-.search_input_box{
+
+.search_input_box {
     color: #959EAD !important;
     line-height: 133.333%;
     cursor: pointer;
     /* width: 364px; */
 }
+
 .search_input:focus-visible {
     outline: unset !important;
 }
 
-@media (max-width:991.98px) {
-   .search_input_box{
-    width: 100%;
-   }
-   .custom_select_box{
-    width: 200px !important;
-   }
+.custom_select_box,
+.search_input_box {
+    width: 100% !important;
 }
+
+@media (max-width:991.98px) {
+    .search_input_box {
+        width: 100%;
+    }
+
+}
+
 @media (max-width:767.98px) {
-    .game_server_bg{
+    .game_server_bg {
         border-radius: 18px !important;
-        background-size: 100%  100;
+        background-size: 100% 100;
         box-shadow: 0px -3.29px 0px 0px #0D6EFD inset;
     }
-    .custom_select_box{
-        width: 100% !important;
-     }
-     
+
+
 }
-
-
