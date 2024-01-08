@@ -72,26 +72,6 @@
 .lh_normal{
     line-height: normal;
 }
-/* .accordion-item .accordion-button {
-    background-color: #111116;
-    color: white;
-}
-.accordion_1 {
-    background-color: #111116;
-    border: 1px solid white;
-    margin-bottom: 20px;
-}
-.accordion_2 {
-    background-color: #111116;
-    border: 1px solid white;
-    margin-bottom: 20px;
-}
-.accordion_3 {
-    background-color: #111116;
-    border: 1px solid white;
-    margin-bottom: 20px;
-} */
-
 
 .accordion-item:last-of-type {
     border-bottom-right-radius: 10px !important;
@@ -112,6 +92,7 @@
 .accordion-item {
     border: 1px solid #90908D !important;
     border-radius: 10px;
+    width: 100%;
     background: #111116 !important;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.07) !important;
 }
@@ -163,4 +144,8 @@
 
 .accordion-button:not(.collapsed){
     box-shadow: none !important;
+}
+.accordion{
+    --bs-accordion-btn-icon-width: 13px !important;
+    --bs-accordion-btn-icon-height: 13px !important;
 }
