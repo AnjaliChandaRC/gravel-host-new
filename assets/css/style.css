@@ -653,6 +653,7 @@ button:focus::after {
 }
 
 .dashboard {
+  filter: drop-shadow(17.071px 34.142px 78.953px rgba(47, 57, 148, 0.08)) !important;
   max-width: 100%;
   width: 1140px;
 }

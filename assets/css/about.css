@@ -1,0 +1,38 @@
+.game_hosting_bg{
+    background-image: url("../images/png/game_hosting_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.game_server_bg{
+    background-image: url("../images/png/game-server-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.rounded_5{
+    border-radius: 5px !important;
+}
+.btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn{
+    margin-left: calc(var(--bs-border-width) * 0);
+}
+.custom_select{
+    background: rgba(18, 18, 26, 0.60);
+    color: #959EAD;
+}
+.search_input_box{
+    border-radius: 5px !important;
+}
+.search_input_box{
+    color: #959EAD !important;
+    line-height: 133.333% ;
+}
+.search_input:focus-visible {
+    outline: unset !important;
+}
+
+@media (max-width:767.98px) {
+    .game_server_bg{
+        border-radius: 18px !important;
+    }
+}
