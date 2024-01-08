@@ -1,0 +1,144 @@
+.game_card {
+    max-width: 300px;
+}
+
+.game_arrow {
+    border: 1px solid transparent !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transition: all 0.2s linear;
+}
+
+.game_arrow:hover {
+    border: 1px solid #024AF7 !important;
+}
+
+.game_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #111116B2;
+    width: 100%;
+    height: 110px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 0.2s linear;
+}
+
+.game_overlay_parent:hover .game_overlay {
+    height: 135px;
+}
+
+.game_overlay .game_card_para_2,
+.game_overlay .order_btn,
+.game_overlay .order_btn img {
+    transition: all 0.2s linear;
+}
+
+.game_overlay:hover .game_card_para_2 {
+    opacity: 0;
+}
+
+.game_card_para_2 {
+    line-height: 27px;
+}
+
+.order_btn {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #0E4BFE;
+    background: linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%),
+        linear-gradient(0deg, #0E4BFE, #0E4BFE),
+        linear-gradient(0deg, #2898FF, #2898FF);
+    z-index: -1;
+}
+
+.game_overlay_parent:hover .game_overlay .order_btn {
+    opacity: 1 !important;
+    z-index: 1 !important;
+}
+
+.order_btn:hover img {
+    transform: translateX(5px) scale(1.1);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 991.98px) {
+    .w_grees_star {
+        width: 40px !important;
+    }
+
+    .w_green_clr_star {
+        width: 200px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .w_grees_star {
+        width: 35px !important;
+    }
+
+    .w_green_clr_star {
+        width: 170px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .w_grees_star {
+        width: 30px !important;
+    }
+
+    .w_green_clr_star {
+        width: 140px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .game_overlay {
+        height: 117px;
+    }
+
+    .game_overlay_parent:hover .game_overlay {
+        height: 140px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gravelhost_img_height {
+        width: 430px !important;
+    }
+
+    .game_overlay {
+        height: 125px;
+    }
+
+    .game_overlay_parent:hover .game_overlay {
+        height: 150px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .game_overlay {
+        height: 131px;
+    }
+
+    .game_overlay_parent:hover .game_overlay {
+        height: 157px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .gravelhost_img_height {
+        width: 500px !important;
+    }
+
+    .min_xxl_fs_20 {
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 1700px) {
+    .gravelhost_img_height {
+        width: 580px !important;
+    }
+}
