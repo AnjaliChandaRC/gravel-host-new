@@ -104,7 +104,7 @@
 }
 
 .game_server_bg {
-    background-image: url("../images/png/game-server-bg.png");
+    background-image: url("../images/webp/game-server-bg.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -133,7 +133,6 @@
     color: #959EAD !important;
     line-height: 133.333%;
     cursor: pointer;
-    /* width: 364px; */
 }
 
 .search_input:focus-visible {
@@ -145,19 +144,11 @@
     width: 100% !important;
 }
 
-
-
-
-
-.bg-gradient {
-    background-color: #111116;
-}
+/* FAQS CSS */
 
 .lh_normal {
     line-height: normal;
 }
-
-/* FAQS CSS */
 
 .faq_parent .accordion-item:last-of-type {
     border-bottom-right-radius: 10px !important;
