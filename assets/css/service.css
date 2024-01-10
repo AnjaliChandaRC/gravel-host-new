@@ -369,8 +369,8 @@ button:focus::after {
         width: 580px !important;
     }
 }
-.trustpilot_text{
- transition: all 0.5s ease-in-out; 
+.trustpilot_text path{
+ transition: all 0.2s ease-in-out; 
 }
 .trustpilot_text:hover path{
     fill:#00B67A  !important;
