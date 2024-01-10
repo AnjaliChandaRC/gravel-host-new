@@ -529,7 +529,7 @@
                         <img class="w-100" src="./assets/images/png/minecraft-img1.png" alt="minecraft-img1">
                         <div class="pt-4 mt-2">
                             <p style="line-height: 105%" class="mb-0 text-white fs_4xl mb-2 ff-rubik fw-semibold">
-                                Minecraft Vanilla
+                                Minecraft Vanilla One
                             </p>
                             <p style="line-height: 140%" class="mb-3 ff-inter clr-blue fs_md">
                                 2 GB recommended
@@ -560,7 +560,7 @@
                         <img class="w-100" src="./assets/images/png/minecraft-img2.png" alt="minecraft-img1">
                         <div class="pt-4 mt-2">
                             <p style="line-height: 105%" class="mb-0 text-white fs_4xl mb-2 ff-rubik fw-semibold">
-                                Second Vanilla
+                                Minecraft Vanilla Two
                             </p>
                             <p style="line-height: 140%" class="mb-3 ff-inter clr-blue fs_md">
                                 2 GB recommended
@@ -591,7 +591,7 @@
                         <img class="w-100" src="./assets/images/webp/minecraft-img3.webp" alt="minecraft-img3">
                         <div class="pt-4 mt-2">
                             <p style="line-height: 105%" class="mb-0 text-white fs_4xl mb-2 ff-rubik fw-semibold">
-                                Third Vanilla
+                                Minecraft Vanilla Three
                             </p>
                             <p style="line-height: 140%" class="mb-3 ff-inter clr-blue fs_md">
                                 2 GB recommended
@@ -622,7 +622,7 @@
                         <img class="w-100" src="./assets/images/webp/minecraft-img4.webp" alt="minecraft-img4">
                         <div class="pt-4 mt-2">
                             <p style="line-height: 105%" class="mb-0 text-white fs_4xl mb-2 ff-rubik fw-semibold">
-                                Fourth Vanilla
+                                Minecraft Vanilla Four
                             </p>
                             <p style="line-height: 140%" class="mb-3 ff-inter clr-blue fs_md">
                                 2 GB recommended
@@ -653,7 +653,7 @@
                         <img class="w-100" src="./assets/images/webp/minecraft-img5.webp" alt="minecraft-img5">
                         <div class="pt-4 mt-2">
                             <p style="line-height: 105%" class="mb-0 text-white fs_4xl mb-2 ff-rubik fw-semibold">
-                                Fifth Vanilla
+                                Minecraft Vanilla Five
                             </p>
                             <p style="line-height: 140%" class="mb-3 ff-inter clr-blue fs_md">
                                 2 GB recommended
@@ -684,7 +684,7 @@
                         <img class="w-100" src="./assets/images/webp/minecraft-img6.webp" alt="minecraft-img6">
                         <div class="pt-4 mt-2">
                             <p style="line-height: 105%" class="mb-0 text-white fs_4xl mb-2 ff-rubik fw-semibold">
-                                Sixth Vanilla
+                                Minecraft Vanilla Six
                             </p>
                             <p style="line-height: 140%" class="mb-3 ff-inter clr-blue fs_md">
                                 2 GB recommended
@@ -1490,20 +1490,29 @@
         });
     </script>
 
-
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var originalData = [...document.querySelectorAll(".pricing-plan-cards")].map(card => card
-                .outerHTML);
+        $(document).ready(function () {
+            // Function to filter items based on the search input
+            function filterItems() {
+                var searchText = $("#searchInput").val().toLowerCase(); // Get the search input value
+                $(".pricing-plan-cards").each(function () {
+                    var itemText = $(this).find(".fw-semibold").text()
+                        .toLowerCase(); // Get the text content to filter
+                    // Toggle a 'hidden' class on the parent element based on the filter
+                    $(this)
+                        .parent()
+                        .toggleClass("hidden", !itemText.includes(searchText));
+                });
+            }
 
-            // Function to handle search
-            document.getElementById("searchInput").addEventListener("input", function () {
-                var searchTerm = this.value.toLowerCase();
-                var filteredResults = originalData.filter(card => card.toLowerCase().includes(
-                    searchTerm));
+            // Trigger filter function on input change
+            $("#searchInput").on("input", function () {
+                filterItems();
+            });
 
-                // Display filtered results
-                document.getElementById("filteredResults").innerHTML = filteredResults.join('');
+            // Trigger filter function on button click (optional)
+            $(".show_more_btn").on("click", function () {
+                filterItems();
             });
         });
     </script>
