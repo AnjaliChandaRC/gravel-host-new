@@ -110,21 +110,6 @@
     background-size: 100% 100%;
 }
 
-.rounded_left_5 {
-    border-radius: 5px 0px 0px 5px !important;
-}
-
-.btn-group>.btn-group:not(:first-child),
-.btn-group>:not(.btn-check:first-child)+.btn {
-    margin-left: calc(var(--bs-border-width) * 0) !important;
-}
-
-.custom_select {
-    background: rgba(18, 18, 26, 0.60) !important;
-    color: #959EAD !important;
-    height: 44px;
-}
-
 .search_input_box {
     border-radius: 5px !important;
 }
@@ -242,14 +227,16 @@
 button:focus::after {
     animation: none;
 }
-
+.w_green_clr_star{
+    width: 130px;
+}
 @media (max-width: 991.98px) {
     .w_grees_star {
         width: 40px !important;
     }
 
     .w_green_clr_star {
-        width: 200px !important;
+        width: 115px !important;
     }
 
     .search_input_box {
@@ -264,7 +251,7 @@ button:focus::after {
     }
 
     .w_green_clr_star {
-        width: 170px !important;
+        width: 110px !important;
     }
 
     .why-choose-us-card-black-blue-common {
@@ -289,7 +276,7 @@ button:focus::after {
     }
 
     .w_green_clr_star {
-        width: 140px !important;
+        width: 90px !important;
     }
 
     .why-choose-us-card-black-blue-common {
@@ -359,10 +346,6 @@ button:focus::after {
 
     .game_card_parent .cardsbgabsoluteimg3 {
         top: -10% !important;
-    }
-
-    .custom_select_box {
-        width: 266px !important;
     }
 
     .search_input_box {
