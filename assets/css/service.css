@@ -99,11 +99,10 @@
 
 
 /* MEDIA QUERY */
-.game_hosting_bg {
-    background-image: url("../images/png/game_hosting_bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+.game_layers_img {
+    z-index: -1;
+    opacity: 0.1 !important;
+    top: 16%;
 }
 
 .game_server_bg {
