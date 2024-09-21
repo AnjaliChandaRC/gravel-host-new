@@ -1,0 +1,259 @@
+#search_input_box {
+    border-radius: 10px !important;
+    border: 1px solid #0E4BFE;
+    cursor: auto;
+}
+
+.categories-btn svg {
+    margin-left: 0px !important;
+}
+
+.pricing-plan-cards-hover:hover {
+    transform: translateY(-0.6%) !important;
+}
+
+.slick-list {
+    padding: 0 !important;
+}
+
+.arrows_parent {
+    margin: 0 auto;
+    width: 310px;
+    position: relative;
+    left: 0%;
+    z-index: 2;
+    display: flex;
+}
+
+.arrows_parent svg {
+    position: absolute;
+    top: -23px;
+    z-index: 2;
+    transition: all 0.2s linear;
+}
+
+.arrows_parent svg:hover path {
+    fill: white;
+}
+
+.arrows_parent .prev {
+    left: 0;
+}
+
+.arrows_parent .next {
+    right: 0;
+}
+
+.blog_slider .prev,
+.next {
+    width: 12px;
+}
+
+.blog_slider .slick-dots {
+    display: flex !important;
+    gap: 10px !important;
+    margin-top: 65px;
+    margin-bottom: 0 !important;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.blog_slider .slick-dots button {
+    background-color: #2C2C35 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    padding: 7px 16px !important;
+    border-radius: 5px !important;
+}
+
+
+.blog_slider .slick-dots .slick-active button {
+    background: linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%),
+        linear-gradient(0deg, #2898FF, #2898FF) !important;
+}
+
+.blue_side_line {
+    width: 5px;
+    height: 100%;
+    background-color: #2F7FEE;
+}
+
+.started_box {
+    background-color: #111116;
+    border-radius: 30px 27px;
+    padding: 30px 27px;
+}
+
+.started_box_line {
+    background-color: #B7B7B7;
+    width: 100%;
+    height: 1px;
+}
+
+.started_box_fill_line {
+    background-color: #2F7FEE;
+    width: 40%;
+    height: 1px;
+}
+
+.learn_more_btn {
+    padding: 15px 32px;
+    border-radius: 10px;
+    border: 1px solid #0E4BFE;
+    margin-top: 10px;
+}
+
+.learn_more_btn img,
+.categories-btn svg {
+    transition: all 0.2s linear;
+}
+
+.learn_more_btn:hover img,
+.categories-btn:hover svg {
+    transform: translateX(5px) scale(1.1);
+}
+
+.article_img {
+    max-width: 103px;
+}
+
+.blog_slider_parent {
+    margin-bottom: 143px;
+}
+
+/* footer css */
+.blog_footer_bg {
+    background-image: url("/assets/images/webp/blog_footer_bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 148px;
+}
+
+.blog_footer_bg li a {
+    transition: all 0.2s linear;
+}
+
+.blog_footer_bg li a:hover {
+    color: #0E4BFE !important;
+}
+
+@media (max-width:1399.98px) {
+    .blog_footer_bg {
+        border-radius: 90px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .blog_footer_bg {
+        border-radius: 60px;
+    }
+
+    .blog_slider_parent {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .arrows_parent {
+        bottom: 0.8%;
+    }
+
+    .blog_slider .slick-dots {
+        margin-top: 40px;
+    }
+
+    .main_category_width {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .blog_slider_parent {
+        margin-bottom: 100px;
+    }
+
+    .categories_btn_parent {
+        max-width: 716px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .footer_max_width {
+        max-width: 500px;
+        margin: 0 auto !important;
+    }
+
+    .blog_slider_parent {
+        margin-bottom: 80px;
+    }
+
+    .px_mobile_0 {
+        padding: 0 !important;
+    }
+
+    .categories_btn_parent {
+        max-width: 733px;
+    }
+
+}
+
+@media (max-width:575.98px) {
+    .btn-get-started {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .arrows_parent {
+        bottom: 0.45%;
+    }
+
+    .learn_more_btn {
+        padding: 15px;
+    }
+
+    .discord_icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .started_box {
+        padding: 20px;
+    }
+
+    .tag_text {
+        font-size: 13px !important;
+    }
+
+    .blog_footer_bg ul {
+        width: 40%;
+    }
+
+    .arrows_parent svg {
+        top: -20px;
+    }
+
+    .blog_footer_bg {
+        border-radius: 0;
+    }
+
+    .blog_footer_bg {
+        margin-top: 171px;
+    }
+}
+
+@media (max-width:374.98px) {
+    .blog_slider .slick-dots button {
+        padding: 4px 12px !important;
+    }
+
+    .arrows_parent {
+        width: 255px;
+        bottom: 0.3%;
+    }
+}
+
+@media (min-width:576px) {
+    #search_input_box {
+        max-width: 340px;
+    }
+}

@@ -1,0 +1,42 @@
+.accordian-legal .border-accordion {
+    padding-bottom: 0 !important;
+    border: 1px solid white !important;
+}
+
+.accordian-legal .accordion-item {
+    padding-bottom: 0 !important;
+}
+
+.accordian-legal .accordion-active-border {
+    border-top: 1px solid white !important;
+}
+
+.accordian-legal .accordion-button:not(.collapsed)::after {
+    background-image: url("../../assets/images/svg/plus_icon.svg") !important;
+    transform: rotate(45deg);
+}
+
+.accordian-legal .accordion-button::after {
+    background-image: url("../../assets/images/svg/plus_icon.svg") !important;
+}
+
+.accordian-legal .accordion-flush .accordion-item .accordion-button,
+.accordian-legal .accordion-item .accordion-button.collapsed,
+.accordian-legal .accordion-flush .accordion-item .accordion-button.collapsed:focus {
+    padding: 16px !important;
+    max-height: 55px;
+}
+
+/* CSS for the accordion button when it's collapsed */
+.accordian-legal .accordion-flush .accordion-item .accordion-button.collapsed {
+    background-color: transparent !important;
+}
+
+/* CSS for the accordion button when it's expanded */
+.accordian-legal .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+    background-color: #0d6efd !important;
+}
+
+.accordian-legal ul li {
+    list-style-type: disc !important;
+}
