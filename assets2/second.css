@@ -1,1 +1,549 @@
 /* text */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* sectionpy */
+* {
+    list-style-type: none !important;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+.bg_color {
+    background-color: #1f1f29;
+}
+
+.Managers {
+    color: #0D6EFD;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.Manager_bg {
+    width: 123px;
+    padding: 4px 14px 4px 12px;
+    background-color: #000;
+    border-radius: 1000px;
+}
+
+.Partner {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.discord {
+    width: 55px;
+    height: 55px;
+    background: #191921;
+    border-radius: 50%;
+}
+
+.Host {
+    color: #FCFCFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 9px;
+}
+
+.Requirements_bg {
+    width: 132px;
+    padding: 4px 14px 4px 12px;
+    background-color: #000;
+    border-radius: 1000px;
+}
+
+.gap_42 {
+    gap: 20px;
+}
+
+.padding_bottom {
+    padding-bottom: 24px;
+}
+
+.include {
+    color: #FCFCFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    padding-bottom: 12px;
+    max-width: 224px;
+}
+
+.card_body {
+    background-color: #111116;
+    padding: 40px 20.67px 38px 27.15px;
+    border-radius: 24px;
+    margin: 20px 0 0;
+}
+
+.modpacks {
+    color: #FCFCFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-bottom: 14px;
+}
+
+.card_text {
+    color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.2px;
+    padding-left: 15px;
+    max-width: 196px;
+}
+
+.svg_bg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #0D6EFD;
+    box-shadow: 0px 16px 40px 0px #0D6EFD38;
+    top: 25px;
+    right: 21px;
+}
+
+.sectionpy {
+    padding: 48px 0 48px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.icon {
+    width: 15px !important;
+    height: 15px !important;
+    margin-top: 8px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.svg_bg {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    right: 40px;
+}
+
+@media(min-width:576px) {
+    .include {
+        font-size: 32px;
+        line-height: 43.4px;
+        max-width: 100%;
+    }
+
+    .card_text {
+        font-size: 16px;
+        line-height: 23.2px;
+        padding-left: 18px;
+    }
+
+    .gap_42 {
+        gap: 42px;
+    }
+
+    .discord_img {
+        width: 24px;
+    }
+
+    .Partner {
+        font-size: 32px;
+        line-height: 41.4px;
+    }
+
+    .card_body {
+        padding: 45px 20.67px 38px 22.15px;
+        margin: 60px 0 0;
+    }
+
+    .svg_img {
+        width: 32px;
+    }
+}
+
+@media(min-width:768px) {
+    .modpacks {
+        font-size: 20px;
+        line-height: 32px;
+        padding-bottom: 18px;
+    }
+
+    .padding_bottom {
+        padding-bottom: 60px;
+    }
+
+    .Managers {
+        font-size: 16px;
+        line-height: 24.8px;
+    }
+
+    .sectionpy {
+        padding: 53px 0 70px;
+    }
+
+    .card_body {
+        padding: 55px 20.67px 38px 22.15px;
+    }
+}
+
+@media(min-width:992px) {
+    .card_body {
+        padding: 73px 20.67px 38px 22.15px;
+    }
+
+    .include {
+        font-size: 40px;
+        line-height: 46.4px;
+    }
+
+    .padding_bottom {
+        padding-bottom: 106px;
+    }
+
+    .Host {
+        font-size: 17px;
+        line-height: 34px;
+    }
+
+    .Partner {
+        font-size: 40px;
+        line-height: 46.4px;
+    }
+
+    .sectionpy {
+        padding: 53px 0 141px;
+    }
+}
+
+@media(min-width:1200px) {
+    .include {
+        padding-bottom: 0;
+    }
+
+    .card_body {
+        margin: 99px 0 0;
+    }
+}
+
+/* Requirements */
+
+.bg-light-blue {
+    background: #19192136;
+}
+
+.req-btn {
+    width: 132px;
+    height: 33px;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+}
+
+.collaborate-bg {
+    background-image: url('../assets/images/webp/main/collaborate-small-img.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 36px;
+    padding-bottom: 58px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.input-box {
+    background: #13131787;
+    border: 1px solid #262626;
+    max-width: 638px;
+    padding: 16px;
+    line-height: 21px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    backdrop-filter: blur(10px);
+}
+
+.input-box::placeholder {
+    color: white;
+}
+
+.message-box {
+    height: 163px;
+    resize: none;
+}
+
+.next-btn {
+    width: 132px;
+    height: 55px;
+    border-radius: 90px;
+    background-color: var(--bg-black-2);
+    border: none;
+    gap: 10px;
+}
+
+.border-box {
+    max-width: 456px;
+    height: 114px;
+}
+
+.max-w-456 {
+    max-width: 456px;
+}
+
+.number-box {
+    color: #111116;
+    width: 105px;
+    height: 105px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 42px;
+    line-height: 43.85px;
+    letter-spacing: 0.02em;
+    place-items: center;
+    background: #F9F9F9;
+    margin: 4px;
+    transition: all 300ms linear;
+}
+
+.number-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    padding: 5px;
+    background: linear-gradient(44.99deg, #EBEAEA 14.65%, #FFFFFF 85.35%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: all 300ms linear;
+}
+
+.border-box:hover .number-box::after {
+    background: transparent;
+    backdrop-filter: blur(25px);
+}
+
+.border-box:hover .number-box {
+    color: #0D6EFD;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.my-24 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.w-24 {
+    width: 24px;
+}
+
+.h-24 {
+    height: 24px;
+}
+
+.fs-xl {
+    font-size: 18px;
+}
+
+.fs-md {
+    font-size: 16px;
+}
+
+.fs-sm {
+    font-size: 14px;
+}
+
+.my-18 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+@media (min-width:992px) {
+    .collaborate-bg {
+        background-image: url('../assets/images/webp/main/collaborate-bg-img.webp');
+        background-size: cover;
+        padding-top: 93px;
+        padding-bottom: 144px;
+    }
+
+    .mt-lg-16 {
+        margin-top: 16px;
+    }
+
+    .mt-lg-64 {
+        margin-top: 64px;
+    }
+
+    .my-lg-24 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .mt-lg-24 {
+        margin-top: 24px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1180px !important;
+    }
+}
+
+/* game */
+
+.card_main_hading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.4px;
+    color: #FCFCFF;
+    max-width: 740px;
+    margin: auto;
+    padding-bottom: 43px;
+}
+
+.hosting_btn {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.8px;
+    color: #0D6EFD;
+    box-shadow: 0px 1px 2px 0px #0D0D120A;
+    background: #191921;
+    padding: 12px 14px;
+    text-decoration: none;
+    border-radius: 50px;
+    max-width: 185px;
+    margin: auto !important;
+    white-space: nowrap;
+}
+
+.game {
+    background-image: url(/assets/images/webp/main/game-layer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.py_125 {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.sec_6_Card {
+    max-width: 100%;
+    min-height: 336px;
+    border-radius: 15px;
+    background: #111116;
+    padding: 20px;
+    text-align: center;
+}
+
+.Card_text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 26.25px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-bottom: 0 !important;
+}
+
+.Card_image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width:1200px) {
+    .Card_image {
+        width: 530px;
+    }
+
+    .Card_text {
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .card_main_hading {
+        font-size: 30px;
+    }
+
+    .Card_text {
+        font-size: 22px;
+    }
+
+    .sec_6_Card {
+        min-height: 300px;
+    }
+
+    .py_md_70 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media(max-width:576.99px) {
+    .py_sm_48 {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .card_main_hading {
+        font-size: 24px;
+        padding-bottom: 24px;
+        line-height: 26px;
+    }
+
+    .Card_text {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .fs-2xl {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:375px) {
+    .Card_text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
