@@ -1,1 +1,436 @@
 /* text */
+
+
+
+
+
+
+
+
+
+
+/* the perks */
+.partner-benefits {
+    color:var(--bg-white);
+}
+
+.circle_svg {
+    margin-top: 5px;
+    margin-right: 10px;
+    max-width: 14px !important;
+    height: 14px !important;
+}
+
+.partner-program-text {
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.lorem-para {
+    max-width: 600px;
+    margin: auto;
+    font-size:18px;
+    color: var(--clr-white-5);
+    padding-top: 24px;
+    margin-bottom: 54px;
+    line-height: 130%;
+}
+.laptop-img {
+    width: 100%;
+    max-width: 575px;
+}
+.the-perks-heading {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 110%;
+}
+.mw-544 {
+    max-width: 544px;
+}
+.perks-py {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+/* hero */
+.hosting-btn {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    box-shadow: 0px 1px 2px 0px #0D0D120A,0px 1px 3px 0px #0D0D120D;
+    background: #2934443D;
+    border: 0;
+    border-radius: 1000px;
+    padding: 4px 12px 4px 14px;
+    color: var(--clr-blue);
+    margin-bottom: 31px;
+}
+
+.hero-sec-heading {
+    font-size: 60px;
+    line-height: 116%;
+    color: var(--bg-white);
+    margin-bottom: 0;
+    padding-bottom: 31px;
+}
+
+.hero-sec-para {
+    font-size: 16px;
+    line-height: 160%;
+    text-align: left;
+    color: var(--bg-white);
+    margin-bottom: 0;
+    padding-bottom: 46px;
+    max-width: 564px;
+}
+
+.computer-img {
+    max-width: 580px;
+}
+.hero-bg {
+   background-image: url("../assets/images/webp/main/hero-bg.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.mw-586 {
+    max-width: 586px;
+}
+.mw-580 {
+    max-width: 580px;
+}
+.hero-py {
+    padding-top:123px;
+    padding-bottom: 178px;
+}
+.mw-77 {
+    max-width: 77px;
+}
+.dots {
+    left: 12%;
+    bottom: -12%;
+}
+/* gaming */
+
+.gaming-btn {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    box-shadow: 0px 1px 2px 0px #0D0D120A, 0px 1px 3px 0px #0D0D120D;
+    background: #2934443D;
+    border: 0;
+    border-radius: 1000px;
+    padding: 4px 12px 4px 14px;
+    color: #0D6EFD;
+    cursor: pointer;
+}
+
+.bg-color {
+    background-color: #111116;
+}
+
+.gaming_partner_heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.4px;
+    text-align: left;
+    color: #FCFCFF;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    max-width: 554px;
+}
+
+.gaming_partner_para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+    color: #FCFCFF;
+    max-width: 1017px;
+    padding-bottom: 56px;
+}
+
+
+.gap-12 {
+    gap: 12px;
+}
+
+
+.partner-btn {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 90px;
+    color: #ffffff;
+    padding: 18px 35px;
+    transition: background-color 0.4s ease, border-image 0.4s ease, transform 0.4s ease;
+    margin-top: 56px;
+    border: 0;
+    background: linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%) !important;
+}
+
+.partner-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-view::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, #2898FF, #2898FF),
+linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%);
+width: 55px;
+height: 55px;
+left: -20px;
+top: 50%;
+transform: translateY(-50%);
+border-radius: 50%;
+transition: all 300ms linear;
+}
+
+.btn-view:hover::after{
+    width: 190px;
+    border-radius:100px;
+}
+.view-btn {
+    color: var(--bg-white);
+    font-size: 20px;
+    line-height: 23px;
+}
+.gaming-box {
+    background-image: url("../assets/images/webp/main/gaming-box.webp");
+    padding: 77px 36px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.gaming-bg {
+    background-image: url("../assets/images/webp/main/gaming-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gaming-partner-mw {
+    max-width: 212px;
+}
+
+@media (min-width: 992px) {
+    .custom_w {
+        max-width: 1180px !important;
+    }
+   
+
+}
+@media (max-width: 1399.98px) {
+.dots-none {
+    display: flex;
+    display: none;
+}
+.gaming-partner-mw {
+    max-width: 180px;
+}
+}
+@media (max-width: 1199.98px) {
+    .laptop-img {
+        max-width: 500px;
+    }
+    .computer-img {
+        max-width: 450px;
+    }
+    .hero-sec-heading {
+        font-size: 40px;
+        line-height: 116%;
+        padding-bottom: 31px;
+    }
+    .hero-py {
+        padding-top:100px;
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 991.98px) { 
+    .laptop-img {
+        max-width: 500px;
+    }
+    .hero-sec-heading {
+        font-size: 38px;
+        line-height: 116%;
+        padding-bottom: 28px;
+    }
+    .hero-py {
+        padding-top:80px;
+        padding-bottom: 80px;
+    }
+    .hosting-btn {
+        margin-bottom: 28px;
+    }
+    .hero-sec-para {
+        padding-bottom: 36px;
+    }
+    .perks-py {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .gaming-partner-mw {
+        max-width: 150px;
+    }
+    .gaming-box {
+        padding: 60px 30px;
+    }
+    .partner-btn {
+        margin-top: 40px;
+    }
+    .gaming_partner_para {
+        padding-bottom: 40px;
+    }
+    .gaming_partner_heading {
+        font-size: 40px;
+        line-height: 46.4px;
+    }
+}
+@media (max-width: 767.98px) { 
+    .laptop-img {
+        max-width: 400px;
+    }
+    .partner-program-text {
+        font-size: 16px;
+        line-height: 130%;
+        margin-bottom: 18px;
+    }
+    .lorem-para {
+        font-size:16px;
+        padding-top: 18px;
+        margin-bottom: 40px;
+        line-height: 130%;
+    }
+    .the-perks-heading {
+        font-size: 28px;
+        line-height: 110%;
+    }
+    .computer-img {
+        max-width: 400px;
+    }
+    .hero-sec-heading {
+        font-size: 32px;
+        line-height: 116%;
+        padding-bottom: 22px;
+    }
+    .hero-py {
+        padding-top:54px;
+        padding-bottom: 54px;
+    }
+    .hosting-btn {
+        margin-bottom: 20px;
+    }
+    .hero-sec-para {
+        padding-bottom: 30px;
+    }
+    .perks-py {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+    .gaming-partner-mw {
+        max-width: 130px;
+    }
+    .gaming-box {
+        padding: 50px 25px;
+    }
+    .partner-btn {
+        margin-top: 30px;
+    }
+    .gaming_partner_para {
+        padding-bottom: 30px;
+    }
+    .gaming_partner_heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 575.98px) { 
+    .laptop-img {
+        max-width: 315px;
+    }
+    .partner-program-text {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 14px;
+    }
+    .lorem-para {
+        font-size:14px;
+        padding-top: 10px;
+        margin-bottom: 24px;
+        line-height: 130%;
+    }
+    .the-perks-heading {
+        font-size: 18px;
+        line-height: 110%;
+    }
+    .computer-img {
+        max-width: 336px;
+    }
+    .hero-sec-heading {
+        font-size: 22px;
+        line-height: 116%;
+        padding-bottom: 10px;
+    }
+    .hero-py {
+        padding-top:35px;
+        padding-bottom: 32px;
+    }
+    .hosting-btn {
+        margin-bottom: 10px;
+    }
+    .hero-sec-para {
+        padding-bottom: 25px;
+    }
+    .mt-35 {
+        margin-top: 35px;
+    }
+    .perks-py {
+        padding-top: 40px;
+        padding-bottom: 47px;
+    }
+    .view-btn {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .gaming-partner-mw {
+        max-width: 112px;
+    }
+    .gaming-box {
+        padding: 37px 12px 47px 12px;
+    }
+    .partner-btn {
+        margin-top: 19px;
+        font-size: 16px;
+        padding: 14px 40px;
+    }
+    .gaming_partner_para {
+        padding-bottom: 19px;
+    }
+    
+    .gaming_partner_heading {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .gaming_partner_para {
+        font-size: 14px;
+    }
+    .gaming_partner_heading {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .gap-6 {
+        gap: 6px !important;
+    }
+    .view-btn {
+        font-size: 18px;
+    }
+    .btn-view::after{
+    width: 47px;
+    height: 47px;
+    }
+}
+
+
