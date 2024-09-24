@@ -1,68 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    list-style-type: none !important;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
 .main {
     max-width: 1920px;
 }
+
 .bg-image {
     background-image: url("../assets/images/webp/main/bg-image.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* the perks */
 .partner-benefits {
-    color:var(--bg-white);
+    color: var(--bg-white);
 }
+
 .circle-svg {
     margin: -4px 10px 0px 0px;
     max-width: 14px !important;
     height: 14px !important;
 }
+
 .partner-program-text {
     max-width: 520px;
     font-size: 18px;
     line-height: 130%;
     margin-bottom: 20px;
 }
+
 .lorem-para {
     max-width: 660px;
-    font-size:18px;
+    font-size: 18px;
     color: var(--clr-white-5);
     padding-top: 24px;
     margin-bottom: 54px;
     line-height: 130%;
 }
+
 .laptop-img {
     width: 100%;
     max-width: 575px;
 }
+
 .the-perks-heading {
     font-size: 40px;
     line-height: 110%;
 }
+
 .perks-para-mw {
     max-width: 544px;
 }
+
 .perks-py {
     padding: 110px 0px;
 }
+
 /* hero */
 .-mt-hero {
     margin-top: -310px;
 }
+
 .hosting-btn {
     font-size: 16px;
     line-height: 150%;
-    box-shadow: 0px 1px 2px 0px #0D0D120A,0px 1px 3px 0px #0D0D120D;
+    box-shadow: 0px 1px 2px 0px #0D0D120A, 0px 1px 3px 0px #0D0D120D;
     background: #2934443D;
     border-radius: 1000px;
     padding: 4px 12px 4px 14px;
     color: var(--clr-blue);
     margin-bottom: 31px;
 }
+
 .hero-sec-heading {
     font-size: 60px;
     line-height: 116%;
     color: var(--bg-white);
     padding-bottom: 31px;
 }
+
 .hero-sec-para {
     font-size: 16px;
     line-height: 160%;
@@ -70,31 +92,39 @@
     padding-bottom: 46px;
     max-width: 564px;
 }
+
 .computer-img {
     max-width: 580px;
 }
+
 .hero-bg {
-   background-image: url("../assets/images/webp/main/hero-bg.webp");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+    background-image: url("../assets/images/webp/main/hero-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
 .mw-586 {
     max-width: 586px;
 }
+
 .mw-580 {
     max-width: 580px;
 }
+
 .hero-py {
     padding: 123px 0px 178px;
 }
+
 .mw-77 {
     max-width: 77px;
 }
+
 .dots {
     left: 12%;
     bottom: -12%;
 }
+
 /* gaming */
 .gaming-btn {
     font-size: 16px;
@@ -105,6 +135,7 @@
     padding: 4px 12px 4px 14px;
     color: var(--clr-blue);
 }
+
 .gaming-partner-heading {
     font-size: 40px;
     font-weight: 700;
@@ -113,6 +144,7 @@
     padding: 16px 0px;
     max-width: 554px;
 }
+
 .gaming-partner-para {
     font-size: 16px;
     font-weight: 400;
@@ -121,9 +153,11 @@
     max-width: 1017px;
     padding-bottom: 56px;
 }
+
 .gap-12 {
     gap: 12px;
 }
+
 .partner-btn {
     font-size: 18px;
     font-weight: 600;
@@ -134,317 +168,1301 @@
     transition: background-color 0.4s ease, border-image 0.4s ease, transform 0.4s ease;
     margin-top: 56px;
     background: linear-gradient(0deg, #2898FF, #2898FF),
-linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%);
+        linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%);
     transition: all 0.3s ease-in-out;
 }
+
 .arrow-ml {
     margin-left: 10px;
-} 
+}
+
 .partner-btn:hover {
     box-shadow: 2px 2px 0px white;
 }
-.btn-view::after{
+
+.btn-view::after {
     content: '';
     position: absolute;
     background: linear-gradient(0deg, #2898FF, #2898FF),
-linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%);
-width: 55px;
-height: 55px;
-left: -20px;
-top: 50%;
-transform: translateY(-50%);
-border-radius: 50%;
-transition: all 300ms linear;
+        linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%);
+    width: 55px;
+    height: 55px;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 300ms linear;
 }
-.btn-view:hover::after{
+
+.btn-view:hover::after {
     width: 190px;
-    border-radius:100px;
+    border-radius: 100px;
 }
+
 .view-btn {
     color: var(--bg-white);
     font-size: 20px;
     line-height: 23px;
 }
+
 .gaming-box {
     background-image: url("../assets/images/webp/main/gaming-box.webp");
     padding: 77px 36px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 .gaming-bg {
     background-image: url("../assets/images/webp/main/gaming-bg.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
 }
+
 .gaming-partner-mw {
     max-width: 212px;
 }
+
 .img-filter {
     filter: grayscale(1);
     opacity: 40%;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .img-filter:hover {
     filter: grayscale(0);
     opacity: 100%;
 }
+
 .gaming-pb {
-    padding-bottom:53px;
+    padding-bottom: 53px;
 }
+
 .-mr-hero-img {
     margin-right: -30px;
 }
-@media (min-width: 1200px) {
-    .custom-w {
-        max-width: 1180px !important;
+
+/* Partner */
+.managers {
+    color: var(--clr-blue);
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.discord-img {
+    width: 30px;
+}
+
+.ms-img {
+    width: 25px;
+}
+
+.manager-bg {
+    padding: 4px 14px 4px 12px;
+    background-color: #191921;
+    border-radius: 1000px;
+}
+
+.partner {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.discord {
+    width: 55px;
+    height: 55px;
+    background: #191921;
+    border-radius: 50%;
+}
+
+.host {
+    color: var(--clr-white-5);
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 9px;
+}
+
+.host-bg div,
+.host-bg p {
+    transition: all 300ms linear;
+}
+
+.host-bg:hover div {
+    box-shadow: 0px 0px 7px white;
+}
+
+.host-bg:hover p {
+    color: var(--clr-blue);
+}
+
+.requirements-bg {
+    width: fit-content;
+    padding: 4px 14px 4px 12px;
+    background-color: #191921;
+    border-radius: 1000px;
+}
+
+.gap-xl {
+    gap: 9px;
+}
+
+.padding-bottom {
+    padding-bottom: 53px;
+}
+
+.include {
+    color: var(--clr-white-5);
+    font-size: 22px;
+    line-height: 26.4px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    max-width: 224px;
+}
+
+.card-body {
+    background-color: var(--bg-black-2);
+    padding: 40px 20.67px 38px 27.15px;
+    border-radius: 24px;
+    margin: 20px 0 0;
+    transition: all 300ms linear;
+}
+
+.card-body:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.modpacks {
+    color: var(--clr-white-5);
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 14px;
+}
+
+.card-data {
+    font-size: 16px;
+    line-height: 23.2px;
+    padding-left: 15px;
+    max-width: 196px;
+}
+
+.svg-bg {
+    border-radius: 50%;
+    background: var(--clr-blue);
+    box-shadow: 0px 16px 40px 0px #0D6EFD38;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    right: 40px;
+}
+
+.sectionpy {
+    padding: 48px 0 48px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.icon {
+    width: 20px !important;
+    height: 17px !important;
+    margin-top: 3px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Requirements */
+
+.bg-light-blue {
+    background: #19192136;
+}
+
+.req-btn {
+    width: 132px;
+    height: 33px;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+}
+
+.collaborate-bg {
+    background-image: url('../assets/images/webp/main/collaborate-small-img.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 36px;
+    padding-bottom: 58px;
+    margin-top: -1px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.input-box {
+    background: #13131787;
+    border: 1px solid #262626;
+    padding: 16px;
+    line-height: 21px;
+    border-radius: 12px;
+    outline: none;
+    backdrop-filter: blur(10px);
+}
+
+.input-box::placeholder {
+    color: white;
+}
+
+.message-box {
+    height: 163px;
+    resize: none;
+}
+
+.next-btn {
+    width: 132px;
+    height: 55px;
+    border-radius: 90px;
+    background-color: var(--bg-black-2);
+    border: none;
+    gap: 10px;
+    transition: all 300ms linear;
+}
+
+.next-btn:hover {
+    box-shadow: 2px 2px 0px white;
+}
+
+.next-btn img {
+    transition: all 300ms linear;
+}
+
+.next-btn:hover img {
+    transform: scale(1.2);
+}
+
+.border-box {
+    max-width: 456px;
+    height: 85px;
+}
+
+.max-w-456 {
+    max-width: 456px;
+}
+
+.number-box {
+    color: var(--bg-black-2);
+    width: 60px;
+    height: 60px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    line-height: 43.85px;
+    letter-spacing: 0.02em;
+    place-items: center;
+    background: var(--clr-white-2);
+    margin: 7px;
+    transition: all 300ms linear;
+}
+
+.number-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    padding: 5px;
+    background: linear-gradient(44.99deg, #EBEAEA 14.65%, #FFFFFF 85.35%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    transition: all 300ms linear;
+}
+
+.border-box:hover .number-box::after {
+    background: transparent;
+    backdrop-filter: blur(25px);
+}
+
+.border-box:hover .number-box {
+    color: var(--clr-blue);
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.my-24 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.w-24 {
+    width: 24px;
+}
+
+.h-24 {
+    height: 24px;
+}
+
+.fs-xl {
+    font-size: 18px;
+}
+
+.fs-md {
+    font-size: 16px;
+}
+
+.fs-sm {
+    font-size: 14px;
+}
+
+.my-18 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/* game */
+
+.card-main-hading {
+    font-size: 40px;
+    line-height: 46.4px;
+    color: var(--clr-white-5);
+    max-width: 740px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.hosting-btn {
+    font-size: 16px;
+    line-height: 24.8px;
+    color: var(--clr-blue);
+    box-shadow: 0px 1px 2px 0px #0D0D120A;
+    background: #191921;
+    padding: 4px 14px;
+    border-radius: 50px;
+    max-width: 185px;
+    white-space: nowrap;
+}
+
+.game {
+    background-image: url('/assets/images/webp/main/game-layer.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.py-125 {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.img-card {
+    max-width: 100%;
+    min-height: 336px;
+    border-radius: 15px;
+    background: var(--bg-black-2);
+    padding: 20px;
+    text-align: center;
+    transition: all 300ms linear;
+}
+
+.img-card:hover {
+    box-shadow: 1px 1px 5px white;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.img-card:hover img {
+    transform: scale(1.09);
+}
+
+.img-card img {
+    transition: all 300ms linear;
+}
+
+.card-text {
+    font-size: 25px;
+    line-height: 26.25px;
+    padding-top: 30px;
+    margin-bottom: 0 !important;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* price card */
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-blue);
+}
+
+.table-bg {
+    background-image: url('/assets/images/webp/main/table-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.heading-box {
+    background: #29344573;
+    width: 673px;
+    height: 61px;
+    padding: 8px 20px;
+    gap: 15px;
+    border-radius: 12px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.blue {
+    color: var(--clr-blue) !important;
+    background: #84A0E81A !important;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.star-green {
+    max-width: 127px;
+    height: 31px;
+}
+
+.btn-monthly {
+    height: 45px;
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    line-height: 21.33px;
+    transition: all 300ms linear;
+}
+
+.btn-common,
+.btn-monthly {
+    background: none;
+    box-shadow: none;
+    transition: all 300ms linear;
+}
+
+.active-btn .btn-monthly {
+    box-shadow: 0px 18px 30px 0px #0D6EFD3B;
+    background: var(--clr-blue);
+}
+
+.active-btn .blue-box {
+    opacity: 0;
+}
+
+.blue-box {
+    background: var(--clr-blue);
+    width: 73px;
+    height: 33px;
+    border-radius: 8px;
+    top: -28px;
+    font-size: 14px;
+    line-height: 16.59px;
+    place-items: center;
+    transition: all 300ms linear;
+}
+
+.mt-37 {
+    margin-top: 37px;
+}
+
+.mt-xl {
+    margin-top: 30px;
+}
+
+.card-box {
+    max-width: 369px;
+    min-height: 362px;
+    background-image: url('/assets/images/webp/main/card-green.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 33px;
+    padding-top: 70px;
+    padding-bottom: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.fs-sm {
+    font-size: 14px;
+    line-height: 17.84px;
+}
+
+.btn-raptor {
+    box-shadow: 0px 23px 45px 0px #2832563D;
+    background: #00B67A;
+    width: 117.52px;
+    height: 46px;
+    border-radius: 125px;
+    transition: all 300ms linear;
+}
+
+.btn-most {
+    color: #00B67A;
+    font-size: 12px;
+    background: #00B67A1A;
+    width: 118px;
+    height: 33px;
+    border-radius: 45px;
+    place-items: center;
+}
+
+.fs-2xl {
+    font-size: 25px;
+    line-height: 29.63px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.months-box {
+    border-top: 1px dashed #FFFFFF4D;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.months-box .plan-data {
+    font-size: 18px;
+}
+
+.btn-add {
+    gap: 10px;
+    font-size: 18px;
+    background: linear-gradient(80.44deg, rgba(0, 124, 83, 0.8) 16.92%, rgba(0, 182, 122, 0.8) 97.49%);
+    height: 48px;
+    border-radius: 90px;
+    transition: all 300ms linear;
+}
+
+.btn-add img {
+    transition: all 300ms linear;
+}
+
+.btn-raptor:hover,
+.btn-monthly:hover {
+    text-shadow: 2px 2px 0px black;
+}
+
+.btn-add:hover {
+    box-shadow: 2px 2px 0px white;
+    text-shadow: 2px 2px 0px black;
+}
+
+.w-133 {
+    width: 133px;
+}
+
+.pt-33 {
+    padding-top: 33px;
+}
+
+.btn-add:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 0px black);
+}
+
+.black-layer {
+    background-image: url('/assets/images/webp/main/crad-black.webp');
+}
+
+.blue-layer {
+    background-image: url('/assets/images/webp/main/card-blue.webp');
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.bg-blue {
+    background: linear-gradient(80.44deg, rgba(0, 63, 243, 0.8) 16.92%, rgba(48, 156, 255, 0.8) 97.49%);
+}
+
+.light-blue {
+    background: var(--clr-blue);
+    box-shadow: 0px 23px 45px 0px #2832563D;
+}
+
+.fs-base {
+    font-size: 16px;
+    line-height: 21.79px;
+}
+
+.mxs-5 {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+
+.pxs-5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+@media(min-width:576px) {
+    .border-box {
+        height: 114px;
+    }
+
+    .number-box {
+        width: 105px;
+        height: 105px;
+        font-size: 42px;
+        margin: 6px;
+    }
+
+    .gap-sm-20 {
+        gap: 20px !important;
+    }
+
+    .my-sm-18 {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .mt-sm-12 {
+        margin-top: 12px !important;
+    }
+
+    .include {
+        font-size: 32px;
+        line-height: 43.4px;
+        max-width: 100%;
+    }
+
+    .card-data {
+        font-size: 16px;
+        line-height: 23.2px;
+        padding-left: 18px;
+    }
+
+    .gap-xl {
+        gap: 42px;
+    }
+
+    .partner {
+        font-size: 32px;
+        line-height: 41.4px;
+    }
+
+    .card-body {
+        padding: 45px 20.67px 38px 22.15px;
+        margin: 60px 0 0;
+    }
+
+    .svg-img {
+        width: 32px;
     }
 }
+
+@media (min-width:768px) {
+    .modpacks {
+        font-size: 20px;
+        line-height: 32px;
+        padding-bottom: 18px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 60px;
+    }
+
+    .managers {
+        font-size: 16px;
+        line-height: 24.8px;
+    }
+
+    .sectionpy {
+        padding: 53px 0 90px;
+    }
+
+    .card-body {
+        padding: 55px 20.67px 38px 22.15px;
+    }
+
+    /* price */
+    .heading-box {
+        overflow: visible !important;
+    }
+
+    .mt-xl {
+        margin-top: 50px;
+    }
+
+    .table-bg {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .overflow-x-md-visible {
+        overflow-x: visible !important;
+    }
+}
+
+@media (min-width:992px) {
+    .collaborate-bg {
+        background-image: url('../assets/images/webp/main/collaborate-bg-img.webp');
+        background-size: cover;
+        background-position: center;
+        padding-top: 93px;
+        padding-bottom: 144px;
+    }
+
+    .mt-lg-16 {
+        margin-top: 16px;
+    }
+
+    .mt-lg-64 {
+        margin-top: 64px;
+    }
+
+    .input-box {
+        max-width: 638px;
+    }
+
+    .my-lg-24 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .mt-lg-24 {
+        margin-top: 24px;
+    }
+
+    .card-body {
+        padding: 73px 20.67px 38px 22.15px;
+    }
+
+    .include {
+        font-size: 40px;
+        line-height: 46.4px;
+        padding-top: 16px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 106px;
+    }
+
+    .host {
+        font-size: 17px;
+        line-height: 34px;
+    }
+
+    .partner {
+        font-size: 40px;
+        line-height: 46.4px;
+    }
+
+    .sectionpy {
+        padding: 53px 0 141px;
+    }
+
+    /* price */
+    .mt-lg-101 {
+        margin-top: 101px;
+    }
+
+    .mb-lg-81 {
+        margin-bottom: 81px;
+    }
+
+    .mt-lg-37 {
+        margin-top: 37px !important;
+    }
+
+    .fs-2xl {
+        font-size: 20px;
+        line-height: 24.63px;
+    }
+
+    .mt-xl {
+        margin-top: 68px;
+    }
+
+    .gap-lg-34 {
+        gap: 34px !important;
+    }
+
+    .btn-add {
+        height: 63px;
+    }
+
+    .fs-lg-3xl {
+        font-size: 40px !important;
+        line-height: 46.4px !important;
+    }
+
+    .months-box {
+        font-size: 20px;
+    }
+
+    .msx-xl {
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+
+    .pxs-xl {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1180px !important;
+    }
+
+    .include {
+        padding-bottom: 0;
+    }
+
+    .card-body {
+        margin: 99px 0 0;
+    }
+
+    .collaborate-bg {
+        background-size: 100% 100%;
+    }
+
+    /* price */
+    .container {
+        max-width: 1180px;
+    }
+
+    .card-box {
+        padding-left: 32px;
+        padding-right: 32px;
+        min-height: 382px;
+    }
+
+    .fs-2xl {
+        font-size: 25px;
+        line-height: 29.63px;
+    }
+
+    .months-box {
+        font-size: 24px;
+    }
+
+    .msx-xl {
+        margin-left: -18px;
+        margin-right: -18px;
+    }
+
+    .pxs-xl {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+@media(max-width:375px) {
+    .card-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
 @media (max-width: 1599.98px) {
     .-mt-hero {
         margin-top: -260px;
     }
 }
+
 @media (max-width: 1399.98px) {
-.dots-none {
-    display: flex;
-    display: none;
+    .dots-none {
+        display: flex;
+        display: none;
+    }
+
+    .gaming-partner-mw {
+        max-width: 180px;
+    }
 }
-.gaming-partner-mw {
-    max-width: 180px;
-}
-}
+
 @media (max-width: 1199.98px) {
     .laptop-img {
         max-width: 450px;
     }
+
     .computer-img {
         max-width: 450px;
     }
+
     .hero-sec-heading {
         font-size: 40px;
         line-height: 116%;
         padding-bottom: 31px;
     }
+
     .hero-py {
         padding: 100px 0px;
     }
+
     .-mr-hero-img {
         margin-right: 0;
     }
+
     .-mt-hero {
         margin-top: -284px;
     }
+
     .perks-para-mw {
         max-width: 450px;
     }
+
+    .card-image {
+        width: 530px;
+    }
+
+    .card-text {
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
 }
-@media (max-width: 991.98px) { 
+
+@media (max-width: 991.98px) {
     .laptop-img {
         max-width: 500px;
     }
+
     .hero-sec-heading {
         font-size: 38px;
         line-height: 116%;
         padding-bottom: 28px;
     }
+
     .hero-py {
         padding: 80px 0px;
     }
+
     .hosting-btn {
         margin-bottom: 28px;
     }
+
     .hero-sec-para {
         padding-bottom: 36px;
     }
+
     .perks-py {
         padding: 80px 0px;
     }
+
     .gaming-partner-mw {
         max-width: 150px;
     }
+
     .gaming-box {
         padding: 60px 30px;
     }
+
     .partner-btn {
         margin-top: 40px;
     }
+
     .gaming-partner-para {
         padding-bottom: 40px;
     }
+
     .gaming-partner-heading {
         font-size: 40px;
         line-height: 46.4px;
     }
+
     .gaming-pb {
         padding-bottom: 40px;
     }
+
     .perks-para-mw {
         max-width: 544px;
     }
 }
-@media (max-width: 767.98px) { 
+
+@media (max-width: 767.98px) {
     .laptop-img {
         max-width: 400px;
     }
+
     .partner-program-text {
         font-size: 16px;
         line-height: 130%;
         margin-bottom: 18px;
     }
+
     .lorem-para {
-        font-size:16px;
+        font-size: 16px;
         padding-top: 18px;
         margin-bottom: 40px;
         line-height: 130%;
     }
+
     .the-perks-heading {
         font-size: 28px;
         line-height: 110%;
     }
+
     .computer-img {
         max-width: 400px;
     }
+
     .hero-sec-heading {
         font-size: 32px;
         line-height: 116%;
         padding-bottom: 22px;
     }
+
     .hero-py {
         padding: 54px 0px;
     }
+
     .hosting-btn {
         margin-bottom: 20px;
     }
+
     .hero-sec-para {
         padding-bottom: 30px;
     }
+
     .perks-py {
         padding: 54px 0px;
     }
+
     .gaming-partner-mw {
         max-width: 130px;
     }
+
     .gaming-box {
         padding: 50px 25px;
     }
+
     .partner-btn {
         margin-top: 30px;
     }
+
     .gaming-partner-para {
         padding-bottom: 30px;
     }
+
     .gaming-partner-heading {
         font-size: 28px;
         line-height: 36px;
     }
+
     .gaming-pb {
         padding-bottom: 20px;
     }
+
+    .card-main-hading {
+        font-size: 30px;
+    }
+
+    .card-text {
+        font-size: 22px;
+    }
+
+    .img-card {
+        min-height: 300px;
+    }
+
+    .py-md-70 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
-@media (max-width: 575.98px) { 
+
+@media (max-width: 575.98px) {
     .laptop-img {
         max-width: 315px;
     }
+
     .partner-program-text {
         font-size: 14px;
         line-height: 130%;
         margin-bottom: 14px;
     }
+
     .lorem-para {
-        font-size:14px;
+        font-size: 14px;
         padding-top: 10px;
         margin-bottom: 24px;
         line-height: 130%;
     }
+
     .the-perks-heading {
         font-size: 18px;
         line-height: 110%;
     }
+
     .computer-img {
         max-width: 336px;
     }
+
     .hero-sec-heading {
         font-size: 22px;
         line-height: 116%;
         padding-bottom: 10px;
     }
+
     .hero-py {
         padding: 35px 0px 32px;
     }
+
     .hosting-btn {
         margin-bottom: 10px;
     }
+
     .hero-sec-para {
         font-size: 14px;
         line-height: 120%;
         padding-bottom: 25px;
     }
+
     .mt-35 {
         margin-top: 35px;
     }
+
     .perks-py {
         padding: 40px 0px 47px;
     }
+
     .view-btn {
         font-size: 18px;
         line-height: 20px;
     }
+
     .gaming-partner-mw {
         max-width: 112px;
     }
+
     .gaming-box {
         padding: 47px 12px 47px 12px;
     }
+
     .partner-btn {
         font-size: 16px;
         margin-top: 19px;
         font-size: 16px;
         padding: 14px 32px;
     }
+
     .gaming-partner-para {
         padding-bottom: 19px;
     }
-    
+
     .gaming-partner-heading {
         padding: 10px 0px;
     }
+
     .gaming-partner-para {
         font-size: 14px;
     }
+
     .gaming-partner-heading {
         font-size: 22px;
         line-height: 26px;
     }
+
     .gap-6 {
         gap: 6px !important;
     }
-    .btn-view::after{
-    width: 47px;
-    height: 47px;
+
+    .btn-view::after {
+        width: 47px;
+        height: 47px;
     }
+
     .gaming-pb {
         padding-bottom: 0px;
     }
+
     .gaming-bg {
         background-image: url("../assets/images/webp/main/gaming-box-img.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
     }
+
     .-mt-hero {
         margin-top: -294px;
     }
+
     .arrow-ml {
         margin-left: 4px;
-    } 
+    }
+
     .mw-204 {
         max-width: 204px;
     }
+
     .circle-svg {
         margin: -12px 10px 0px 0px;
     }
+
+    .py-sm-52 {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .card-main-hading {
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 14px;
+        line-height: 26px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .fs-2xl {
+        font-size: 22px;
+    }
+
+    .card-box {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
-
-
