@@ -8,7 +8,6 @@
 }
 
 /* Partner */
-
 .managers {
     color: var(--clr-blue);
     font-size: 12px;
@@ -143,6 +142,7 @@
     background-size: 100% 100%;
     padding-top: 36px;
     padding-bottom: 58px;
+    margin-top: -1px;
 }
 
 .mt-16 {
@@ -290,7 +290,7 @@
     color: var(--clr-white-5);
     max-width: 740px;
     margin: auto;
-    padding-bottom: 43px;
+    padding-bottom: 30px;
 }
 
 .hosting-btn {
@@ -553,6 +553,16 @@
     line-height: 21.79px;
 }
 
+.mxs-5 {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+
+.pxs-5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
 @media(max-width:1200px) {
     .card-image {
         width: 530px;
@@ -590,8 +600,10 @@
     }
 
     .card-main-hading {
-        font-size: 24px;
-        padding-bottom: 24px;
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 14px;
         line-height: 26px;
     }
 
@@ -772,8 +784,8 @@
     }
 
     .fs-lg-3xl {
-        font-size: 40px;
-        line-height: 46.4px;
+        font-size: 40px !important;
+        line-height: 46.4px !important;
     }
 }
 
@@ -788,6 +800,10 @@
 
     .card-body {
         margin: 99px 0 0;
+    }
+
+    .collaborate-bg {
+        background-size: 100% 100%;
     }
 
     /* price */
