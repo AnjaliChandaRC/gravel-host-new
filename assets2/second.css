@@ -708,6 +708,10 @@
         padding-top: 70px;
         padding-bottom: 70px;
     }
+
+    .overflow-x-md-visible {
+        overflow-x: visible !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -770,6 +774,10 @@
 
     .mb-lg-81 {
         margin-bottom: 81px;
+    }
+
+    .mt-lg-37 {
+        margin-top: 37px !important;
     }
 
     .fs-2xl {
