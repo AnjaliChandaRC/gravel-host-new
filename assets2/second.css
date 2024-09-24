@@ -1,37 +1,28 @@
-/* text */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* sectionpy */
 * {
     list-style-type: none !important;
     text-decoration: none !important;
     scroll-behavior: smooth;
 }
 
-.bg_color {
-    background-color: #1f1f29;
-}
+/* Partner */
 
-.Managers {
-    color: #0D6EFD;
-    font-family: 'Inter', sans-serif;
+.managers {
+    color: var(--clr-blue);
     font-size: 12px;
-    font-weight: 500;
     line-height: 21px;
 }
 
-.Manager_bg {
+.manager-bg {
     width: 123px;
     padding: 4px 14px 4px 12px;
-    background-color: #000;
+    background-color: #191921;
     border-radius: 1000px;
 }
 
-.Partner {
-    font-family: 'Oswald', sans-serif;
+.partner {
     font-size: 22px;
     line-height: 26px;
 }
@@ -51,74 +42,66 @@
     border-radius: 50%;
 }
 
-.Host {
-    color: #FCFCFF;
-    font-family: 'Rubik', sans-serif;
+.host {
+    color: var(--clr-white-5);
     font-size: 16px;
-    font-weight: 500;
     line-height: 22px;
     padding-left: 9px;
 }
 
-.Requirements_bg {
+.requirements-bg {
     width: 132px;
     padding: 4px 14px 4px 12px;
-    background-color: #000;
+    background-color: #191921;
     border-radius: 1000px;
 }
 
-.gap_42 {
-    gap: 20px;
+.gap-xl {
+    gap: 9px;
 }
 
-.padding_bottom {
-    padding-bottom: 24px;
+.padding-bottom {
+    padding-bottom: 53px;
 }
 
 .include {
-    color: #FCFCFF;
-    font-family: 'Oswald', sans-serif;
+    color: var(--clr-white-5);
     font-size: 22px;
-    font-weight: 700;
     line-height: 26.4px;
     padding-bottom: 12px;
+    padding-top: 10px;
     max-width: 224px;
 }
 
-.card_body {
-    background-color: #111116;
+.card-body {
+    background-color: var(--bg-black-2);
     padding: 40px 20.67px 38px 27.15px;
     border-radius: 24px;
     margin: 20px 0 0;
 }
 
 .modpacks {
-    color: #FCFCFF;
-    font-family: 'Oswald', sans-serif;
+    color: var(--clr-white-5);
     font-size: 20px;
-    font-weight: 700;
     line-height: 28px;
     padding-bottom: 14px;
 }
 
-.card_text {
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
+.card-data {
     font-size: 16px;
-    font-weight: 400;
     line-height: 23.2px;
     padding-left: 15px;
     max-width: 196px;
 }
 
-.svg_bg {
-    width: 35px;
-    height: 35px;
+.svg-bg {
     border-radius: 50%;
-    background: #0D6EFD;
+    background: var(--clr-blue);
     box-shadow: 0px 16px 40px 0px #0D6EFD38;
-    top: 25px;
-    right: 21px;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    right: 40px;
 }
 
 .sectionpy {
@@ -137,113 +120,6 @@
 
 .cursor {
     cursor: pointer;
-}
-
-.svg_bg {
-    width: 70px;
-    height: 70px;
-    top: -35px;
-    right: 40px;
-}
-
-@media(min-width:576px) {
-    .include {
-        font-size: 32px;
-        line-height: 43.4px;
-        max-width: 100%;
-    }
-
-    .card_text {
-        font-size: 16px;
-        line-height: 23.2px;
-        padding-left: 18px;
-    }
-
-    .gap_42 {
-        gap: 42px;
-    }
-
-    .discord_img {
-        width: 24px;
-    }
-
-    .Partner {
-        font-size: 32px;
-        line-height: 41.4px;
-    }
-
-    .card_body {
-        padding: 45px 20.67px 38px 22.15px;
-        margin: 60px 0 0;
-    }
-
-    .svg_img {
-        width: 32px;
-    }
-}
-
-@media(min-width:768px) {
-    .modpacks {
-        font-size: 20px;
-        line-height: 32px;
-        padding-bottom: 18px;
-    }
-
-    .padding_bottom {
-        padding-bottom: 60px;
-    }
-
-    .Managers {
-        font-size: 16px;
-        line-height: 24.8px;
-    }
-
-    .sectionpy {
-        padding: 53px 0 70px;
-    }
-
-    .card_body {
-        padding: 55px 20.67px 38px 22.15px;
-    }
-}
-
-@media(min-width:992px) {
-    .card_body {
-        padding: 73px 20.67px 38px 22.15px;
-    }
-
-    .include {
-        font-size: 40px;
-        line-height: 46.4px;
-    }
-
-    .padding_bottom {
-        padding-bottom: 106px;
-    }
-
-    .Host {
-        font-size: 17px;
-        line-height: 34px;
-    }
-
-    .Partner {
-        font-size: 40px;
-        line-height: 46.4px;
-    }
-
-    .sectionpy {
-        padding: 53px 0 141px;
-    }
-}
-
-@media(min-width:1200px) {
-    .include {
-        padding-bottom: 0;
-    }
-
-    .card_body {
-        margin: 99px 0 0;
-    }
 }
 
 /* Requirements */
@@ -334,7 +210,7 @@
 }
 
 .number-box {
-    color: #111116;
+    color: var(--bg-black-2);
     width: 105px;
     height: 105px;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -342,7 +218,7 @@
     line-height: 43.85px;
     letter-spacing: 0.02em;
     place-items: center;
-    background: #F9F9F9;
+    background: var(--clr-white-2);
     margin: 4px;
     transition: all 300ms linear;
 }
@@ -369,7 +245,7 @@
 }
 
 .border-box:hover .number-box {
-    color: #0D6EFD;
+    color: var(--clr-blue);
 }
 
 .gap-20 {
@@ -406,61 +282,24 @@
     margin-bottom: 18px;
 }
 
-@media (min-width:992px) {
-    .collaborate-bg {
-        background-image: url('../assets/images/webp/main/collaborate-bg-img.webp');
-        background-size: cover;
-        padding-top: 93px;
-        padding-bottom: 144px;
-    }
-
-    .mt-lg-16 {
-        margin-top: 16px;
-    }
-
-    .mt-lg-64 {
-        margin-top: 64px;
-    }
-
-    .my-lg-24 {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .mt-lg-24 {
-        margin-top: 24px;
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        max-width: 1180px !important;
-    }
-}
-
 /* game */
 
-.card_main_hading {
-    font-family: 'Oswald', sans-serif;
+.card-main-hading {
     font-size: 40px;
-    font-weight: 700;
     line-height: 46.4px;
-    color: #FCFCFF;
+    color: var(--clr-white-5);
     max-width: 740px;
     margin: auto;
     padding-bottom: 43px;
 }
 
-.hosting_btn {
-    font-family: Inter;
+.hosting-btn {
     font-size: 16px;
-    font-weight: 500;
     line-height: 24.8px;
-    color: #0D6EFD;
+    color: var(--clr-blue);
     box-shadow: 0px 1px 2px 0px #0D0D120A;
     background: #191921;
     padding: 12px 14px;
-    text-decoration: none;
     border-radius: 50px;
     max-width: 185px;
     margin: auto !important;
@@ -468,27 +307,27 @@
 }
 
 .game {
-    background-image: url(/assets/images/webp/main/game-layer.webp);
+    background-image: url('/assets/images/webp/main/game-layer.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.py_125 {
+.py-125 {
     padding-top: 125px;
     padding-bottom: 125px;
 }
 
-.sec_6_Card {
+.img-card {
     max-width: 100%;
     min-height: 336px;
     border-radius: 15px;
-    background: #111116;
+    background: var(--bg-black-2);
     padding: 20px;
     text-align: center;
     transition: all 300ms linear;
 }
 
-.sec_6_Card:hover {
+.img-card:hover {
     box-shadow: 1px 1px 5px white;
 }
 
@@ -496,111 +335,29 @@
     border-radius: 10px;
 }
 
-.sec_6_Card:hover img {
+.img-card:hover img {
     transform: scale(1.09);
 }
 
-.sec_6_Card img {
+.img-card img {
     transition: all 300ms linear;
 }
 
-.Card_text {
-    font-family: 'Rubik', sans-serif;
+.card-text {
     font-size: 25px;
-    font-weight: 600;
     line-height: 26.25px;
-    color: #FFFFFF;
     padding-top: 30px;
     margin-bottom: 0 !important;
 }
 
-.Card_image {
+.card-image {
     max-width: 100%;
     height: auto;
 }
 
-@media(max-width:1200px) {
-    .Card_image {
-        width: 530px;
-    }
-
-    .Card_text {
-        padding-top: 20px;
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: 768.98px) {
-    .card_main_hading {
-        font-size: 30px;
-    }
-
-    .Card_text {
-        font-size: 22px;
-    }
-
-    .sec_6_Card {
-        min-height: 300px;
-    }
-
-    .py_md_70 {
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
-}
-
-@media(max-width:576.99px) {
-    .py_sm_48 {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-
-    .card_main_hading {
-        font-size: 24px;
-        padding-bottom: 24px;
-        line-height: 26px;
-    }
-
-    .Card_text {
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    .fs-2xl {
-        font-size: 22px;
-    }
-}
-
-@media(max-width:375px) {
-    .Card_text {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-}
-
-
-
 /* price card */
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-.font-rubik {
-    font-family: "Rubik", sans-serif;
-}
-
 .font-montserrat {
     font-family: "Montserrat", sans-serif;
-}
-
-.font-inter {
-    font-family: "Inter", sans-serif;
-}
-
-.font-open {
-    font-family: "Open Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -610,7 +367,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #0D6EFD;
+    background-color: var(--clr-blue);
 }
 
 .table-bg {
@@ -640,7 +397,7 @@
 
 .btn-monthly {
     box-shadow: 0px 18px 30px 0px #0D6EFD3B;
-    background: #0D6EFD;
+    background: var(--clr-blue);
     height: 45px;
     padding: 12px 30px;
     border-radius: 12px;
@@ -661,7 +418,7 @@
 }
 
 .blue-box {
-    background: #0D6EFD;
+    background: var(--clr-blue);
     width: 73px;
     height: 33px;
     border-radius: 8px;
@@ -682,7 +439,7 @@
 .card-box {
     max-width: 369px;
     min-height: 362px;
-    background-image: url(/assets/images/webp/main/card-green.webp);
+    background-image: url('/assets/images/webp/main/card-green.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: 33px;
@@ -703,7 +460,6 @@
     width: 117.52px;
     height: 46px;
     border-radius: 125px;
-    border: none;
     transition: all 300ms linear;
 }
 
@@ -748,7 +504,6 @@
         linear-gradient(80.44deg, rgba(0, 124, 83, 0.8) 16.92%, rgba(0, 182, 122, 0.8) 97.49%);
     height: 48px;
     border-radius: 90px;
-    border: none;
     transition: all 300ms linear;
 }
 
@@ -772,11 +527,11 @@
 }
 
 .black-layer {
-    background-image: url(/assets/images/webp/main/crad-black.webp);
+    background-image: url('/assets/images/webp/main/crad-black.webp');
 }
 
 .blue-layer {
-    background-image: url(/assets/images/webp/main/card-blue.webp);
+    background-image: url('/assets/images/webp/main/card-blue.webp');
 }
 
 .pt-32 {
@@ -789,7 +544,7 @@
 }
 
 .light-blue {
-    background: #0D6EFD;
+    background: var(--clr-blue);
     box-shadow: 0px 23px 45px 0px #2832563D;
 }
 
@@ -798,7 +553,126 @@
     line-height: 21.79px;
 }
 
+@media(max-width:1200px) {
+    .card-image {
+        width: 530px;
+    }
+
+    .card-text {
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .card-main-hading {
+        font-size: 30px;
+    }
+
+    .card-text {
+        font-size: 22px;
+    }
+
+    .img-card {
+        min-height: 300px;
+    }
+
+    .py-md-70 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media(max-width:576.99px) {
+    .py-sm-48 {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .card-main-hading {
+        font-size: 24px;
+        padding-bottom: 24px;
+        line-height: 26px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .fs-2xl {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:375px) {
+    .card-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media(min-width:576px) {
+    .include {
+        font-size: 32px;
+        line-height: 43.4px;
+        max-width: 100%;
+    }
+
+    .card-data {
+        font-size: 16px;
+        line-height: 23.2px;
+        padding-left: 18px;
+    }
+
+    .gap-xl {
+        gap: 42px;
+    }
+
+    .discord-img {
+        width: 24px;
+    }
+
+    .partner {
+        font-size: 32px;
+        line-height: 41.4px;
+    }
+
+    .card-body {
+        padding: 45px 20.67px 38px 22.15px;
+        margin: 60px 0 0;
+    }
+
+    .svg-img {
+        width: 32px;
+    }
+}
+
 @media (min-width:768px) {
+    .modpacks {
+        font-size: 20px;
+        line-height: 32px;
+        padding-bottom: 18px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 60px;
+    }
+
+    .managers {
+        font-size: 16px;
+        line-height: 24.8px;
+    }
+
+    .sectionpy {
+        padding: 53px 0 70px;
+    }
+
+    .card-body {
+        padding: 55px 20.67px 38px 22.15px;
+    }
+
+    /* price */
     .heading-box {
         overflow: visible !important;
     }
@@ -814,6 +688,59 @@
 }
 
 @media (min-width:992px) {
+    .collaborate-bg {
+        background-image: url('../assets/images/webp/main/collaborate-bg-img.webp');
+        background-size: cover;
+        padding-top: 93px;
+        padding-bottom: 144px;
+    }
+
+    .mt-lg-16 {
+        margin-top: 16px;
+    }
+
+    .mt-lg-64 {
+        margin-top: 64px;
+    }
+
+    .my-lg-24 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .mt-lg-24 {
+        margin-top: 24px;
+    }
+
+    .card-body {
+        padding: 73px 20.67px 38px 22.15px;
+    }
+
+    .include {
+        font-size: 40px;
+        line-height: 46.4px;
+        padding-top: 16px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 106px;
+    }
+
+    .host {
+        font-size: 17px;
+        line-height: 34px;
+    }
+
+    .partner {
+        font-size: 40px;
+        line-height: 46.4px;
+    }
+
+    .sectionpy {
+        padding: 53px 0 141px;
+    }
+
+    /* price */
     .mt-lg-101 {
         margin-top: 101px;
     }
@@ -843,9 +770,27 @@
     .btn-add {
         height: 63px;
     }
+
+    .fs-lg-3xl {
+        font-size: 40px;
+        line-height: 46.4px;
+    }
 }
 
 @media (min-width:1200px) {
+    .container {
+        max-width: 1180px !important;
+    }
+
+    .include {
+        padding-bottom: 0;
+    }
+
+    .card-body {
+        margin: 99px 0 0;
+    }
+
+    /* price */
     .container {
         max-width: 1180px;
     }
