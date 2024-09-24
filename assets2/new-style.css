@@ -1,3 +1,6 @@
+.main {
+    max-width: 1920px;
+}
 .bg-image {
     background-image: url("../assets/images/webp/main/bg-image.webp");
     background-repeat: no-repeat;
@@ -181,6 +184,7 @@ transition: all 300ms linear;
     filter: grayscale(1);
     opacity: 40%;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .img-filter:hover {
     filter: grayscale(0);
