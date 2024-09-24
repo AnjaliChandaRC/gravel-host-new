@@ -467,7 +467,7 @@ button:focus::after {
   max-height: 340px;
   text-align: start;
   transition: 0.4s ease-in-out;
-  z-index: 2;
+  z-index: 5;
 }
 
 .active {
