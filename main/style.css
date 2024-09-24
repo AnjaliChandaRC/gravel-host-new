@@ -403,7 +403,7 @@
     background-size: 100% 100%;
     padding-top: 36px;
     padding-bottom: 58px;
-    margin-top: -1px;
+    margin-top: -2px;
 }
 
 .mt-16 {
@@ -461,7 +461,7 @@
 
 .border-box {
     max-width: 456px;
-    height: 85px;
+    height:100px;
 }
 
 .max-w-456 {
@@ -1345,7 +1345,7 @@
     }
 
     .hero-py {
-        padding: 35px 0px 32px;
+        padding: 42px 0px 48px;
     }
 
     .hosting-btn {
@@ -1363,7 +1363,7 @@
     }
 
     .perks-py {
-        padding: 40px 0px 47px;
+        padding: 48px 0px 34px;
     }
 
     .view-btn {
@@ -1376,7 +1376,7 @@
     }
 
     .gaming-box {
-        padding: 47px 12px 47px 12px;
+        padding: 48px 12px;
     }
 
     .partner-btn {
@@ -1440,8 +1440,7 @@
     }
 
     .py-sm-52 {
-        padding-top: 52px;
-        padding-bottom: 52px;
+        padding: 48px 0px;
     }
 
     .card-main-hading {
