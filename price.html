@@ -62,7 +62,8 @@
                     <div class="card-box w-100 d-flex justify-content-center">
                         <div class="d-flex flex-column w-100">
                             <div class="d-flex justify-content-between">
-                                <img class="w-100 traveler-mw" src="./assets/images/webp/main/travelers-logo.webp" alt="#">
+                                <img class="w-100 traveler-mw" src="./assets/images/webp/main/travelers-logo.webp"
+                                    alt="#">
                                 <p class="fw-bold btn-most d-grid mb-0 font-montserrat">Most Popular</p>
                             </div>
                             <div class="d-flex justify-content-between mt-30">
@@ -83,8 +84,9 @@
                         </div>
                     </div>
                     <p
-                        class="d-flex justify-content-center align-items-center ff-inter text-white fw-bold fs-sm position-absolute top-0 start-50 translate-middle-x btn-raptor border-0 text-uppercase">Raptor
-                </p>
+                        class="d-flex justify-content-center align-items-center ff-inter text-white fw-bold fs-sm position-absolute top-0 start-50 translate-middle-x btn-raptor border-0 text-uppercase">
+                        Raptor
+                    </p>
                 </div>
                 <div class="col-lg-4 pxs-xl col-md-6 mt-4 mt-lg-0 d-flex justify-content-center position-relative">
                     <div class="card-box w-100 d-flex black-layer justify-content-center">
@@ -108,16 +110,18 @@
                         </div>
                     </div>
                     <p
-                        class="d-flex justify-content-center align-items-center ff-inter text-white fw-bold fs-sm position-absolute top-0 start-50 translate-middle-x btn-raptor border-0 text-uppercase w-133 bg-black">Sabertooth
-                </p>
+                        class="d-flex justify-content-center align-items-center ff-inter text-white fw-bold fs-sm position-absolute top-0 start-50 translate-middle-x btn-raptor border-0 text-uppercase w-133 bg-black">
+                        Sabertooth
+                    </p>
                 </div>
                 <div class="col-lg-4 pxs-xl col-md-6 mt-4 mt-lg-0 d-flex justify-content-center position-relative">
                     <div class="card-box w-100 d-flex blue-layer justify-content-center">
                         <div class="d-flex flex-column w-100">
-                         <div class="d-flex justify-content-between">
-                            <img class="w-100 traveler-mw" src="./assets/images/webp/main/travelers-logo.webp" alt="#">
-                            <p class="ms-auto fw-bold btn-most d-grid blue mb-0 font-montserrat">Most Popular</p>
-                         </div>
+                            <div class="d-flex justify-content-between">
+                                <img class="w-100 traveler-mw" src="./assets/images/webp/main/travelers-logo.webp"
+                                    alt="#">
+                                <p class="ms-auto fw-bold btn-most d-grid blue mb-0 font-montserrat">Most Popular</p>
+                            </div>
                             <div class="d-flex justify-content-between mt-30">
                                 <p class="ff-rubik fw-medium text-white mb-0 fs-2xl plan-slots" data-slot="1">100+ Slots
                                 </p>
@@ -136,8 +140,9 @@
                         </div>
                     </div>
                     <p
-                        class="d-flex justify-content-center align-items-center ff-inter text-white fw-bold light-blue fs-sm position-absolute top-0 start-50 translate-middle-x btn-raptor border-0 text-uppercase">REX
-                </p>
+                        class="d-flex justify-content-center align-items-center ff-inter text-white fw-bold light-blue fs-sm position-absolute top-0 start-50 translate-middle-x btn-raptor border-0 text-uppercase">
+                        REX
+                    </p>
                 </div>
             </div>
             <div
@@ -156,7 +161,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="./main/app.js"></script>
+    <script>
+        const pricingData = {
+            monthly: [
+                { slots: '30 Slots', ram: '10GB RAM', price: '12.99', data: 'monthly' },
+                { slots: '70 Slots', ram: '12GB RAM', price: '29.99', data: 'monthly' },
+                { slots: '100+ Slots', ram: '16GB+ RAM', price: '49.99,', data: 'monthly' },
+            ],
+            quarterly: [
+                { slots: '40 Slots', ram: '12GB RAM', price: '36.99', data: 'quarterly' },
+                { slots: '80 Slots', ram: '14GB RAM', price: '87.99', data: 'quarterly' },
+                { slots: '120+ Slots', ram: '18GB+ RAM', price: '149.99', data: 'quarterly' },
+            ],
+            'semi-annually': [
+                { slots: '50 Slots', ram: '16GB RAM', price: '72.99', data: 'semi-annually' },
+                { slots: '90 Slots', ram: '18GB RAM', price: '174.99', data: 'semi-annually' },
+                { slots: '150+ Slots', ram: '20GB+ RAM', price: '299.99', data: 'semi-annually' },
+            ],
+            annually: [
+                { slots: '70 Slots', ram: '18GB RAM', price: '144.99', data: 'annually' },
+                { slots: '100+ Slots', ram: '24GB RAM', price: '349.99', data: 'annually' },
+                { slots: '170+ Slots', ram: '28GB+ RAM', price: '599.99', data: 'annually' },
+            ]
+        };
+
+        function updatePlanDetails(planType) {
+            const slots = document.querySelectorAll('.plan-slots');
+            const ram = document.querySelectorAll('.plan-ram');
+            const prices = document.querySelectorAll('.plan-price');
+            const data = document.querySelectorAll('.plan-data');
+
+            slots.forEach((slot, index) => {
+                slot.textContent = pricingData[planType][index].slots;
+            });
+
+            ram.forEach((ram, index) => {
+                ram.textContent = pricingData[planType][index].ram;
+            });
+
+            prices.forEach((price, index) => {
+                price.textContent = pricingData[planType][index].price;
+            });
+            data.forEach((data, index) => {
+                data.textContent = pricingData[planType][index].data;
+            });
+        }
+
+        const buttons = document.querySelectorAll(".btn-monthly");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", (event) => {
+                const activeBtn = document.querySelector(".position-relative .active-btn");
+                event.target.parentElement.classList.toggle("active-btn");
+                if (activeBtn) activeBtn.classList.remove("active-btn");
+
+                const planType = event.target.dataset.plan;
+                updatePlanDetails(planType);
+            });
+        });
+    </script>
 </body>
 
 </html>

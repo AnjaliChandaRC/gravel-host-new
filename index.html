@@ -539,9 +539,9 @@
         <div
           class="d-flex justify-content-lg-between justify-content-center align-items-center hero-py flex-lg-row flex-column gap-xl-0 gap-sm-5">
           <div class="mw-586">
-            <div class="d-flex justify-content-center justify-content-lg-start"><p
-                class="hosting-btn fw-medium ff-inter"><svg width="16" height="17" viewBox="0 0 16 17"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <p class="hosting-btn fw-medium ff-inter"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.4016 9.26406H9.20156V13.4641H13.4016V9.26406Z" stroke="#0D6EFD" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M6.80156 9.26406H2.60156V13.4641H6.80156V9.26406Z" stroke="#0D6EFD" stroke-width="1.5"
@@ -551,7 +551,8 @@
                   <path d="M6.80156 2.66406H2.60156V6.86406H6.80156V2.66406Z" stroke="#0D6EFD" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                Hosting</p></div>
+                Hosting</p>
+            </div>
             <div class="d-flex flex-column justify-content-lg-start justify-content-center align-items-center">
               <h2 class="hero-sec-heading mb-0 fw-bold ff-rubik text-lg-start text-center mw-204">The BisectHosting
                 <span style="color: var(--clr-blue);">Partner
@@ -686,8 +687,8 @@
     <section class="gaming-bg gaming-pb">
       <div class="mx-auto container gaming-box custom-w w-100">
         <div class="d-flex justify-content-center">
-          <p class="gaming-btn ff-inter fw-medium"><svg width="16" height="17"
-              viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <p class="gaming-btn ff-inter fw-medium"><svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M13.4016 9.26406H9.20156V13.4641H13.4016V9.26406Z" stroke="#0D6EFD" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round" />
               <path d="M6.80156 9.26406H2.60156V13.4641H6.80156V9.26406Z" stroke="#0D6EFD" stroke-width="1.5"
@@ -863,7 +864,7 @@
         </p>
         <div class="row flex-column-reverse flex-lg-row mt-24 pt-1 mt-lg-64 align-items-center">
           <div class="col-lg-6 mt-24 pt-2 pt-sm-0 mt-lg-0">
-            <form id="formfill" method="post" onsubmit="sendEmail(event)"
+            <form id="formfill" method="get" onsubmit="sendEmail(event)"
               class="w-100 d-flex flex-column align-items-md-center align-items-lg-start justify-content-center">
               <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium">First Name</p>
               <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="text" name="first_name"
@@ -1342,7 +1343,6 @@
       <span>-40% &nbsp;</span><span id="timer-button"></span><span>&nbsp; left</span>
     </div>
   </div>
-  <script src="./main/app.js"></script>
 
   <!-- Sweet Alert -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -1487,7 +1487,6 @@
       duration: 1000,
     });
   </script>
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -1516,8 +1515,6 @@
       "dateModified": "2024-08-08"
     }
   </script>
-
-
   <script>
     document.querySelectorAll('.tab-btn').forEach(button => {
       button.addEventListener('click', () => {
@@ -1540,6 +1537,7 @@
       });
     });
   </script>
+  <script src="./main/app.js"></script>
 </body>
 
 </html>
