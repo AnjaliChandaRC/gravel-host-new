@@ -208,6 +208,12 @@
       color: grey;
     }
   </style>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("N9x2d_OkytANvnrD-");  // Replace with your public key
+    })();
+  </script>
 </head>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -848,7 +854,6 @@
         </div>
       </div>
     </section>
-
     <!-- Requirements -->
     <section class="collaborate-bg">
       <div class="container my-md-5 my-lg-0">
@@ -858,24 +863,34 @@
         </p>
         <div class="row flex-column-reverse flex-lg-row mt-24 pt-1 mt-lg-64 align-items-center">
           <div class="col-lg-6 mt-24 pt-2 pt-sm-0 mt-lg-0">
-            <form id="formfill" method="get"
+            <form id="formfill" method="post" onsubmit="sendEmail(event)"
               class="w-100 d-flex flex-column align-items-md-center align-items-lg-start justify-content-center">
               <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium">First Name</p>
-              <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="text"
+              <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="text" name="first_name"
                 placeholder="Enter First Name" required>
-              <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium mt-12 mt-lg-24">Email</p>
-              <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="email"
+
+              <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium pt-3 pt-sm-0 mt-12 mt-lg-24">Email</p>
+              <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="email" name="email"
                 placeholder="Enter your Email" required>
-              <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium mt-12 mt-lg-24">Discord*</p>
-              <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="text"
+
+              <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium pt-3 pt-sm-0 mt-12 mt-lg-24">Discord</p>
+              <input class="mt-12 input-box w-100 ff-rubik fw-normal fs-sm text-white" type="text" name="discord"
                 placeholder="Enter Your Discord" required>
-              <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium pt-4 pt-sm-0 mt-12 mt-lg-24">Message</p>
-              <textarea id="Message" class="mt-12 input-box w-100 ff-ru-k fw-normal fs_xsm text-white message-box"
-                placeholder="Enter your Message"></textarea>
-              <button aria-label="next"
-                class="ff-rubik fw-semibold text-white fs_xl next-btn d-flex justify-content-center align-items-center mt-12">Next<img
-                  src="./assets/images/svg/main/arrow-right.svg" alt="arrow-right"></button>
+
+              <p class="text-white mb-0 fs-md w-100 ff-rubik fw-medium pt-3 pt-sm-0 mt-12 mt-lg-24">Message</p>
+              <textarea id="Message" class="mt-12 input-box w-100 ff-rubik fw-normal fs_xsm text-white message-box"
+                name="message" placeholder="Enter your Message"></textarea>
+
+              <button id="submit-btn" aria-label="next" type="submit"
+                class="ff-rubik fw-semibold text-white fs_xl next-btn d-flex justify-content-center align-items-center mt-12">
+                Next
+                <img src="./assets/images/svg/main/arrow-right.svg" alt="arrow-right">
+              </button>
             </form>
+            <div id="success-message"
+              class="position-fixed send-box d-flex justify-content-center align-items-center ff-oswald">
+              Submit Successfully
+            </div>
           </div>
           <div class="col-lg-6 pb-lg-4 d-flex justify-content-center justify-content-lg-end">
             <div class="d-flex max-w-456 w-100 flex-column align-items-center">
@@ -928,7 +943,6 @@
         </div>
       </div>
     </section>
-
     <!-- game -->
     <section class="game d-flex align-items-center justify-content-center w-100 py-125 py-md-70 py-sm-52">
       <div class="container">
@@ -1106,6 +1120,7 @@
     </section>
     </div>
   </main>
+  <script src="./main/app.js"></script>
   <!-- Jquery v3.6.1 -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -1432,7 +1447,7 @@
 
       document.getElementById("timer").textContent = minutes + " : " + seconds;
       document.getElementById("timer-button").textContent = minutes + " : " + seconds;
-            document.getElementById("coupon").textContent = couponText;
+      document.getElementById("coupon").textContent = couponText;
     };
     promoCountdownInterval = setInterval(handler, 1000);
     handler();

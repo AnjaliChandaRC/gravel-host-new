@@ -55,3 +55,34 @@ buttons.forEach((button) => {
         updatePlanDetails(planType);
     });
 });
+
+//
+
+function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        'service_3rwtrur',
+        'template_4ruauh9',
+        e.target,
+        'N9x2d_OkytANvnrD-'
+    ).then(
+        function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('success-message').style.right = '2%'; // Show success message
+            document.getElementById('submit-btn').style.right = '-82%'; // Hide submit button
+
+            // Reset the form data
+            e.target.reset(); // Use the event's target to reset the form
+
+            // Hide success message and show the button again after 2 seconds
+            setTimeout(() => {
+                document.getElementById('success-message').style.right = '-82%'; // Hide success message
+                document.getElementById('submit-btn').style.right = '2%'; // Show submit button again
+            }, 2000); // Hide after 2 seconds
+        },
+        function (error) {
+            console.log('FAILED...', error);
+        }
+    );
+}
