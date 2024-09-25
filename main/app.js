@@ -56,7 +56,7 @@ buttons.forEach((button) => {
     });
 });
 
-//
+//email js
 
 function sendEmail(e) {
     e.preventDefault();
@@ -69,17 +69,13 @@ function sendEmail(e) {
     ).then(
         function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            document.getElementById('success-message').style.right = '2%'; // Show success message
-            document.getElementById('submit-btn').style.right = '-82%'; // Hide submit button
-
-            // Reset the form data
-            e.target.reset(); // Use the event's target to reset the form
-
-            // Hide success message and show the button again after 2 seconds
+            document.getElementById('success-message').style.right = '2%';
+            document.getElementById('submit-btn').style.right = '-82%';
+            e.target.reset();
             setTimeout(() => {
-                document.getElementById('success-message').style.right = '-82%'; // Hide success message
-                document.getElementById('submit-btn').style.right = '2%'; // Show submit button again
-            }, 2000); // Hide after 2 seconds
+                document.getElementById('success-message').style.right = '-82%';
+                document.getElementById('submit-btn').style.right = '2%';
+            }, 2000);
         },
         function (error) {
             console.log('FAILED...', error);
