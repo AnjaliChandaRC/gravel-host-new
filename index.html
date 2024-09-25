@@ -25,8 +25,7 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
   <link rel="shortcut icon" href="/assets/images/png/logo.png " type="image/x-icon" />
-  <link rel="stylesheet" href="./assets2/second.css">
-  <link rel="stylesheet" href="/assets2/new-style.css">
+  <link rel="stylesheet" href="/main/style.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -1350,34 +1349,6 @@
     // new code
     const showPopupButton = document.querySelector("#show-popup");
 
-
-    // OLD CODE:
-    /*
-          closeButton.addEventListener("click", function () {
-          popup.classList.remove("show");
-          popup.classList.add("hide");
-          showPopupButton.style.visibility = "visible";
-          backgroundPopup.style.display = "none";
-          });
-  
-          showPopupButton.addEventListener("click", function () {
-          popup.classList.remove("hide");
-          popup.classList.add("show");
-          showPopupButton.style.visibility = "hidden";
-          backgroundPopup.style.display = "block";
-          });
-  
-  
-          document.addEventListener("mouseleave", function(event){
-          if(event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight))
-          {
-              popup.classList.remove("hide");
-              popup.classList.add("show");
-              showPopupButton.style.visibility = "hidden";
-              backgroundPopup.style.display = "block";
-          }
-          });*/
-
     closeButton.addEventListener("click", function () {
       popup.classList.remove("show");
       popup.classList.add("hide");
@@ -1392,7 +1363,6 @@
       backgroundPopup.style.display = "block";
     });
 
-
     function getStorage(key) {
       if (!('localStorage' in window)) {
         return;
@@ -1406,8 +1376,6 @@
       }
       window.localStorage.setItem(key, value);
     }
-
-
 
     var hasPopupOut = getStorage('hasPopupOut');
 
@@ -1445,7 +1413,6 @@
       promoCountdown = promoCountdownDate;
     }
 
-
     var promoCountdownInterval;
     var expireMin = new Date(promoCountdown).getTime();
     var handler = function () {
@@ -1465,11 +1432,7 @@
 
       document.getElementById("timer").textContent = minutes + " : " + seconds;
       document.getElementById("timer-button").textContent = minutes + " : " + seconds;
-      // document.getElementById("timer").textContent =
-      //  (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
-      // document.getElementById("timer-button").textContent =
-      //   (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
-      document.getElementById("coupon").textContent = couponText;
+            document.getElementById("coupon").textContent = couponText;
     };
     promoCountdownInterval = setInterval(handler, 1000);
     handler();
