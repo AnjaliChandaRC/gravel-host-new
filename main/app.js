@@ -4,10 +4,10 @@ function sendEmail(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        'service_3rwtrur',
-        'template_4ruauh9',
+        'service_23j22r6',
+        'template_3mncha6',
         e.target,
-        'N9x2d_OkytANvnrD-'
+        'hwN2jXJE0h2K-OMSO'
     ).then(
         function (response) {
             console.log('SUCCESS!', response.status, response.text);
